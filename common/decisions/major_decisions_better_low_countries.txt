@@ -1,0 +1,105 @@
+﻿
+#Creating Netherlands Kingdom
+form_netherlands_kingdom_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_found_kingdom.dds"
+	}
+	desc = form_netherlands_kingdom_decision_desc
+	selection_tooltip = form_netherlands_kingdom_decision_tooltip
+	decision_group_type = major
+
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 120
+		kingdom = 0
+		empire = 0
+		hegemony = 0
+	}
+
+	is_shown = {
+		NOT = { exists = title:k_netherlands.holder }
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_formed_netherlands_kingdom
+			}
+		}
+		#No kings or emperors.
+		highest_held_title_tier <= tier_duchy
+		#Must be within an empire.
+		top_liege.primary_title.tier >= tier_empire
+		OR = {
+			culture = { has_cultural_pillar = heritage_central_germanic }
+			culture = { has_cultural_pillar = heritage_frankish }
+		}
+		any_sub_realm_county = {
+			title_province = { geographical_region = custom_core_netherlands }
+		}
+	}
+
+	is_valid = {
+		#Must have imperial immediacy.
+		liege = top_liege
+		prestige_level >= high_prestige_level
+		#And at least Holland, Brabant, Gelre, Julich, Flanders, Utrecht and Luxemburg.
+		completely_controls_region = custom_core_netherlands
+	}
+
+	is_valid_showing_failures_only = {
+		is_landed = yes
+		is_capable_adult = yes
+		is_imprisoned = no
+		top_liege != this
+		is_at_war = no
+	}
+
+	cost = {
+		gold = {
+			value = 0
+			if = {
+				limit = {
+					has_treasury = no
+				}
+				add = 250
+			}
+		}
+		treasury = {
+			value = 0
+			if = {
+				limit = {
+					has_treasury = yes
+				}
+				add = 250
+			}
+		}
+	}
+
+	effect = {
+		gain_heroic_legend_seed_tooltip_effect = yes
+		show_as_tooltip = {
+			form_netherlands_scripted_effect = yes
+		}
+		trigger_event = {
+			id = better_low_countries_decisions.0001
+		}
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_formed_netherlands_kingdom
+			}
+			set_global_variable = {
+				name = flag_formed_netherlands_kingdom
+				value = root
+			}
+		}
+	}
+	
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}

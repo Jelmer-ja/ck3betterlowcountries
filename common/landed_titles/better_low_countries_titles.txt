@@ -1,0 +1,15 @@
+﻿k_netherlands = {
+	color = { 235 80 30 }
+
+	definite_form = yes
+
+	capital = c_antwerpen
+}
+
+d_picardy = {
+	color = { 18 76 240 }
+	
+	definite_form = yes
+	
+	capital = c_amiens
+}

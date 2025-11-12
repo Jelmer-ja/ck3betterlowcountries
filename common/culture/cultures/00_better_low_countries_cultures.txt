@@ -1,0 +1,69 @@
+﻿picard = {
+	color = { 0.6 0.6 0.95 }
+	created = 862.1.1
+	parents = { frankish }
+	
+	ethos = ethos_courtly
+	heritage = heritage_frankish
+	language = language_french
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_chanson_de_geste
+		tradition_chivalry
+		tradition_parochialism
+		
+	}
+	
+	name_list = name_list_french
+	
+	coa_gfx = { french_coa_gfx frankish_group_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { french_clothing_gfx western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+	house_coa_frame = house_frame_03
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
+
+	ethnicities = {
+		20 = caucasian_blond
+		10 = caucasian_ginger
+		30 = caucasian_brown_hair
+		30 = caucasian_dark_hair
+	}	
+}
+
+walloon = {
+	color = { 0.55 0.55 0.75 }
+	created = 862.1.1
+	parents = { frankish }
+	
+	ethos = ethos_communal
+	heritage = heritage_frankish
+	language = language_french
+	martial_custom = martial_custom_male_only
+	head_determination = head_determination_domain
+	traditions = {
+		tradition_chanson_de_geste
+		tradition_hunters
+		tradition_chivalry
+		tradition_hill_dwellers
+	}
+	
+	name_list = name_list_french
+	
+	coa_gfx = { french_coa_gfx frankish_group_coa_gfx western_coa_gfx }
+	building_gfx = { western_building_gfx }
+	clothing_gfx = { french_clothing_gfx western_clothing_gfx }
+	unit_gfx = { western_unit_gfx }
+	house_coa_frame = house_frame_03
+	house_coa_mask_offset = { 0.0 0.055 }
+	house_coa_mask_scale = { 0.9 0.9 }
+
+	ethnicities = {
+		15 = caucasian_blond
+		10 = caucasian_ginger
+		30 = caucasian_brown_hair
+		35 = caucasian_dark_hair
+	}	
+}
