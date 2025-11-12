@@ -1,0 +1,39 @@
+﻿custom_core_netherlands = {
+	duchies = {
+		#k_france
+		d_flanders
+		#k_lotharingia
+		d_julich
+		#k_lotharingia
+		d_luxembourg
+		#k_lotharingia
+		d_brabant
+		#k_frisia
+		d_gelre
+		#k_frisia
+		d_utrecht
+		#k_frisia
+		d_holland
+	}
+}
+
+custom_core_netherlands_full = {
+	duchies = {
+		#k_france
+		d_flanders
+		#k_lotharingia
+		d_julich
+		#k_lotharingia
+		d_luxembourg
+		#k_lotharingia
+		d_brabant
+		#k_frisia
+		d_gelre
+		#k_frisia
+		d_utrecht
+		#k_frisia
+		d_holland
+		#k_frisia
+		d_frisia
+	}
+}

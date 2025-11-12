@@ -1,0 +1,95 @@
+﻿##################################################
+# Realm decisions
+##################################################
+# Forming the kingdom
+namespace = better_low_countries_decisions
+
+better_low_countries_decisions.0001 = {
+	type = character_event
+	title = better_low_countries_decisions.0001.t
+	desc = better_low_countries_decisions.0001.desc
+	theme = realm
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+	right_portrait = {
+		character = scope:scoped_emperor
+		animation = shock
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		form_netherlands_scripted_effect = yes
+		legend_seed_new_title_effect = yes
+	}
+	option = {
+		name = better_low_countries_decisions.0001.a
+
+		# Send narrative fluff to other players (if any).
+		every_player = {
+			limit = {
+				this != root
+				top_liege = scope:scoped_emperor
+			}
+			trigger_event = better_low_countries_decisions.0002
+		}
+	}
+}
+
+# Reaction event
+better_low_countries_decisions.0002 = {
+	type = character_event
+	title = better_low_countries_decisions.0001.t
+	desc = {
+		first_valid = {
+			# Emperor surrounding kings' reaction.
+			triggered_desc = {
+				trigger = {
+					OR = {
+						has_title = title:e_hre
+						has_title = title:k_france
+						has_title = title:k_lotharingia
+						has_title = title:k_frisia
+					}
+				}
+				desc = better_low_countries_decisions.0002.desc.emperor
+			}
+			# Everybody else's.
+			triggered_desc = {
+				trigger = {
+					NOT = { 
+						OR = {
+							has_title = title:e_hre
+							has_title = title:k_france
+							has_title = title:k_lotharingia
+							has_title = title:k_frisia
+						} 
+					}
+				}
+				desc = better_low_countries_decisions.0002.desc.vassals
+			}
+		}
+	}
+	theme = realm
+	left_portrait = {
+		character = scope:scoped_ruler
+		animation = personality_bold
+	}
+	right_portrait = {
+		character = scope:scoped_emperor
+		animation = shock
+	}
+
+	immediate = {
+		#The Emperor hears the future!
+		if = {
+			limit = { has_title = title:e_hre }
+			play_music_cue = "mx_cue_combat_2"
+		}
+		title:e_hre.holder = { save_scope_as = scoped_emperor }
+	}
+	option = {
+		name = better_low_countries_decisions.0002.a
+	}
+}
