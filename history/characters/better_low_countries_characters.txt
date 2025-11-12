@@ -1,4 +1,4 @@
-
+﻿
 10065 = {
 	name = "Eustache"
 	# AKA: Eustatius
@@ -219,12 +219,12 @@
 	name = "Renaud"	#Renaud I count of Clermont
 	religion = catholic
 	culture = picard
-	dynasty = picard_de_creil
+	dynasty = french_de_creil
 	1010.1.1 = {
 		birth = yes
 	}
 	1028.1.1 = {
-		add_spouse = picard0002 #Ermengarde, daughter of Baudoin I de Clermont
+		add_spouse = french0002 #Ermengarde, daughter of Baudoin I de Clermont
 	}
 	1088.1.1 = {
 		death = yes

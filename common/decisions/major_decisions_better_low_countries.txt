@@ -33,7 +33,7 @@ form_netherlands_kingdom_decision = {
 			culture = { has_cultural_pillar = heritage_frankish }
 		}
 		any_sub_realm_county = {
-			title_province = { geographical_region = custom_core_netherlands }
+			title_province = { geographical_region = custom_core_netherlands_full }
 		}
 	}
 

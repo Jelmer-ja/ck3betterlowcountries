@@ -5,8 +5,8 @@
 	title:k_france.holder = { save_scope_as = scoped_king_france }
 	title:k_frisia.holder = { save_scope_as = scoped_king_frisia }
 	title:k_lotharingia.holder = { save_scope_as = scoped_king_lotharingia }
-	title:d_frisia = { save_scope_as = scoped_duke_frisia }
-	title:d_picardy = { save_scope_as = scoped_duke_picardy }
+	title:d_frisia = { save_scope_as = frisia }
+	title:d_picardy = { save_scope_as = picardy }
 	title:k_netherlands = { save_scope_as = netherlands }
 	
 	#Check current liege of Brabant
@@ -20,7 +20,6 @@
 	title:d_julich = { set_de_jure_liege_title = title:k_netherlands }
 	title:d_brabant = { set_de_jure_liege_title = title:k_netherlands }
 	title:d_luxembourg = { set_de_jure_liege_title = title:k_netherlands }
-	
 	if = {
 		limit = { completely_controls = title:d_frisia }
 		title:d_frisia = { set_de_jure_liege_title = title:k_netherlands }
@@ -32,9 +31,6 @@
 	}
 	else = { custom_tooltip = form_netherlands_kingdom_decision_effect_picardy_tooltip }
 	
-	title:k_netherlands = {
-		set_de_jure_liege_title = scope:previous_kingdom.de_jure_liege
-	}
 	create_title_and_vassal_change = {
 		type = created
 		save_scope_as = change
@@ -47,7 +43,12 @@
 		}
 	}
 	resolve_title_and_vassal_change = scope:change
-	hidden_effect = { set_primary_title_to = title:k_netherlands }
+	hidden_effect = { 
+		set_primary_title_to = title:k_netherlands 
+		title:k_netherlands = {
+			set_de_jure_liege_title = scope:previous_kingdom.de_jure_liege
+		}
+	}
 	add_prestige = major_prestige_gain
 	if = {
 		limit = {

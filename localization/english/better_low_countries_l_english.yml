@@ -10,5 +10,5 @@
  better_low_countries_decisions.0002.desc.vassals:0 "A new entity known as the Kingdom of the Netherlands has risen in the Empire. \n\nAn independent force to be reckoned with, they have broken free from any prior claims to their lands, be it from the German lords to the east or the King of France to the south.\n\nI should look out for this new potential threat."
  better_low_countries_decisions.0002.a:0 "How peculiar..."
  custom_core_netherlands:0 "the Low Countries"
- form_netherlands_kingdom_decision_effect_frisia_tooltip:1 "If you [completely_control|E] the [d_frisia.GetName], it will become part of [netherlands.GetName]"
- form_netherlands_kingdom_decision_effect_picardy_tooltip:1 "If you [completely_control|E] the [d_picardy.GetName], it will become part of [netherlands.GetName]"
+ form_netherlands_kingdom_decision_effect_frisia_tooltip:1 "If you [completely_control|E] the [frisia.GetName], it will become part of [netherlands.GetName]"
+ form_netherlands_kingdom_decision_effect_picardy_tooltip:1 "If you [completely_control|E] the [picardy.GetName], it will become part of [netherlands.GetName]"
