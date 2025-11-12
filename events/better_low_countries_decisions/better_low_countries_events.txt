@@ -43,7 +43,7 @@ better_low_countries_decisions.0002 = {
 	title = better_low_countries_decisions.0001.t
 	desc = {
 		first_valid = {
-			# Emperor surrounding kings' reaction.
+			# Emperor and surrounding kings' reaction.
 			triggered_desc = {
 				trigger = {
 					OR = {

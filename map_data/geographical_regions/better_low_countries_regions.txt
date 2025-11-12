@@ -21,6 +21,8 @@ custom_core_netherlands_full = {
 	duchies = {
 		#k_france
 		d_flanders
+		#k_france
+		d_picardy
 		#k_lotharingia
 		d_julich
 		#k_lotharingia

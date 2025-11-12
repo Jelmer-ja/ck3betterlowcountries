@@ -28,7 +28,6 @@ form_netherlands_kingdom_decision = {
 		#No kings or emperors.
 		highest_held_title_tier <= tier_duchy
 		#Must be within an empire.
-		top_liege.primary_title.tier >= tier_empire
 		OR = {
 			culture = { has_cultural_pillar = heritage_central_germanic }
 			culture = { has_cultural_pillar = heritage_frankish }
@@ -39,8 +38,6 @@ form_netherlands_kingdom_decision = {
 	}
 
 	is_valid = {
-		#Must have imperial immediacy.
-		liege = top_liege
 		prestige_level >= high_prestige_level
 		#And at least Holland, Brabant, Gelre, Julich, Flanders, Utrecht and Luxemburg.
 		completely_controls_region = custom_core_netherlands
@@ -61,7 +58,7 @@ form_netherlands_kingdom_decision = {
 				limit = {
 					has_treasury = no
 				}
-				add = 250
+				add = 300
 			}
 		}
 		treasury = {
@@ -70,7 +67,7 @@ form_netherlands_kingdom_decision = {
 				limit = {
 					has_treasury = yes
 				}
-				add = 250
+				add = 300
 			}
 		}
 	}

@@ -1,4 +1,4 @@
-﻿k_switzerland = {
+﻿k_netherlands = {
 	pattern = "pattern_solid.dds"
 	color1 = "blue"
 	color2 = "yellow"

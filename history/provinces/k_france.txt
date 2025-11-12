@@ -69,20 +69,6 @@
 	holding = church_holding
 }
 
-###c_vermandois
-2397 = {	#MARLE
-	culture = picard
-	religion = catholic
-	holding = castle_holding
-}
-2400 = {	#ROUCY
-	holding = none
-	holding = city_holding
-}
-2399 = {	#LAON
-	holding = church_holding
-}
-
 ###c_valois
 2358 = {	#SENLIS
 	culture = french
@@ -97,19 +83,6 @@
 	1150.1.1 = {
 		holding = castle_holding
 	}
-}
-
-###c_amiens
-2184 = {	#AMIENS
-	culture = picard
-	religion = catholic
-	holding = castle_holding
-}
-2185 = {	#CORBIE
-	holding = church_holding
-}
-2186 = {	#PERONNE
-	holding = city_holding
 }
 
 ###c_beaumont
@@ -128,18 +101,6 @@
 	holding = none
 }
 
-###c_clermont
-2189 = {	#CLERMONT
-	culture = picard
-	religion = catholic
-	holding = castle_holding
-}
-2188 = {	#NOYON
-	holding = church_holding
-}
-2187 = {	#SAINT-QUENTIN
-	holding = city_holding
-}
 
 ##d_berry ###################################
 ###c_berry
@@ -817,6 +778,47 @@
 	}
 }
 
+##d_picardy
+###c_amiens
+2184 = {	#AMIENS
+	culture = picard
+	religion = catholic
+	holding = castle_holding
+}
+2185 = {	#CORBIE
+	holding = church_holding
+}
+2186 = {	#PERONNE
+	holding = city_holding
+}
+
+###c_clermont
+2189 = {	#CLERMONT
+	culture = picard
+	religion = catholic
+	holding = castle_holding
+}
+2188 = {	#NOYON
+	holding = church_holding
+}
+2187 = {	#SAINT-QUENTIN
+	holding = city_holding
+}
+
+###c_vermandois
+2397 = {	#MARLE
+	culture = picard
+	religion = catholic
+	holding = castle_holding
+}
+2400 = {	#ROUCY
+	holding = none
+	holding = city_holding
+}
+2399 = {	#LAON
+	holding = church_holding
+}
+
 ###c_boulogne
 2132 = {	#BOULOGNE
 	culture = picard
@@ -836,5 +838,3 @@
 		holding = city_holding
 	}
 }
-
-###d_picardy
