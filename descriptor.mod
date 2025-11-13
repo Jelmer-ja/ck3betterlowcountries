@@ -6,4 +6,4 @@ tags={
 }
 name="Better Low Countries"
 picture="thumbnail.png"
-supported_version="1.18.1"
+supported_version="1.18.1.1"
