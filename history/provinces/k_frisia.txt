@@ -50,7 +50,7 @@
 	religion = catholic
 	holding = castle_holding
 	769.1.1 = {
-		special_building_slot = temple_of_nehalennia_01_01
+		special_building_slot = temple_of_nehalennia_01
 	}
 }
 2113 = {	#BERGEN OP ZOOM
@@ -156,6 +156,7 @@
 	culture = saxon
 	religion = catholic
 	holding = castle_holding
+	special_building = drenthe_megaliths_01
 }
 2420 = {	#ASSEN
 	holding = none

@@ -1,4 +1,4 @@
-notre_dame_amiens_01 = {
+﻿notre_dame_amiens_01 = {
 	effect_desc = {
 		triggered_desc = {
 			trigger = { has_dlc_feature = legends_of_the_dead }
@@ -96,7 +96,7 @@ temple_of_nehalennia_01 = {
 		}
 	}
 	
-	cost_gold = 600
+	cost_gold = 500
 	
 	character_modifier = {
 		monthly_piety = 0.15
@@ -108,6 +108,47 @@ temple_of_nehalennia_01 = {
 	county_modifier = {
 		tax_mult = 0.1
 		development_growth_factor = 0.2
+	}
+
+	on_complete = {
+		#Regular Mandala Boon
+		mandala_built_piety_duchy_building_t3_effect = yes
+	}
+	
+	ai_value = {
+		base = 100
+		ai_pious_building_preference_modifier = yes
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_religious
+}
+
+drenthe_megaliths_01 = {
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_stonehenge_mesh"
+	}
+
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_stonehenge.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 3000
+
+	character_modifier = {
+		learning = 1
+		monthly_learning_lifestyle_xp_gain_mult = 0.15
 	}
 
 	on_complete = {
