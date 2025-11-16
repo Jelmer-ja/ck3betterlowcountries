@@ -1,0 +1,391 @@
+﻿on_game_start = {
+	on_actions = {
+		blc_setup_on_actions
+	}
+}
+
+blc_setup_on_actions = {
+    effect = {
+        # Move the capital of Picardy from Vermandois to Amiens
+        ## Work only on d_picardy
+        title:d_picardy = {
+            # Save old capital (for the duchy-building hack)
+            title_capital_county = { save_scope_as = old_capital }
+
+            # Set new de jure capital
+            set_capital_county = title:c_amiens
+        }
+
+        ## Duchy-building correction hack (vanilla fix)
+        hidden_effect = {
+            scope:old_capital ?= {
+                duchy = { save_scope_as = current_duchy }
+                random_duchy = {
+                    limit = {
+                        NOT = { this = scope:current_duchy }
+                        is_noble_family_title = no
+                        is_mercenary_company = no
+                    }
+                    save_scope_as = placeholder_duchy
+                }
+                scope:current_duchy = {
+                    every_de_jure_county = {
+                        limit = {
+                            NOT = { this = title:c_amiens }
+                        }
+                        set_de_jure_liege_title = scope:placeholder_duchy
+                        add_to_list = correction_list
+                    }
+                }
+                every_in_list = {
+                    list = correction_list
+                    set_de_jure_liege_title = scope:current_duchy
+                }
+            }
+        }
+
+
+        # Set character cultures in the southern Low Countries to Picard and Walloon
+        ## House of Boulogne
+        character:20142 = {
+            set_culture = culture:picard
+        }
+
+        character:205860 = {
+            set_culture = culture:picard
+        }
+
+        character:30911 = {
+            set_culture = culture:picard
+        }
+
+        character:30913 = {
+            set_culture = culture:picard
+        }
+
+        character:30914 = {
+            set_culture = culture:picard
+        }
+
+        character:30915 = {
+            set_culture = culture:picard
+        }
+
+        character:316 = {
+            set_culture = culture:picard
+        }
+
+        character:317 = {
+            set_culture = culture:picard
+        }
+
+        character:41729 = {
+            set_culture = culture:picard
+        }
+
+        character:32135 = {
+            set_culture = culture:picard
+        }
+
+        character:32136 = {
+            set_culture = culture:picard
+        }
+
+        character:10065 = {
+            set_culture = culture:picard
+        }
+
+        character:10067 = {
+            set_culture = culture:picard
+        }
+
+        character:10069 = {
+            set_culture = culture:picard
+        }
+
+        character:10071 = {
+            set_culture = culture:picard
+        }
+
+        character:10072 = {
+            set_culture = culture:picard
+        }
+
+        character:10073 = {
+            set_culture = culture:picard
+        }
+
+        #Amiens characters
+        character:40398 = {
+            set_culture = culture:picard
+        }
+
+        character:40399 = {
+            set_culture = culture:picard
+        }
+
+        character:40400 = {
+            set_culture = culture:picard
+        }
+
+        character:40402 = {
+            set_culture = culture:picard
+        }
+
+        character:40404 = {
+            set_culture = culture:picard
+        }
+
+        character:40406 = {
+            set_culture = culture:picard
+        }
+
+        character:40409 = {
+            set_culture = culture:picard
+        }
+
+        character:40411 = {
+            set_culture = culture:picard
+        }
+
+        character:40412 = {
+            set_culture = culture:picard
+        }
+
+        character:40414 = {
+            set_culture = culture:picard
+        }
+
+        character:40416 = {
+            set_culture = culture:picard
+        }
+
+        character:40418 = {
+            set_culture = culture:picard
+        }
+
+        character:40422 = {
+            set_culture = culture:picard
+        }
+
+        character:40424 = {
+            set_culture = culture:picard
+        }
+
+        character:40426 = {
+            set_culture = culture:picard
+        }
+
+        character:40428 = {
+            set_culture = culture:picard
+        }
+
+        character:418 = {
+            set_culture = culture:picard
+        }
+
+        character:550 = {
+            set_culture = culture:picard
+        }
+
+        character:216 = {
+            set_culture = culture:picard
+        }
+
+        character:419 = {
+            set_culture = culture:picard
+        }
+
+        character:551 = {
+            set_culture = culture:picard
+        }
+
+        character:6401 = {
+            set_culture = culture:picard
+        }
+
+        character:91013 = {
+            set_culture = culture:picard
+        }
+
+        character:91014 = {
+            set_culture = culture:picard
+        }
+
+        character:91015 = {
+            set_culture = culture:picard
+        }
+
+        character:91016 = {
+            set_culture = culture:picard
+        }
+
+        character:91017 = {
+            set_culture = culture:picard
+        }
+
+        character:91018 = {
+            set_culture = culture:picard
+        }
+
+        character:91019 = {
+            set_culture = culture:picard
+        }
+
+        character:91078 = {
+            set_culture = culture:picard
+        }
+
+        character:91079 = {
+            set_culture = culture:picard
+        }
+
+        character:91080 = {
+            set_culture = culture:picard
+        }
+
+        character:91081 = {
+            set_culture = culture:picard
+        }
+
+        character:455505 = {
+            set_culture = culture:picard
+        }
+
+        character:455652 = {
+            set_culture = culture:picard
+        }
+
+        character:455653 = {
+            set_culture = culture:picard
+        }
+
+        character:455725 = {
+            set_culture = culture:picard
+        }
+
+        character:303410 = {
+            set_culture = culture:picard
+        }
+
+        character:303411 = {
+            set_culture = culture:picard
+        }
+
+        character:303412 = {
+            set_culture = culture:picard
+        }
+
+        character:31102 = {
+            set_culture = culture:picard
+        }
+
+        character:161755 = {
+            set_culture = culture:picard
+        }
+
+        character:31102 = {
+            set_culture = culture:picard
+        }
+
+        character:205522 = {
+            set_culture = culture:picard
+        }
+
+        character:205524 = {
+            set_culture = culture:picard
+        }
+
+        character:205525 = {
+            set_culture = culture:picard
+        }
+
+        character:205526 = {
+            set_culture = culture:picard
+        }
+
+        character:205527 = {
+            set_culture = culture:picard
+        }
+
+        character:168043 = {
+            set_culture = culture:picard
+        }
+
+        character:205853 = {
+            set_culture = culture:picard
+        }
+
+        character:231020 = {
+            set_culture = culture:picard
+        }
+
+        character:303408 = {
+            set_culture = culture:picard
+        }
+
+        character:303409 = {
+            set_culture = culture:picard
+        }
+
+        character:303415 = {
+            set_culture = culture:picard
+        }
+
+        character:303413 = {
+            set_culture = culture:picard
+        }
+
+        character:131715 = {
+            set_culture = culture:walloon
+        }
+
+        character:205528 = {
+            set_culture = culture:walloon
+        }
+
+        character:31154 = {
+            set_culture = culture:walloon
+        }
+
+        character:91058 = {
+            set_culture = culture:walloon
+        }
+
+        character:91065 = {
+            set_culture = culture:walloon
+        }
+
+        character:161921 = {
+            set_culture = culture:walloon
+        }
+
+        character:183154 = {
+            set_culture = culture:walloon
+        }
+
+        character:212690 = {
+            set_culture = culture:walloon
+        }
+
+        character:31661 = {
+            set_culture = culture:walloon
+        }
+
+        character:32286 = {
+            set_culture = culture:walloon
+        }
+
+        character:161976 = {
+            set_culture = culture:walloon
+        }
+
+        character:33212 = {
+            set_culture = culture:walloon
+        }
+
+        character:163050 = {
+            set_culture = culture:walloon
+        }
+    }
+}

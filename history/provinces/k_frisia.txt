@@ -49,6 +49,9 @@
 	culture = dutch
 	religion = catholic
 	holding = castle_holding
+	769.1.1 = {
+		special_building_slot = temple_of_nehalennia_01_01
+	}
 }
 2113 = {	#BERGEN OP ZOOM
 	holding = none

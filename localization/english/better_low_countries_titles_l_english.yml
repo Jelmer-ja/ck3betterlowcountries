@@ -3,3 +3,7 @@
  k_netherlands_adj:0 "Dutch"
  d_picardy:0 "Picardy"
  d_picardy_adj:0 "Picard"
+ d_valois:0 "Île-de-France"
+ d_valois_adj:0 "Ilois"
+ c_groningen:0 "Drenthe"
+ c_groningen_adj:0 "Drenthean"

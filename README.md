@@ -1,2 +1,2 @@
 # ck3betterlowcountries
-CK3 flavor mod for Netherlands
+CK3 flavor mod for the Low Countries

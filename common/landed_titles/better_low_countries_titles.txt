@@ -124,26 +124,6 @@ e_france = {
 					color = { 25 80 225 }
 				}
 			}
-			c_valois = {
-				color = { 15 40 210 }
-
-				b_senlis = {
-					province = 2358
-
-					color = { 15 40 210 }
-				}
-				b_crepy = {
-					province = 2360
-
-					color = { 15 40 210 }
-				}
-				b_coucy = {
-					province = 2398
-
-					color = { 15 40 210 }
-				}
-			}
-
 			c_beaumont = {
 				color = { 35 65 230 }
 
@@ -171,9 +151,9 @@ e_france = {
 		}
 		
 		d_picardy = {
-			color = { 18 76 240 }
+			color = { 72 86 220 }
 			
-			capital = c_amiens
+			capital = c_vermandois
 			
 			c_amiens = {
 				color = { 18 76 240 }
@@ -213,25 +193,6 @@ e_france = {
 					color = { 28 58 230 }
 				}
 			}
-			c_vermandois = {
-				color = { 20 50 220 }
-
-				b_marle = {
-					province = 2397
-
-					color = { 20 50 220 }
-				}
-				b_roucy = {
-					province = 2400
-
-					color = { 20 50 220 }
-				}
-				b_laon = {
-					province = 2399
-
-					color = { 20 50 220 }
-				}
-			}
 			c_boulogne = {
 				color = { 78 103 165 }
 
@@ -254,6 +215,44 @@ e_france = {
 					province = 2135
 
 					color = { 78 103 165 }
+				}
+			}
+			c_valois = {
+				color = { 15 40 210 }
+
+				b_senlis = {
+					province = 2358
+
+					color = { 15 40 210 }
+				}
+				b_crepy = {
+					province = 2360
+
+					color = { 15 40 210 }
+				}
+				b_coucy = {
+					province = 2398
+
+					color = { 15 40 210 }
+				}
+			}
+			c_vermandois = {
+				color = { 20 50 220 }
+
+				b_marle = {
+					province = 2397
+
+					color = { 20 50 220 }
+				}
+				b_roucy = {
+					province = 2400
+
+					color = { 20 50 220 }
+				}
+				b_laon = {
+					province = 2399
+
+					color = { 20 50 220 }
 				}
 			}
 		}

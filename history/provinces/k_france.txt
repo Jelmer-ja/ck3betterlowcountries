@@ -69,22 +69,6 @@
 	holding = church_holding
 }
 
-###c_valois
-2358 = {	#SENLIS
-	culture = french
-	religion = catholic
-	holding = castle_holding
-}
-2360 = {	#CREPY
-	holding = city_holding
-}
-2398 = {	#COUCY
-	holding = none
-	1150.1.1 = {
-		holding = castle_holding
-	}
-}
-
 ###c_beaumont
 2190 = {	#BEAUMONT
 	culture = french
@@ -784,6 +768,9 @@
 	culture = picard
 	religion = catholic
 	holding = castle_holding
+	769.1.1 = {
+		special_building_slot = notre_dame_amiens_01
+	}
 }
 2185 = {	#CORBIE
 	holding = church_holding
@@ -836,5 +823,21 @@
 
 	1178.1.1 = {
 		holding = city_holding
+	}
+}
+
+###c_valois
+2358 = {	#SENLIS
+	culture = french
+	religion = catholic
+	holding = castle_holding
+}
+2360 = {	#CREPY
+	holding = city_holding
+}
+2398 = {	#COUCY
+	holding = none
+	1150.1.1 = {
+		holding = castle_holding
 	}
 }

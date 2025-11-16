@@ -30,6 +30,7 @@ form_netherlands_kingdom_decision = {
 		#Must be within an empire.
 		OR = {
 			culture = { has_cultural_pillar = heritage_central_germanic }
+			culture = { has_cultural_pillar = heritage_north_germanic } # for vikings in 876 bookmark
 			culture = { has_cultural_pillar = heritage_frankish }
 		}
 		any_sub_realm_county = {
