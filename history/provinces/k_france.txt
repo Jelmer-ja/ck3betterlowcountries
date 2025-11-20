@@ -385,6 +385,9 @@
 	culture = french
 	religion = catholic
 	holding = castle_holding
+	769.1.1 = {
+		special_building_slot = chartres_cathedral_01
+	}
 }
 2322 = {	#CHARTRES
 	holding = church_holding
@@ -422,6 +425,9 @@
 	culture = french
 	religion = catholic
 	holding = church_holding
+	769.1.1 = {
+		special_building_slot = reims_cathedral_01
+	}
 	867.1.1 = {
 		buildings = {
 			monastic_schools_01
@@ -699,6 +705,9 @@
 	culture = dutch
 	religion = catholic
 	holding = castle_holding
+	769.1.1 = {
+		special_building_slot = st_donatians_church_01
+	}
 	1066.1.1 = {
 		buildings = {
 			common_tradeport_02
@@ -719,6 +728,9 @@
 	culture = dutch
 	religion = catholic
 	holding = castle_holding
+	769.1.1 = {
+		special_building_slot = ypres_cloth_hall_01
+	}
 }
 2128 = {	#VEURNE
 	holding = none

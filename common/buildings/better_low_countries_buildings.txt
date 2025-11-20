@@ -5,14 +5,10 @@
 			desc = building_funeral_effect_desc
 		}
 	}
-	asset = {
-		type = pdxmesh
-		name = "building_special_notre_dame_mesh"
-	}
 
 	construction_time = very_slow_construction_time
 
-	type_icon = "icon_structure_notre_dame.dds"
+	type_icon = "icon_structure_cathedral_amiens.dds"
 	
 	can_construct_potential = {
 		building_requirement_tribal = no
@@ -70,6 +66,179 @@
 	flag = travel_point_of_interest_religious
 }
 
+utrecht_cathedral_01 = {
+	type_icon = "icon_structure_utrecht_cathedral.dds"
+	
+	is_enabled = {
+		scope:holder = {
+			faith = { religion_tag = christianity_religion }
+		}
+	}
+	
+	show_disabled = yes
+
+	character_modifier = {
+		monthly_piety = 0.5
+		piety_level_impact_mult = 0.3
+		monthly_dynasty_prestige_mult = 0.02
+		clergy_opinion = 5
+	}
+
+	county_modifier = {
+		development_growth = 0.2
+	}
+
+	province_modifier = {
+		tax_mult = 0.2
+	}
+	
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+	
+	flag = travel_point_of_interest_religious
+}
+
+chartres_cathedral_01 = {
+	effect_desc = {
+		triggered_desc = {
+			trigger = { has_dlc_feature = legends_of_the_dead }
+			desc = building_funeral_effect_desc
+		}
+	}
+
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_cathedral_chartres.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	can_construct = {
+		scope:holder = {
+			religion = religion:christianity_religion
+			culture = {
+				has_innovation = innovation_windmills
+			}
+		}
+	}
+	
+	is_enabled = {
+		scope:holder = {
+			religion = religion:christianity_religion
+		}
+	}
+	
+	show_disabled = yes
+	
+	cost_gold = 1000
+
+	character_modifier = {
+		monthly_piety = 1
+		stewardship_per_piety_level = 1
+		monthly_dynasty_prestige_mult = 0.05
+	}
+	county_modifier = {
+		county_opinion_add = 5
+		tax_mult = 0.2
+		development_growth_factor = 0.3
+		development_growth = 0.3
+	}
+	
+	province_modifier = {
+		monthly_income = 2
+	}
+
+	on_complete = {
+		#Regular Mandala Boon
+		mandala_built_piety_duchy_building_t3_effect = yes
+	}
+	
+	ai_value = {
+		base = 100
+		ai_pious_building_preference_modifier = yes
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_religious
+}
+
+reims_cathedral_01 = {
+	effect_desc = {
+		triggered_desc = {
+			trigger = { has_dlc_feature = legends_of_the_dead }
+			desc = building_funeral_effect_desc
+		}
+	}
+
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_cathedral_reims.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	can_construct = {
+		scope:holder = {
+			religion = religion:christianity_religion
+			culture = {
+				has_innovation = innovation_windmills
+			}
+		}
+	}
+	
+	is_enabled = {
+		scope:holder = {
+			religion = religion:christianity_religion
+		}
+	}
+	
+	show_disabled = yes
+	
+	cost_gold = 800
+
+	character_modifier = {
+		tyranny_gain_mult = -0.2
+		monthly_dynasty_prestige_mult = 0.05
+	}
+	county_modifier = {
+		tax_mult = 0.15
+		development_growth_factor = 0.3
+		development_growth = 0.3
+	}
+	
+	province_modifier = {
+		monthly_income = 2
+	}
+
+	on_complete = {
+		#Regular Mandala Boon
+		mandala_built_piety_duchy_building_t3_effect = yes
+	}
+	
+	ai_value = {
+		base = 100
+		ai_pious_building_preference_modifier = yes
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_religious
+}
+
 temple_of_nehalennia_01 = {
 	construction_time = very_slow_construction_time
 	
@@ -91,7 +260,7 @@ temple_of_nehalennia_01 = {
 	
 	is_enabled = {
 		custom_description = {
-			text = holy_site_christian_or_holy_site_trigger
+			text = holy_site_germanic_or_holy_site_trigger
 			religion = religion:germanic_religion
 		}
 	}
@@ -100,7 +269,7 @@ temple_of_nehalennia_01 = {
 	
 	character_modifier = {
 		monthly_piety = 0.15
-        travel_safety = 20
+        travel_speed = 20
 	}
 	province_modifier = {
 		monthly_income = 1
@@ -130,7 +299,6 @@ temple_of_nehalennia_01 = {
 }
 
 drenthe_megaliths_01 = {
-
 	asset = {
 		type = pdxmesh
 		name = "building_special_stonehenge_mesh"
@@ -167,5 +335,158 @@ drenthe_megaliths_01 = {
 	
 	type = special
 
+	flag = travel_point_of_interest_religious
+}
+
+ypres_cloth_hall_01 = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_ypres_cloth_hall.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_currency_02
+		}
+	}
+	
+	cost_gold = 1000
+
+	character_modifier = {
+		monthly_stewardship_lifestyle_xp_gain_mult = 0.25
+		monthly_dynasty_prestige_mult = 0.1
+		monthly_income_mult = 0.1
+		republic_government_tax_contribution_mult = 0.25
+	}
+
+	county_modifier = {
+		development_growth_factor = 0.1
+		development_growth = 0.1
+	}
+	
+	province_modifier = {
+		monthly_income = 2
+		tax_mult = 0.05
+	}
+
+	on_complete = {
+		county.holder = { 
+			add_prestige = 1000 
+			dynasty = {
+				add_dynasty_prestige = 500
+			}
+		}
+	}
+	
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+	
+	flag = travel_point_of_interest_economic
+}
+
+
+koudenberg_palace_01 = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_koudenberg_palace.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_hoardings
+		}
+	}
+	
+	cost_gold = 1000
+
+	character_modifier = {
+		monthly_dynasty_prestige_mult = 0.01
+		short_reign_duration_mult = -0.2
+		vassal_limit = 2
+	}
+
+	province_modifier = {
+		fort_level = 2
+		defender_holding_advantage = 5
+		hostile_raid_time = 1
+		garrison_size = 1
+	}
+	
+	county_modifier = {
+		monthly_county_control_growth_add = 0.5
+	}
+	
+	on_complete = {
+		county.holder = { 
+			add_prestige = 700 
+			add_legitimacy = 200
+			dynasty = {
+				add_dynasty_prestige = 300
+			}
+		}
+	}
+	
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+}
+
+st_donatians_church_01 = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_cologne_cathedral.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+		barony = title:b_bruges
+	}
+	
+	can_construct = {
+		scope:holder = {
+			faith = { religion_tag = christianity_religion }
+		}
+	}
+
+	is_enabled = {
+		scope:holder = {
+			faith = { religion_tag = christianity_religion }
+		}
+	}
+	
+	show_disabled = yes
+	
+	cost_gold = 650
+
+	character_modifier = {
+		monthly_piety = 0.2
+	}
+	
+	county_modifier = {
+		development_growth = 0.1
+	}
+
+	province_modifier = {
+		tax_mult = 0.2
+		levy_size = 0.2
+		monthly_income = 1
+	}
+
+	ai_value = {
+		base = 100
+	}
+
+	type = special
+	
 	flag = travel_point_of_interest_religious
 }

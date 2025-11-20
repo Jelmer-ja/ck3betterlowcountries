@@ -76,6 +76,9 @@
 	culture = dutch
 	religion = catholic
 	holding = castle_holding
+	769.1.1 = {
+		special_building_slot = koudenberg_palace_01
+	}
 }
 2107 = {	#BRUSSELS
 	holding = city_holding
@@ -234,7 +237,7 @@
 2078 = {	#EPINAL
 	holding = church_holding
 }
-2713 = {	#BLANKENBERG = LÜNSTADT / LUNEVILLE
+2713 = {	#BLANKENBERG = Lï¿½NSTADT / LUNEVILLE
 	holding = none
 	950.1.1 = {
 		holding = city_holding

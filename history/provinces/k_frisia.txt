@@ -49,7 +49,7 @@
 	culture = dutch
 	religion = catholic
 	holding = castle_holding
-	769.1.1 = {
+	300.1.1 = {
 		special_building_slot = temple_of_nehalennia_01
 	}
 }
@@ -118,6 +118,9 @@
 	culture = dutch
 	religion = catholic
 	holding = castle_holding
+	769.1.1 = {
+		special_building_slot = utrecht_cathedral_01
+	}
 }
 2451 = {	#AMERSFOORT
 	holding = none

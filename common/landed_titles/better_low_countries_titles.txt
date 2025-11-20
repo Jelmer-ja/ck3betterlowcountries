@@ -11,6 +11,334 @@ k_netherlands = {
 	capital = c_brabant
 }
 
+k_frisia = {
+	color = { 245 100 20 }
+
+	capital = c_holland #Holland
+
+	can_create_on_partition = {
+		faith = { religion_tag = germanic_religion }
+	}
+
+	can_create = {
+		trigger_if = {
+			limit = {
+				is_ai = yes
+			}
+			OR = {
+				culture = culture:frisian
+				culture = culture:dutch
+			}
+			faith = { religion_tag = germanic_religion }
+		}
+	}
+
+	ai_primary_priority = {
+		if = {
+			limit = {
+				OR = {
+					culture = culture:frisian
+					culture = culture:dutch
+				}
+				faith = faith:asatru
+			}
+			add = @correct_culture_primary_score
+		}
+	}
+
+	d_holland = {
+		color = { 235 80 30 }
+
+		capital = c_holland #Amsterdam
+
+		c_holland = {
+			color = { 235 85 30 }
+
+			b_amsterdam = {
+				province = 2406
+
+				color = { 235 85 30 }
+			}
+			b_delft = {
+				province = 2404
+
+				color = { 235 85 30 }
+			}
+			b_rotterdam = {
+				province = 2403
+
+				color = { 235 85 30 }
+			}
+			b_dort = {
+				province = 2402
+
+				color = { 235 85 30 }
+			}
+		}
+
+		c_westfriesland = {
+			color = { 245 99 50 }
+
+			b_haarlem = {
+				province = 2405
+
+				color = { 245 99 50 }
+			}
+
+			b_edam = {
+				province = 2408
+
+				color = { 245 99 50 }
+			}
+
+			b_medemblik = {
+				province = 2409
+
+				color = { 245 99 50 }
+			}
+
+			b_aalkmar = {
+				province = 2407
+
+				color = { 245 99 50 }
+			}
+		}
+		c_zeeland = {
+			color = { 200 100 30 }
+
+			b_middelburg = {
+				province = 2112
+
+				color = { 200 100 30 }
+			}
+
+			b_bergen_op_zoom = {
+				province = 2113
+
+				color = { 200 100 30 }
+			}
+
+			b_brielle = {
+				province = 2401
+
+				color = { 200 100 30 }
+			}
+		}
+	}
+
+	d_gelre = {
+		color = { 200 60 40 }
+
+		capital = c_guelders #Geldern
+
+		c_guelders = {
+			color = { 200 60 40 }
+
+			b_geldern = {
+				province = 2450
+
+				color = { 200 60 40 }
+			}
+			b_nijmegen = {
+				province = 2103
+
+				color = { 200 60 40 }
+			}
+			b_tiel = {
+				province = 2425
+
+				color = { 200 60 40 }
+			}
+		}
+
+		c_arnhem = {
+			color = { 235 45 30 }
+
+			b_arnhem = {
+				province = 2428
+
+				color = { 235 45 30 }
+			}
+			b_apeldoorn = {
+				province = 2427
+
+				color = { 235 45 30}
+			}
+			b_harderwijk = {
+				province = 2426
+
+				color = { 235 45 30 }
+			}
+		}
+
+		c_zutphen = {
+			color = { 195 30 5 }
+
+			b_zutphen = {
+				province = 2429
+
+				color = { 195 30 5 }
+			}
+			b_borculo = {
+				province = 2432
+
+				color = { 195 30 5 }
+			}
+			b_bredevoort = {
+				province = 2434
+
+				color = { 195 30 5 }
+			}
+		}
+	}
+
+	d_utrecht = {
+		color = { 170 100 10 }
+
+		capital = c_nedersticht #Utrecht
+
+		c_nedersticht = {
+			color = { 160 100 10 }
+
+			b_utrecth = {
+				province = 2424
+
+				color = { 160 100 10 }
+			}
+			b_amersfoort = {
+				province = 2451
+
+				color = { 160 100 10 }
+			}
+		}
+
+		c_oversticht = {
+			color = { 180 120 10 }
+
+			b_zwolle = {
+				province = 2421
+
+				color = { 180 120 10 }
+			}
+			b_kampen = {
+				province = 2416
+
+				color = { 180 120 10 }
+			}
+			b_ommen = {
+				province = 2423
+
+				color = { 180 120 10 }
+			}
+			b_almelo = {
+				province = 2431
+
+				color = { 180 120 10 }
+			}
+			b_coevorden = {
+				province = 2422
+
+				color = { 180 120 10 }
+			}
+		}
+
+		c_groningen = {
+			color = { 200 145 40 }
+
+			b_groningen = {
+				province = 2417
+
+				color = { 200 145 40 }
+			}
+			b_assen = {
+				province = 2420
+
+				color = { 200 145 40 }
+			}
+			b_emmen = {
+				province = 2419
+
+				color = { 200 145 40 }
+			}
+			b_steenwijk = {
+				province = 2452
+
+				color = { 200 145 40 }
+			}
+		}
+	}
+
+	d_frisia = {
+		color = { 190 90 10 }
+
+		capital = c_dokkum
+
+		c_dokkum = {
+			color = { 190 90 10 }
+
+			b_dokkum = {
+				province = 2414
+
+				color = { 190 90 10 }
+			}
+			b_appingedam = {
+				province = 2415
+
+				color = { 190 90 10 }
+			}
+			b_delfzijl = {
+				province = 2453
+
+				color = { 190 90 10 }
+			}
+		}
+
+		c_ostfriesland = {
+			color = { 205 70 5 }
+
+			b_emden = {
+				province = 2418
+
+				color = { 205 70 5 }
+			}
+			b_wilhelmshaven = {
+				province = 2437
+
+				color = { 205 70 5 }
+			}
+			b_varel = {
+				province = 2454
+
+				color = { 205 70 5 }
+			}
+		}
+		c_frisia = {
+			color = { 175 70 20 }
+
+			b_leeuwarden = {
+				province = 2413
+
+				color = { 175 70 20 }
+			}
+			b_staveren = {
+				province = 2410
+
+				color = { 175 70 20 }
+			}
+			b_harlingen = {
+				province = 2411
+
+				color = { 175 70 20 }
+			}
+			b_wadeilannen = {
+				province = 2412
+
+				color = { 175 70 20 }
+			}
+		}
+	}
+}
+
 e_france = {
 	color = { 11 22 170 }
 
