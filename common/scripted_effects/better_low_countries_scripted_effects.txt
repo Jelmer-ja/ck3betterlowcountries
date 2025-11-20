@@ -1,4 +1,119 @@
-﻿form_netherlands_scripted_effect = {
+﻿form_picardy_kingdom_scripted_effect = {
+	save_scope_as = scoped_ruler
+	#Check the current liege of Picardy
+	title:d_picardy.de_jure_liege = { save_scope_as = previous_kingdom }
+	geographical_region:custom_core_greater_picardy = { save_scope_as = greater_picardy_region }
+
+	#De jure shifts
+	title:d_picardy = { set_de_jure_liege_title = title:k_picardy }
+	title:d_lower_picardy = { set_de_jure_liege_title = title:k_picardy }
+	title:c_lille = { set_de_jure_liege_title = title:d_lower_picardy }
+	title:c_hainaut = { set_de_jure_liege_title = title:d_lower_picardy }
+	title:c_cambray = { set_de_jure_liege_title = title:d_lower_picardy }
+	title:c_guines = { set_de_jure_liege_title = title:d_lower_picardy }
+
+	create_title_and_vassal_change = {
+		type = created
+		save_scope_as = change
+		add_claim_on_loss = no
+	}
+	title:k_picardy = {
+		change_title_holder = {
+			holder = root
+			change = scope:change
+		}
+	}
+
+	title:k_picardy = {
+		every_in_de_jure_hierarchy = {
+			limit = {
+				tier = tier_county
+				title_province = { geographical_region = custom_core_greater_frisia }
+				holder = {
+					OR = {
+						this = root
+						target_is_liege_or_above = root
+					}
+				}
+			}
+			add_county_modifier = {
+				modifier = newfound_independence_modifier
+				years = 40
+			}
+		}
+	}
+
+	resolve_title_and_vassal_change = scope:change
+	hidden_effect = { 
+		#Set primary title to Picardy
+		set_primary_title_to = title:k_picardy
+		title:k_picardy = {
+			set_de_jure_liege_title = scope:previous_kingdom.de_jure_liege
+		}
+	}
+	add_prestige = major_prestige_gain
+}
+
+form_new_frisia_kingdom_scripted_effect = {
+	save_scope_as = scoped_ruler
+	#Check the current liege of Frisia
+	title:d_frisia.de_jure_liege = { save_scope_as = previous_kingdom }
+	geographical_region:custom_core_greater_frisia = { save_scope_as = greater_frisia_region }
+
+	#De jure shifts
+	title:d_picardy = { set_de_jure_liege_title = title:k_new_frisia }
+	title:d_north_frisia = { set_de_jure_liege_title = title:k_new_frisia }
+	title:c_westfriesland = { set_de_jure_liege_title = title:d_frisia }
+	title:c_ribe = { set_de_jure_liege_title = title:d_north_frisia }
+	title:c_ditmarschen = { set_de_jure_liege_title = title:d_north_frisia }
+	title:c_ditmarschen = { set_de_jure_liege_title = title:d_north_frisia }
+
+	create_title_and_vassal_change = {
+		type = created
+		save_scope_as = change
+		add_claim_on_loss = no
+	}
+	title:k_new_frisia = {
+		change_title_holder = {
+			holder = root
+			change = scope:change
+		}
+	}
+
+	title:k_new_frisia = {
+		every_in_de_jure_hierarchy = {
+			limit = {
+				tier = tier_county
+				title_province = { geographical_region = custom_core_greater_frisia }
+				holder = {
+					OR = {
+						this = root
+						target_is_liege_or_above = root
+					}
+				}
+			}
+			add_county_modifier = {
+				modifier = newfound_independence_modifier
+				years = 40
+			}
+		}
+	}
+
+	resolve_title_and_vassal_change = scope:change
+	hidden_effect = { 
+		#Set primary title to Picardy
+		set_primary_title_to = title:k_new_frisia
+		title:k_new_frisia = {
+			set_de_jure_liege_title = scope:previous_kingdom.de_jure_liege
+		}
+		title:d_holland = { set_de_jure_liege_title = title:k_lotharingia }
+		title:d_gelre = { set_de_jure_liege_title = title:k_lotharingia }
+		title:d_utrecht = { set_de_jure_liege_title = title:k_lotharingia }
+	}
+	add_prestige = major_prestige_gain
+}
+
+form_netherlands_scripted_effect = {
 	#Determine scope
 	save_scope_as = scoped_ruler
 	title:e_hre.holder = { save_scope_as = scoped_emperor }

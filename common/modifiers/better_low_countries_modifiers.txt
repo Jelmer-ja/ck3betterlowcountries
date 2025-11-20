@@ -2,3 +2,17 @@
 	icon = economy_negative
     tax_mult = -1.0
 }
+
+new_picardy_modifier = {
+	icon = county_modifier_development_positive
+	build_speed = -0.1
+	build_gold_cost = -0.05
+	development_growth_factor = small_development_growth_gain
+}
+
+new_frisia_modifier = {
+	icon = county_modifier_development_positive
+	build_speed = -0.1
+	build_gold_cost = -0.05
+	development_growth_factor = small_development_growth_gain
+}

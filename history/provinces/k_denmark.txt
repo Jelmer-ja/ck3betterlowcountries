@@ -300,12 +300,6 @@
 		holding = city_holding
 	}
 }
-84 = {		#HUSUMBRO
-	holding = church_holding
-	700.1.1 = {
-		special_building = danevirke_01
-	}
-}
 
 ###c_vorbasse
 59 = {		#VORBASSE
@@ -354,4 +348,10 @@
 }
 220 = {		#STRAND
 	holding = none
+}
+84 = {		#HUSUMBRO
+	holding = church_holding
+	700.1.1 = {
+		special_building = danevirke_01
+	}
 }

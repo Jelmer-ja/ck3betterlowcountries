@@ -706,7 +706,7 @@
 	religion = catholic
 	holding = castle_holding
 	769.1.1 = {
-		special_building_slot = st_donatians_church_01
+		special_building_slot = saint_bavos_cathedral_01
 	}
 	1066.1.1 = {
 		buildings = {

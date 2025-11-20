@@ -93,3 +93,45 @@ better_low_countries_decisions.0002 = {
 		name = better_low_countries_decisions.0002.a
 	}
 }
+
+#New Frisian kingdom
+better_low_countries_decisions.0003 = {
+	type = character_event
+	title = better_low_countries_decisions.0003.t
+	desc = better_low_countries_decisions.0003.desc
+	theme = realm
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		form_new_frisia_kingdom_scripted_effect = yes
+		legend_seed_new_title_effect = yes
+	}
+	option = {
+		name = better_low_countries_decisions.0003.a
+	}
+}
+
+#Picard nationhood
+better_low_countries_decisions.0004 = {
+	type = character_event
+	title = better_low_countries_decisions.0004.t
+	desc = better_low_countries_decisions.0004.desc
+	theme = realm
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		form_picardy_kingdom_scripted_effect = yes
+		legend_seed_new_title_effect = yes
+	}
+	option = {
+		name = better_low_countries_decisions.0004.a
+	}
+}

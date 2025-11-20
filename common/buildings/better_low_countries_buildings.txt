@@ -269,7 +269,7 @@ temple_of_nehalennia_01 = {
 	
 	character_modifier = {
 		monthly_piety = 0.15
-        travel_speed = 20
+        #travel_speed = 20
 	}
 	province_modifier = {
 		monthly_income = 1
@@ -390,7 +390,6 @@ ypres_cloth_hall_01 = {
 	flag = travel_point_of_interest_economic
 }
 
-
 koudenberg_palace_01 = {
 	construction_time = very_slow_construction_time
 
@@ -442,51 +441,77 @@ koudenberg_palace_01 = {
 	type = special
 }
 
-st_donatians_church_01 = {
+saint_bavos_cathedral_01 = {
+	
 	construction_time = very_slow_construction_time
 
-	type_icon = "icon_structure_cologne_cathedral.dds"
+	type_icon = "icon_structure_saint_bavos_cathedral.dds"
 	
 	can_construct_potential = {
 		building_requirement_tribal = no
-		barony = title:b_bruges
-	}
-	
-	can_construct = {
 		scope:holder = {
 			faith = { religion_tag = christianity_religion }
 		}
 	}
-
-	is_enabled = {
-		scope:holder = {
-			faith = { religion_tag = christianity_religion }
+	
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_windmills
 		}
 	}
 	
 	show_disabled = yes
 	
-	cost_gold = 650
+	cost_gold = 1000
 
 	character_modifier = {
-		monthly_piety = 0.2
+		monthly_piety = 1
+		stress_loss_per_piety_level = 0.1
+		monthly_dynasty_prestige_mult = 0.05
 	}
-	
+
 	county_modifier = {
+		development_growth_factor = 0.1
 		development_growth = 0.1
 	}
-
+	
 	province_modifier = {
-		tax_mult = 0.2
-		levy_size = 0.2
-		monthly_income = 1
+		tax_mult = 0.1
+		levy_size = 0.1
 	}
 
+	on_complete = {
+		county.holder = { 
+			add_piety = 600
+			add_legitimacy = 200
+			dynasty = {
+				add_dynasty_prestige = 200
+			}
+		}
+		if = {
+			limit = {
+				county.holder.culture = {
+					has_cultural_parameter = more_fervor_on_church_construction
+				}
+			}
+			county.holder.faith = {
+				change_fervor = {
+					value = 10
+					desc = fervor_gain_built_temple_holding
+				}
+			}
+		}
+		else = {
+			county.holder.faith = {
+				change_fervor = {
+					value = 3
+					desc = fervor_gain_built_temple_holding
+				}
+			}
+		}
+	}
+	
 	ai_value = {
 		base = 100
 	}
-
-	type = special
-	
-	flag = travel_point_of_interest_religious
 }

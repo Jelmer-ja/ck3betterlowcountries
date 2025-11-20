@@ -39,3 +39,41 @@ custom_core_netherlands_full = {
 		d_frisia
 	}
 }
+
+custom_core_picardy = {
+	counties = {
+		#d_picardy
+		c_amiens
+		c_vermandois
+		c_clermont
+		c_valois
+		c_boulogne
+
+		#d_flanders
+		c_lille
+		c_guines
+
+		#d_brabant
+		c_hainaut
+		c_cambray
+	}
+}
+
+custom_core_greater_frisia = {
+	counties = {
+		#d_holland
+		c_westfriesland
+
+		#d_frisia
+		c_frisia
+		c_dokkum
+		c_ostfriesland
+
+		#d_slesvig
+		c_ribe
+
+		#d_holstein
+		c_stade
+		c_ditmarschen
+	}
+}
