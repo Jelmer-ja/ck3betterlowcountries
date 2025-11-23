@@ -128,7 +128,6 @@ k_picardy = {
 }
 
 d_north_frisia = {
-	custom=yes
 	pattern="pattern_cross_02.dds"
 	color1=yellow
 	color2=white

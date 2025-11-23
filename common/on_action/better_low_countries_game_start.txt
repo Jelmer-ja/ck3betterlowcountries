@@ -336,6 +336,11 @@ blc_setup_on_actions = {
             set_culture = culture:picard
         }
 
+        character:40900 = {
+            set_culture = culture:picard
+        }
+
+        #Walloons
         character:131715 = {
             set_culture = culture:walloon
         }
@@ -386,6 +391,48 @@ blc_setup_on_actions = {
 
         character:163050 = {
             set_culture = culture:walloon
+        }
+
+        character:90119 = {
+            set_culture = culture:walloon
+        }
+
+        #Frisians
+        any_character = {
+            limit = {
+                name = "Douwe"
+                age > 0
+                religion = catholic
+                culture = dutch
+            }
+            set_culture = culture:frisian
+        }
+
+        any_character = {
+            limit = {
+                name = "Lutbert"
+                age > 0
+                religion = catholic
+                culture = dutch
+            }
+            set_culture = culture:frisian
+        }
+
+        any_character = {
+            limit = {
+                name = "Sicco"
+                age > 0
+                religion = catholic
+                culture = dutch
+            }
+            set_culture = culture:frisian
+        }
+
+        any_character = {
+            limit = {
+                dynasty = dutch_horne
+            }
+            set_culture = culture:frisian
         }
     }
 }

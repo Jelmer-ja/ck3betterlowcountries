@@ -156,7 +156,6 @@ form_new_frisia_kingdom_decision = {
 		is_landed = yes
 		is_capable_adult = yes
 		is_imprisoned = no
-		top_liege != this
 		is_at_war = no
 	}
 
@@ -233,7 +232,7 @@ form_picardy_kingdom_decision = {
 	}
 
 	is_shown = {
-		NOT = { exists = title:k_k_picardy.holder }
+		NOT = { exists = title:k_picardy.holder }
 		NOT = {  #Can only do it once.
 			is_target_in_global_variable_list = {
 				name = unavailable_unique_decisions
@@ -263,13 +262,13 @@ form_picardy_kingdom_decision = {
 				}
 			}
 		}
+		
 	}
 
 	is_valid_showing_failures_only = {
 		is_landed = yes
 		is_capable_adult = yes
 		is_imprisoned = no
-		top_liege != this
 		is_at_war = no
 	}
 

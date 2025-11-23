@@ -2,7 +2,6 @@
 	save_scope_as = scoped_ruler
 	#Check the current liege of Picardy
 	title:d_picardy.de_jure_liege = { save_scope_as = previous_kingdom }
-	geographical_region:custom_core_greater_picardy = { save_scope_as = greater_picardy_region }
 
 	#De jure shifts
 	title:d_picardy = { set_de_jure_liege_title = title:k_picardy }
@@ -11,6 +10,7 @@
 	title:c_hainaut = { set_de_jure_liege_title = title:d_lower_picardy }
 	title:c_cambray = { set_de_jure_liege_title = title:d_lower_picardy }
 	title:c_guines = { set_de_jure_liege_title = title:d_lower_picardy }
+	title:d_flanders = { set_de_jure_liege_title = title:k_picardy }
 
 	create_title_and_vassal_change = {
 		type = created
@@ -28,7 +28,7 @@
 		every_in_de_jure_hierarchy = {
 			limit = {
 				tier = tier_county
-				title_province = { geographical_region = custom_core_greater_frisia }
+				title_province = { geographical_region = custom_core_picardy }
 				holder = {
 					OR = {
 						this = root
@@ -37,7 +37,7 @@
 				}
 			}
 			add_county_modifier = {
-				modifier = newfound_independence_modifier
+				modifier = new_picardy_modifier
 				years = 40
 			}
 		}
@@ -50,6 +50,13 @@
 		title:k_picardy = {
 			set_de_jure_liege_title = scope:previous_kingdom.de_jure_liege
 		}
+		#Grant the duchy of Lower Picardy to player
+		title:d_lower_picardy = {
+			change_title_holder = {
+				holder = root
+				change = scope:change
+			}
+		}
 	}
 	add_prestige = major_prestige_gain
 }
@@ -58,15 +65,14 @@ form_new_frisia_kingdom_scripted_effect = {
 	save_scope_as = scoped_ruler
 	#Check the current liege of Frisia
 	title:d_frisia.de_jure_liege = { save_scope_as = previous_kingdom }
-	geographical_region:custom_core_greater_frisia = { save_scope_as = greater_frisia_region }
 
 	#De jure shifts
 	title:d_picardy = { set_de_jure_liege_title = title:k_new_frisia }
 	title:d_north_frisia = { set_de_jure_liege_title = title:k_new_frisia }
 	title:c_westfriesland = { set_de_jure_liege_title = title:d_frisia }
+	title:c_ditmarschen = { set_de_jure_liege_title = title:d_north_frisia }
 	title:c_ribe = { set_de_jure_liege_title = title:d_north_frisia }
-	title:c_ditmarschen = { set_de_jure_liege_title = title:d_north_frisia }
-	title:c_ditmarschen = { set_de_jure_liege_title = title:d_north_frisia }
+	title:c_stade = { set_de_jure_liege_title = title:d_north_frisia }
 
 	create_title_and_vassal_change = {
 		type = created
@@ -93,7 +99,7 @@ form_new_frisia_kingdom_scripted_effect = {
 				}
 			}
 			add_county_modifier = {
-				modifier = newfound_independence_modifier
+				modifier = new_frisia_modifier
 				years = 40
 			}
 		}
@@ -143,6 +149,10 @@ form_netherlands_scripted_effect = {
 	if = {
 		limit = { completely_controls = title:d_picardy }
 		title:d_picardy = { set_de_jure_liege_title = title:k_netherlands }
+	}
+	if = {
+		limit = { completely_controls = title:d_lower_picardy }
+		title:d_lower_picardy = { set_de_jure_liege_title = title:k_netherlands }
 	}
 	else = { custom_tooltip = form_netherlands_kingdom_decision_effect_picardy_tooltip }
 	
