@@ -1,0 +1,11 @@
+﻿#tradition_frisian_freedom = {
+#
+#}
+
+#tradition_defense_of_the_somme = {
+#
+#}
+
+#tradition_boars_of_the_ardennes = {
+#
+#}

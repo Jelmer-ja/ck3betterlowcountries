@@ -1,7 +1,7 @@
-﻿blc_curse_of_starum_modifier = {
-	icon = economy_negative
-    tax_mult = -1.0
-}
+﻿#blc_curse_of_starum_modifier = {
+#	icon = economy_negative
+#    tax_mult = -1.0
+#}
 
 new_picardy_modifier = {
 	icon = county_modifier_development_positive

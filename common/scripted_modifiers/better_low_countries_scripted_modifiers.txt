@@ -1,0 +1,4 @@
+﻿blc_nerthas_blessing = {
+    travel_danger_resistance = 0.25
+    scope = travel
+}

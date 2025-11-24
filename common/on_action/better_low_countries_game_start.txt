@@ -6,46 +6,112 @@
 
 blc_setup_on_actions = {
     effect = {
+        # Convert county cultures to mod standard
+        ##Frisian
+        title:c_westfriesland = { set_county_culture = culture:frisian }
+        title:c_frisia = { set_county_culture = culture:frisian }
+        title:c_dokkum = { set_county_culture = culture:frisian }
+        title:c_ostfriesland = { set_county_culture = culture:frisian }
+
+        ##Walloon
+        title:c_bouillon = { set_county_culture = culture:walloon }
+        title:c_namur = { set_county_culture = culture:walloon }
+        title:c_liege = { set_county_culture = culture:walloon }
+
+        ##Picard
+        title:c_amiens = { set_county_culture = culture:picard }
+        title:c_boulogne = { set_county_culture = culture:picard }
+        title:c_vermandois = { set_county_culture = culture:picard }
+        title:c_clermont = { set_county_culture = culture:picard }
+        title:c_hainaut = { set_county_culture = culture:picard }
+        title:c_cambray = { set_county_culture = culture:picard }
+        title:c_lille = { set_county_culture = culture:picard }
+
+        ##Dutch
+        title:c_kleve = { set_county_culture = culture:dutch }
+        title:c_maastricht = { set_county_culture = culture:dutch }
+        title:c_guines = { set_county_culture = culture:dutch }
+
+        ##Saxon
+        title:c_zutphen = { set_county_culture = culture:saxon }
+        title:c_groningen = { set_county_culture = culture:saxon }
+        title:c_oversticht = { set_county_culture = culture:saxon }
+
+        ##Start date specific
+        if = {
+            limit = { current_date < 900.1.1 }
+            title:c_luxembourg = { set_county_culture = culture:walloon }
+        }
+        if = {
+            limit = { current_date >= 900.1.1 }
+            title:c_ribe = { set_county_culture = culture:frisian }
+        }
+
+
+        #Place special building slots and buildings
+        ##Place special building slots
+        province:2105 = { add_special_building_slot = koudenberg_palace_01 }
+        province:2125 = { add_special_building_slot = ypres_cloth_hall_01 }
+        province:2424 = { add_special_building_slot = utrecht_cathedral_01 }
+        province:2115 = { add_special_building_slot = saint_bavos_cathedral_01 }
+        province:2184 = { add_special_building_slot = notre_dame_amiens_01 }
+        province:2322 = { add_special_building_slot = chartres_cathedral_01 }
+        province:2390 = { add_special_building_slot = reims_cathedral_01 }
+        province:2112 = { add_special_building_slot = temple_of_nehalennia_01 }
+        province:2106 = { add_special_building_slot = antwerp_cathedral_01 }
+
+        ##Place special buildings
+        province:2417 = { add_special_building = drenthe_megaliths_01 }
+
+
         # Move the capital of Picardy from Vermandois to Amiens
         ## Work only on d_picardy
-        title:d_picardy = {
-            # Save old capital (for the duchy-building hack)
-            title_capital_county = { save_scope_as = old_capital }
+        #title:d_picardy = {
+        #    # Save old capital (for the duchy-building hack)
+        #    title_capital_county = { save_scope_as = old_capital }
+        #
+        #    # Set new de jure capital
+        #    set_capital_county = title:c_amiens
+        #}
+        #hidden_effect = {
+        #    scope:old_capital ?= {
+        #        duchy = { save_scope_as = current_duchy }
+        #        random_duchy = {
+        #            limit = {
+        #                NOT = { this = scope:current_duchy }
+        #                is_noble_family_title = no
+        #                is_mercenary_company = no
+        #            }
+        #            save_scope_as = placeholder_duchy
+        #        }
+        #        scope:current_duchy = {
+        #            every_de_jure_county = {
+        #                limit = {
+        #                    NOT = { this = title:c_amiens }
+        #                }
+        #                set_de_jure_liege_title = scope:placeholder_duchy
+        #                add_to_list = correction_list
+        #            }
+        #        }
+        #        every_in_list = {
+        #            list = correction_list
+        #            set_de_jure_liege_title = scope:current_duchy
+        #        }
+        #    }
+        #}
 
-            # Set new de jure capital
-            set_capital_county = title:c_amiens
+
+        #Change existing cultures
+        ##Change the traditions of the Frisian culture
+        culture:frisian = {
+            remove_culture_tradition = tradition_zealous_people
+            remove_culture_tradition = tradition_battlefield_looters
+            add_culture_tradition = tradition_religious_patronage
+            add_culture_tradition = tradition_stand_and_fight #replace with rather dead than slave/frisian freedom
         }
 
-        ## Duchy-building correction hack (vanilla fix)
-        hidden_effect = {
-            scope:old_capital ?= {
-                duchy = { save_scope_as = current_duchy }
-                random_duchy = {
-                    limit = {
-                        NOT = { this = scope:current_duchy }
-                        is_noble_family_title = no
-                        is_mercenary_company = no
-                    }
-                    save_scope_as = placeholder_duchy
-                }
-                scope:current_duchy = {
-                    every_de_jure_county = {
-                        limit = {
-                            NOT = { this = title:c_amiens }
-                        }
-                        set_de_jure_liege_title = scope:placeholder_duchy
-                        add_to_list = correction_list
-                    }
-                }
-                every_in_list = {
-                    list = correction_list
-                    set_de_jure_liege_title = scope:current_duchy
-                }
-            }
-        }
 
-
-        # Set character cultures in the southern Low Countries to Picard and Walloon
+        # Change the culture of existing characters
         ## House of Boulogne
         character:20142 = {
             set_culture = culture:picard
@@ -398,40 +464,15 @@ blc_setup_on_actions = {
         }
 
         #Frisians
-        any_character = {
-            limit = {
-                name = "Douwe"
-                age > 0
-                religion = catholic
-                culture = dutch
-            }
+        character:dutch0001 = {
             set_culture = culture:frisian
         }
 
-        any_character = {
-            limit = {
-                name = "Lutbert"
-                age > 0
-                religion = catholic
-                culture = dutch
-            }
+        character:dutch0002 = {
             set_culture = culture:frisian
         }
 
-        any_character = {
-            limit = {
-                name = "Sicco"
-                age > 0
-                religion = catholic
-                culture = dutch
-            }
-            set_culture = culture:frisian
-        }
-
-        any_character = {
-            limit = {
-                dynasty = dutch_horne
-            }
+        character:dutch0003 = {
             set_culture = culture:frisian
         }
     }
