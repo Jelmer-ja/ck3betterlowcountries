@@ -24,7 +24,6 @@
         diplomacy = -3
 		men_at_arms_recruitment_cost = 0.5
 		men_at_arms_maintenance = 0.2
-		levy_maintenance = -0.2
 		levy_size = 0.2
 		levy_toughness = 3
 		levy_attack = 3

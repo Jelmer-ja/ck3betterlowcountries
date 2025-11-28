@@ -14,7 +14,7 @@
 		tradition_defense_of_the_somme
 	}
 	
-	name_list = name_list_french
+	name_list = name_list_picard
 	
 	coa_gfx = { french_coa_gfx frankish_group_coa_gfx western_coa_gfx }
 	building_gfx = { western_building_gfx }
@@ -48,7 +48,7 @@ walloon = {
 		tradition_hill_dwellers
 	}
 	
-	name_list = name_list_french
+	name_list = name_list_walloon
 	
 	coa_gfx = { french_coa_gfx frankish_group_coa_gfx western_coa_gfx }
 	building_gfx = { western_building_gfx }

@@ -13,10 +13,6 @@ d_north_frisia = {
 	color = { 186 96 76 }
 
 	capital = c_ditmarschen
-
-	cultural_names = {
-		name_list_frisian = cn_noardfryslan
-	}
 }
 
 k_netherlands = {
@@ -74,13 +70,6 @@ k_frisia = {
 
 	d_holland = {
 		color = { 235 80 30 }
-
-		cultural_names = {
-			name_list_french = cn_hollande
-			name_list_walloon = cn_hollande
-			name_list_picard = cn_hollande
-			name_list_frisian = cn_hollan
-		}
 
 		capital = c_holland #Amsterdam
 
@@ -377,13 +366,6 @@ k_frisia = {
 
 	d_frisia = {
 		color = { 190 90 10 }
-		
-		cultural_names = {
-			name_list_french = cn_frise
-			name_list_walloon = cn_frise
-			name_list_picard = cn_frise
-			name_list_frisian = cn_fryslan
-		}
 
 		capital = c_dokkum
 
@@ -999,6 +981,9 @@ k_lotharingia = {
 					name_list_saxon = cn_limburg
 					name_list_swabian = cn_limburg
 					name_list_bavarian = cn_limburg
+					name_list_walloon = cn_limbourg
+					name_list_piard = cn_limbourg
+					name_list_french = cn_limbourg
 				}
 			}
 			b_duren = {
@@ -1612,6 +1597,10 @@ e_france = {
 			
 			c_amiens = {
 				color = { 18 76 240 }
+
+				cultural_names = {
+					name_list_picard = cn_anmien
+				}
 
 				b_amiens = {
 					province = 2184
