@@ -1,4 +1,7 @@
-﻿l_english:
+﻿l_english: 
+ sea_zuiderzee:0 "Almere"
+ dynnpat_suf_sdochter:0 "sdochter"
+ dynnpat_suf_szoon:0 "szoon"
  form_netherlands_kingdom_decision:0 "Unite the Netherlands"
  form_new_frisia_kingdom_decision:0 "A New Frisian Kingdom"
  form_picardy_kingdom_decision:0 "Picard Nationhood"

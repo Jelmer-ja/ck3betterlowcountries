@@ -13,6 +13,10 @@ d_north_frisia = {
 	color = { 186 96 76 }
 
 	capital = c_ditmarschen
+
+	cultural_names = {
+		name_list_frisian = cn_noardfryslan
+	}
 }
 
 k_netherlands = {
@@ -24,7 +28,7 @@ k_netherlands = {
 k_new_frisia = {
 	color = { 190 90 10 }
 
-	capital = c_dokkum
+	capital = c_ostfriesland
 }
 
 k_picardy = {
@@ -71,10 +75,24 @@ k_frisia = {
 	d_holland = {
 		color = { 235 80 30 }
 
+		cultural_names = {
+			name_list_french = cn_hollande
+			name_list_walloon = cn_hollande
+			name_list_picard = cn_hollande
+			name_list_frisian = cn_hollan
+		}
+
 		capital = c_holland #Amsterdam
 
 		c_holland = {
 			color = { 235 85 30 }
+
+			cultural_names = {
+				name_list_french = cn_hollande
+				name_list_walloon = cn_hollande
+				name_list_picard = cn_hollande
+				name_list_frisian = cn_hollan
+			}
 
 			b_amsterdam = {
 				province = 2406
@@ -95,16 +113,28 @@ k_frisia = {
 				province = 2402
 
 				color = { 235 85 30 }
+
+				cultural_names = {
+					name_list_frisian = cn_doardt
+				}
 			}
 		}
 
 		c_westfriesland = {
 			color = { 245 99 50 }
 
+			cultural_names = {
+				name_list_frisian = cn_westfryslan
+			}
+
 			b_haarlem = {
 				province = 2405
 
 				color = { 245 99 50 }
+
+				cultural_names = {
+					name_list_frisian = cn_haarlim
+				}
 			}
 
 			b_edam = {
@@ -117,21 +147,39 @@ k_frisia = {
 				province = 2409
 
 				color = { 245 99 50 }
+
+				cultural_names = {
+					name_list_frisian = cn_memleke
+				}
 			}
 
 			b_aalkmar = {
 				province = 2407
 
 				color = { 245 99 50 }
+
+				cultural_names = {
+					name_list_frisian = cn_alkmar
+				}
 			}
 		}
 		c_zeeland = {
 			color = { 200 100 30 }
 
+			cultural_names = {
+				name_list_french = cn_zelande
+				name_list_walloon = cn_zelande
+				name_list_picard = cn_zelande
+			}
+
 			b_middelburg = {
 				province = 2112
 
 				color = { 200 100 30 }
+
+				cultural_names = {
+					name_list_frisian = cn_middelburch
+				}
 			}
 
 			b_bergen_op_zoom = {
@@ -144,12 +192,22 @@ k_frisia = {
 				province = 2401
 
 				color = { 200 100 30 }
+
+				cultural_names = {
+					name_list_dutch = cn_den_briel
+				}
 			}
 		}
 	}
 
 	d_gelre = {
 		color = { 200 60 40 }
+
+		cultural_names = {
+			name_list_french = cn_gueldre
+			name_list_walloon = cn_gueldre
+			name_list_picard = cn_gueldre
+		}
 
 		capital = c_guelders #Geldern
 
@@ -160,11 +218,23 @@ k_frisia = {
 				province = 2450
 
 				color = { 200 60 40 }
+				
+				cultural_names = {
+					name_list_french = cn_gueldre
+					name_list_walloon = cn_gueldre
+					name_list_picard = cn_gueldre
+				}
 			}
 			b_nijmegen = {
 				province = 2103
 
 				color = { 200 60 40 }
+				
+				cultural_names = {
+					name_list_french = cn_nimueges
+					name_list_walloon = cn_nimueges
+					name_list_picard = cn_nimueges
+				}
 			}
 			b_tiel = {
 				province = 2425
@@ -231,6 +301,10 @@ k_frisia = {
 				province = 2451
 
 				color = { 160 100 10 }
+
+				cultural_names = {
+					name_list_frisian = cn_amersfoart
+				}
 			}
 		}
 
@@ -271,6 +345,13 @@ k_frisia = {
 				province = 2417
 
 				color = { 200 145 40 }
+		
+				cultural_names = {
+					name_list_french = cn_groningue
+					name_list_walloon = cn_groningue
+					name_list_picard = cn_groningue
+					name_list_Frisian = cn_grins
+				}
 			}
 			b_assen = {
 				province = 2420
@@ -286,12 +367,23 @@ k_frisia = {
 				province = 2452
 
 				color = { 200 145 40 }
+
+				cultural_names = {
+					name_list_frisian = cn_stienwyk
+				}
 			}
 		}
 	}
 
 	d_frisia = {
 		color = { 190 90 10 }
+		
+		cultural_names = {
+			name_list_french = cn_frise
+			name_list_walloon = cn_frise
+			name_list_picard = cn_frise
+			name_list_frisian = cn_fryslan
+		}
 
 		capital = c_dokkum
 
@@ -307,11 +399,19 @@ k_frisia = {
 				province = 2415
 
 				color = { 190 90 10 }
+
+				cultural_names = {
+					name_list_frisian = cn_appingedaam
+				}
 			}
 			b_delfzijl = {
 				province = 2453
 
 				color = { 190 90 10 }
+
+				cultural_names = {
+					name_list_frisian = cn_delfsyl
+				}
 			}
 		}
 
@@ -334,28 +434,1033 @@ k_frisia = {
 				color = { 205 70 5 }
 			}
 		}
+
 		c_frisia = {
 			color = { 175 70 20 }
+		
+			cultural_names = {
+				name_list_french = cn_frise
+				name_list_walloon = cn_frise
+				name_list_picard = cn_frise
+				name_list_frisian = cn_fryslan
+			}
 
 			b_leeuwarden = {
 				province = 2413
 
 				color = { 175 70 20 }
+
+				cultural_names = {
+					name_list_frisian = cn_ljouwert
+				}
 			}
 			b_staveren = {
 				province = 2410
 
 				color = { 175 70 20 }
+
+				cultural_names = {
+					name_list_frisian = cn_starum
+				}
 			}
 			b_harlingen = {
 				province = 2411
 
 				color = { 175 70 20 }
+
+				cultural_names = {
+					name_list_frisian = cn_harns
+				}
 			}
 			b_wadeilannen = {
 				province = 2412
 
 				color = { 175 70 20 }
+
+				cultural_names = {
+					name_list_frisian = cn_griend
+				}
+			}
+		}
+	}
+}
+
+k_lotharingia = {
+	color = { 110 110 160 }
+
+	capital = c_luxembourg #Luxemburg
+
+	ai_primary_priority = {
+		if = {
+			limit = {
+				culture = { has_cultural_pillar = heritage_central_germanic }
+			}
+			add = @better_than_the_alternatives_score
+		}
+		if = {
+			limit = {
+				OR = {
+					culture = culture:french
+					culture = culture:norman
+					culture = culture:occitan
+				}
+			}
+			add = @better_than_the_alternatives_score
+		}
+	}
+
+	d_luxembourg = {
+		color = { 120 100 155 }
+		
+		cultural_names = {
+			name_list_dutch = cn_luxemburg
+			name_list_franconian = cn_luxemburg
+			name_list_saxon = cn_luxemburg
+			name_list_swabian = cn_luxemburg
+			name_list_bavarian = cn_luxemburg
+		}
+
+		capital = c_luxembourg #Luxembourg
+
+		c_luxembourg = {
+			color = { 100 120 155 }
+			
+			cultural_names = {
+				name_list_dutch = cn_luxemburg
+				name_list_franconian = cn_luxemburg
+				name_list_saxon = cn_luxemburg
+				name_list_swabian = cn_luxemburg
+				name_list_bavarian = cn_luxemburg
+			}
+
+			b_luxembourg = {
+				province = 2082
+
+				color = { 110 110 155 }
+			
+				cultural_names = {
+					name_list_dutch = cn_luxemburg
+					name_list_franconian = cn_luxemburg
+					name_list_saxon = cn_luxemburg
+					name_list_swabian = cn_luxemburg
+					name_list_bavarian = cn_luxemburg
+				}
+			}
+			b_bastogne = {
+				province = 2090
+
+				color = { 110 110 155 }
+			
+				cultural_names = {
+					name_list_dutch = cn_bastenaken
+					name_list_franconian = cn_bastnach
+					name_list_saxon = cn_bastnach
+					name_list_swabian = cn_bastnach
+					name_list_bavarian = cn_bastnach
+				}
+			}
+			b_clervaux = {
+				province = 2449
+
+				color = { 110 110 155 }
+			
+				cultural_names = {
+					name_list_dutch = cn_clerf
+					name_list_franconian = cn_clerf
+					name_list_saxon = cn_clerf
+					name_list_swabian = cn_clerf
+					name_list_bavarian = cn_clerf
+				}
+			}
+			b_vianden = {
+				province = 2699
+
+				color = { 110 110 155 }
+			}
+			b_diekirch = {
+				province = 2089
+
+				color = { 110 110 155 }
+			}
+		}
+		c_bouillon = {
+			color = { 100 110 180 }
+			
+				cultural_names = {
+					name_list_dutch = cn_bullioen
+					name_list_franconian = cn_beulen
+					name_list_saxon = cn_beulen
+					name_list_swabian = cn_beulen
+					name_list_bavarian = cn_beulen
+				}
+
+			b_bouillon = {
+				province = 2091
+
+				color = { 100 110 180 }
+			
+				cultural_names = {
+					name_list_dutch = cn_bullioen
+					name_list_franconian = cn_beulen
+					name_list_saxon = cn_beulen
+					name_list_swabian = cn_beulen
+					name_list_bavarian = cn_beulen
+				}
+			}
+			b_chiny = {
+				province = 2686
+
+				color = { 100 110 180 }
+			
+				cultural_names = {
+					name_list_walloon = cn_tchini
+				}
+			}
+			b_saint_hubert = {
+				province = 2687
+
+				color = { 100 110 180 }
+			
+				cultural_names = {
+					name_list_walloon = cn_sint_houbert
+				}
+			}
+			b_virton = {
+				province = 2095
+
+				color = { 100 110 180 }
+			
+				cultural_names = {
+					name_list_franconian = cn_wirten
+					name_list_saxon = cn_wirten
+					name_list_swabian = cn_wirten
+					name_list_bavarian = cn_wirten
+					name_list_walloon = cn_vierton
+				}
+			}
+		}
+		c_liege = {
+			cultural_names = {
+				name_list_dutch = cn_luik
+				name_list_franconian = cn_luttich
+				name_list_saxon = cn_luttich
+				name_list_swabian = cn_luttich
+				name_list_bavarian = cn_luttich
+				name_list_walloon = cn_lidje
+			}
+
+			color = { 90 95 135 }
+
+			b_liege = {
+				province = 2097
+
+				color = { 90 95 135 }
+
+				cultural_names = {
+					name_list_dutch = cn_luik
+					name_list_franconian = cn_luttich
+					name_list_saxon = cn_luttich
+					name_list_swabian = cn_luttich
+					name_list_bavarian = cn_luttich
+					name_list_walloon = cn_lidje
+				}
+			}
+			b_la_roche = {
+				province = 2094
+
+				color = { 90 95 135 }
+				
+				cultural_names = {
+					name_list_franconian = cn_welchenfels
+					name_list_saxon = cn_welchenfels
+					name_list_swabian = cn_welchenfels
+					name_list_bavarian = cn_welchenfels
+					name_list_walloon = cn_li_rodje
+				}
+			}
+			b_huy = {
+				province = 2096
+
+				color = { 90 95 135 }
+
+				cultural_names = {
+					name_list_dutch = cn_hoei
+					name_list_walloon = cn_hu
+				}
+			}
+		}
+		c_namur = {
+			color = { 100 95 150 }
+
+			cultural_names = {
+				name_list_dutch = cn_namen
+				name_list_franconian = cn_namuer
+				name_list_saxon = cn_namuer
+				name_list_swabian = cn_namuer
+				name_list_bavarian = cn_namuer
+				name_list_walloon = cn_nameur
+			}
+
+			b_namur = {
+				province = 2098
+
+				color = { 100 95 150 }
+
+				cultural_names = {
+					name_list_dutch = cn_namen
+					name_list_franconian = cn_namuer
+					name_list_saxon = cn_namuer
+					name_list_swabian = cn_namuer
+					name_list_bavarian = cn_namuer
+					name_list_walloon = cn_nameur
+				}
+			}
+			b_charleroi = {
+				province = 2116
+
+				color = { 100 95 150 }
+
+				cultural_names = {
+					name_list_dutch = cn_karelskoning
+					name_list_walloon = cn_tchalerwe
+				}
+			}
+			b_couvin = {
+				province = 2122
+
+				color = { 100 95 150 }
+
+				cultural_names = {
+					name_list_walloon = cn_couven
+				}
+			}
+		}
+	}
+
+	d_brabant = {
+		color = { 110 85 125 }
+
+		capital = c_brabant #Leuven
+
+		c_brabant = {
+			color = { 110 85 125 }
+
+			b_leuven = {
+				province = 2105
+
+				color = { 110 85 125 }
+				
+				cultural_names = {
+					name_list_franconian = cn_lowen
+					name_list_saxon = cn_lowen
+					name_list_swabian = cn_lowen
+					name_list_bavarian = cn_lowen
+					name_list_walloon = cn_louvain
+					name_list_french = cn_louvain
+					name_list_picard = cn_louvain
+				}
+			}
+			b_brussels = {
+				province = 2107
+
+				color = { 110 85 125 }
+				
+				cultural_names = {
+					name_list_dutch = cn_brussel
+					name_list_franconian = cn_bruessel
+					name_list_saxon = cn_bruessel
+					name_list_swabian = cn_bruessel
+					name_list_bavarian = cn_bruessel
+					name_list_walloon = cn_bruxelles
+					name_list_french = cn_bruxelles
+					name_list_picard = cn_bruxelles
+				}
+			}
+			b_turnhout = {
+				province = 2111
+
+				color = { 110 85 125 }
+			}
+		}
+		c_antwerpen = {
+			color = { 125 85 110 }
+				
+			cultural_names = {
+				name_list_franconian = cn_antorf
+				name_list_saxon = cn_antorf
+				name_list_swabian = cn_antorf
+				name_list_bavarian = cn_antorf
+				name_list_walloon = cn_anvers
+				name_list_french = cn_anvers
+				name_list_picard = cn_anvers
+				name_list_english = cn_antwerp
+				name_list_scottish = cn_antwerp
+			}
+
+			b_antwerpen = {
+				province = 2106
+
+				color = { 125 85 110 }
+				
+				cultural_names = {
+					name_list_franconian = cn_antorf
+					name_list_saxon = cn_antorf
+					name_list_swabian = cn_antorf
+					name_list_bavarian = cn_antorf
+					name_list_walloon = cn_anvers
+					name_list_french = cn_anvers
+					name_list_picard = cn_anvers
+					name_list_english = cn_antwerp
+					name_list_scottish = cn_antwerp
+				}
+			}
+
+			b_rosendaal = {
+				province = 2108
+
+				color = { 125 85 110 }
+				
+				cultural_names = {
+					name_list_walloon = cn_rosendael
+					name_list_french = cn_rosendael
+					name_list_picard = cn_rosendael
+					name_list_dutch = cn_rozendaal
+				}
+			}
+
+			b_breda = {
+				province = 2109
+
+				color = { 125 85 110 }
+				
+				cultural_names = {
+					name_list_walloon = cn_breeda
+					name_list_french = cn_breeda
+					name_list_picard = cn_breeda
+				}
+			}
+		}
+		c_hainaut = {
+			color = { 110 95 145 }
+			
+			cultural_names = {
+				name_list_dutch = cn_henegouwen
+				name_list_franconian = cn_hennegau
+				name_list_saxon = cn_hennegau
+				name_list_swabian = cn_hennegau
+				name_list_bavarian = cn_hennegau
+			}
+
+			b_mons = {
+				province = 2117
+
+				color = { 110 95 145 }
+			
+				cultural_names = {
+					name_list_dutch = cn_bergen_mons
+					name_list_franconian = cn_bergen_mons
+					name_list_saxon = cn_bergen_mons
+					name_list_swabian = cn_bergen_mons
+					name_list_bavarian = cn_bergen_mons
+					name_list_picard = cn_bergen_mont
+				}
+			}
+			b_tournai = {
+				province = 2127
+
+				color = { 110 95 145 }
+			
+				cultural_names = {
+					name_list_dutch = cn_doornik
+					name_list_franconian = cn_dornick
+					name_list_saxon = cn_dornick
+					name_list_swabian = cn_dornick
+					name_list_bavarian = cn_dornick
+					name_list_picard = cn_tornai
+					name_list_walloon = cn_tornee
+				}
+			}
+			b_ath = {
+				province = 2120
+
+				color = { 110 95 145 }
+			
+				cultural_names = {
+					name_list_dutch = cn_aat
+					name_list_picard = cn_aat_picard
+					name_list_walloon = cn_aat_walloon
+				}
+			}
+		}
+		c_cambray = {
+			color = { 95 80 135 }
+			
+			cultural_names = {
+				name_list_dutch = cn_kamerijk
+				name_list_franconian = cn_kamerich
+				name_list_saxon = cn_kamerich
+				name_list_swabian = cn_kamerich
+				name_list_bavarian = cn_kamerich
+				name_list_french = cn_cambrai
+				name_list_picard = cn_cambrai
+				name_list_walloon = cn_cambrai
+			}
+
+			b_cambrai = {
+				province = 2118
+
+				color = { 95 80 135 }
+			
+				cultural_names = {
+					name_list_dutch = cn_kamerijk
+					name_list_franconian = cn_kamerich
+					name_list_saxon = cn_kamerich
+					name_list_swabian = cn_kamerich
+					name_list_bavarian = cn_kamerich
+					name_list_french = cn_cambrai
+					name_list_picard = cn_cambrai
+					name_list_walloon = cn_cambrai
+				}
+			}
+			b_malboden = {
+				province = 2121
+
+				color = { 95 80 135 }
+			
+				cultural_names = {
+					name_list_dutch = cn_mabuse
+					name_list_french = cn_maubeuge
+					name_list_picard = cn_maubeuge
+					name_list_walloon = cn_maubeuge
+				}
+			}
+			b_valenciennes = {
+				province = 2119
+
+				color = { 95 80 135 }
+			
+				cultural_names = {
+					name_list_dutch = cn_valencijn
+				}
+			}
+		}
+	}
+
+	d_julich = {
+		color = { 145 125 195 }
+			
+		cultural_names = {
+			name_list_dutch = cn_gulik
+			name_list_french = cn_juliers
+			name_list_picard = cn_juliers
+			name_list_walloon = cn_juliers
+		}
+
+		capital = c_aachen #Aachen
+
+		c_aachen = {
+			color = { 130 125 175 }
+
+			cultural_names = {
+				name_list_french = cn_aix_la_chapelle
+				name_list_picard = cn_aix_la_chapelle
+				name_list_walloon = cn_aix_la_chapelle
+				name_list_occitan = cn_aquisgrana
+				name_list_italian = cn_aquisgrana
+				name_list_cisalpine = cn_aquisgrana
+				name_list_sicilian = cn_aquisgrana
+				name_list_dutch = cn_aken
+			}
+
+			b_aachen = {
+				province = 2092
+
+				color = { 130 125 175 }
+
+				cultural_names = {
+					name_list_french = cn_aix_la_chapelle
+					name_list_picard = cn_aix_la_chapelle
+					name_list_walloon = cn_aix_la_chapelle
+					name_list_occitan = cn_aquisgrana
+					name_list_italian = cn_aquisgrana
+					name_list_cisalpine = cn_aquisgrana
+					name_list_sicilian = cn_aquisgrana
+					name_list_dutch = cn_aken
+				}
+			}
+			b_limbourg = {
+				province = 2448
+
+				color = { 130 125 175 }
+
+				cultural_names = {
+					name_list_dutch = cn_limburg
+					name_list_franconian = cn_limburg
+					name_list_saxon = cn_limburg
+					name_list_swabian = cn_limburg
+					name_list_bavarian = cn_limburg
+				}
+			}
+			b_duren = {
+				province = 2093
+
+				color = { 130 125 175 }
+
+				cultural_names = {
+					name_list_dutch = cn_duren_dutch
+				}
+			}
+			b_eschweiler = {
+				province = 2683
+
+				color = { 130 125 175 }
+
+				cultural_names = {
+					name_list_french = cn_exvilliers
+					name_list_picard = cn_exvilliers
+					name_list_walloon = cn_exvilliers
+				}
+			}
+			b_prum = {
+				province = 2684
+
+				color = { 130 125 175 }
+
+				cultural_names = {
+					name_list_french = cn_prume
+					name_list_picard = cn_prume
+					name_list_walloon = cn_prume
+				}
+			}
+		}
+		c_cleves = {
+			color = { 165 120 190 }
+
+			cultural_names = {
+				name_list_french = cn_cleves
+				name_list_picard = cn_cleves
+				name_list_walloon = cn_cleves
+				name_list_dutch = cn_kleef
+				name_list_franconian = cn_kleve
+				name_list_saxon = cn_kleve
+				name_list_swabian = cn_kleve
+				name_list_bavarian = cn_kleve
+			}
+
+			b_kleve = {
+				province = 2104
+
+				color = { 165 120 190 }
+
+				cultural_names = {
+					name_list_french = cn_cleves
+					name_list_picard = cn_cleves
+					name_list_walloon = cn_cleves
+					name_list_dutch = cn_kleef
+					name_list_franconian = cn_kleve
+					name_list_saxon = cn_kleve
+					name_list_swabian = cn_kleve
+					name_list_bavarian = cn_kleve
+				}
+			}
+			b_gladbach = {
+				province = 2102
+
+				color = { 165 120 190 }
+
+				cultural_names = {
+					name_list_dutch = cn_gladbeek
+				}
+			}
+			b_wezel = {
+				province = 2435
+
+				color = { 165 120 190 }
+
+				cultural_names = {
+					name_list_franconian = cn_wesel
+					name_list_saxon = cn_wesel
+					name_list_swabian = cn_wesel
+					name_list_bavarian = cn_wesel
+				}
+			}
+			b_moers = {
+				province = 2101
+
+				color = { 165 120 190 }
+
+				cultural_names = {
+					name_list_french = cn_meurs
+					name_list_picard = cn_meurs
+					name_list_walloon = cn_meurs
+					name_list_dutch = cn_meurs
+				}
+			}
+		}
+		c_maastricht = {
+			color = { 145 125 195 }
+
+			b_maastricht = {
+				province = 2099
+
+				color = { 145 125 195 }
+
+				cultural_names = {
+					name_list_walloon = cn_mastraik
+				}
+			}
+			b_eindhoven = {
+				province = 2100
+
+				color = { 145 125 195 }
+			}
+			b_tilburg = {
+				province = 2110
+
+				color = { 145 125 195 }
+
+				cultural_names = {
+					name_list_french = cn_tilbourg
+					name_list_picard = cn_tilbourg
+					name_list_walloon = cn_tilbourg
+				}
+			}
+		}
+	}
+
+	d_upper_lorraine = { # Upper Lotharingia
+		color = { 90 90 125 }
+
+		capital = c_trier #Trier
+
+		cultural_names = {
+			name_list_french = cn_upper_lorraine
+			name_list_norman = cn_upper_lorraine
+		}
+
+		c_trier = {
+			color = { 80 80 125 }
+
+			b_trier = {
+				province = 2083
+
+				color = { 90 90 125 }
+			}
+			b_beda = {
+				province = 2085
+
+				color = { 90 90 125 }
+			}
+			b_konz = {
+				province = 2700
+
+				color = { 90 90 125 }
+			}
+			b_wadern = {
+				province = 2703
+
+				color = { 90 90 125 }
+			}
+		}
+		c_nancy = {
+			color = { 65 65 100 }
+
+			b_nancy = {
+				province = 2709
+
+				color = { 65 65 100 }
+			}
+			b_epinal = {
+				province = 2078
+
+				color = { 65 65 100 }
+			}
+			b_blankenberg = { #Lünstadt
+				province = 2713
+
+				color = { 65 65 100 }
+			}
+			b_salm = {
+				province = 2714
+
+				color = { 65 65 100 }
+			}
+		}
+		c_metz = {
+			color = { 85 85 140 }
+
+			b_metz = {
+				province = 2708
+
+				color = { 85 85 140 }
+			}
+			b_saarburg = {
+				province = 2698
+
+				color = { 85 85 140 }
+			}
+			b_forbach = {
+				province = 2705
+
+				color = { 85 85 140 }
+			}
+			b_faulquemont = {
+				province = 2711
+
+				color = { 85 85 140 }
+			}
+		}
+		c_saarbrucken = {
+			color = { 90 90 110 }
+
+			b_saarbrucken = {
+				province = 2704
+
+				color = { 90 90 110 }
+			}
+			b_zweibrucken = {
+				province = 2726
+
+				color = { 90 90 110 }
+			}
+			b_bitsch = {
+				province = 2725
+
+				color = { 90 90 110 }
+			}
+		}
+		c_puttlingen = {
+			color = { 80 80 115 }
+
+			b_puttlingen = {
+				province = 2710
+
+				color = { 80 80 115 }
+			}
+			b_finstigen = { #Finstingen
+				province = 2712
+
+				color = { 80 80 115 }
+			}
+		}
+		c_neufchateau = {
+			color = { 75 75 125 }
+
+			b_neufchateau = {
+				province = 2384
+
+				color = { 75 75 125 }
+			}
+			b_vaudemont = {
+				province = 2715
+
+				color = { 75 75 125 }
+			}
+			b_lure = {
+				province = 2192
+
+				color = { 75 75 125 }
+			}
+		}
+	}
+
+	d_lower_lorraine = { # Lower Lotharingia
+		color = { 150 145 180 }
+
+		capital = c_cologne # Cologne
+
+		cultural_names = {
+			name_list_french = cn_lower_lorraine
+			name_list_norman = cn_lower_lorraine
+		}
+
+		c_cologne = {
+			color = { 150 145 180 }
+
+			b_cologne = {
+				province = 2088
+
+				color = { 150 145 180 }
+			}
+			b_bonn = {
+				province = 2087
+
+				color = { 150 145 180 }
+			}
+			b_neuss = {
+				province = 2682
+
+				color = { 150 145 180 }
+			}
+			b_nauenahr = {
+				province = 2685
+
+				color = { 150 145 180 }
+			}
+		}
+		c_dortmund = {
+			color = { 150 165 185 }
+
+			b_dortmund = {
+				province = 2673
+
+				color = { 150 165 185 }
+			}
+			b_essen = {
+				province = 2677
+
+				color = { 150 165 185 }
+			}
+			b_recklinghausen = {
+				province = 2675
+
+				color = { 150 165 185 }
+			}
+		}
+		c_arnsberg = {
+			color = { 170 170 195 }
+
+			b_arnsberg = {
+				province = 2680
+
+				color = { 170 170 195 }
+			}
+			b_bilstein = {
+				province = 2681
+
+				color = { 170 170 195 }
+			}
+		}
+		c_mark = {
+			color = { 145 135 175 }
+
+			b_mark = {
+				province = 2679
+
+				color = { 145 135 175 }
+			}
+			b_hagen = {
+				province = 2678
+
+				color = { 145 135 175 }
+			}
+			b_hukeswag = {
+				province = 2676
+
+				color = { 145 135 175 }
+			}
+		}
+		c_koblenz = {
+			color = { 150 140 190 }
+
+			b_koblenz = {
+				province = 2084
+
+				color = { 150 140 190 }
+			}
+
+			b_adenau = {
+				province = 2086
+
+				color = { 150 140 190 }
+			}
+			b_cochem = {
+				province = 2697
+
+				color = { 150 140 190 }
+			}
+			b_sponhem = { #Sponheim
+				province = 2696
+
+				color = { 150 140 190 }
+			}
+		}
+		c_bergh = {
+			color = { 130 145 170 }
+
+			b_bergh = {
+				province = 2433
+
+				color = { 130 145 170 }
+			}
+			b_siegburg = {
+				province = 2688
+
+				color = { 130 145 170 }
+			}
+		}
+		c_sayn = {
+			color = { 155 140 170 }
+
+			b_sayn = {
+				province = 2689
+
+				color = { 155 140 170 }
+			}
+			b_wied = {
+				province = 2690
+
+				color = { 155 140 170 }
+			}
+			b_isenburg = {
+				province = 2691
+
+				color = { 155 140 170 }
+			}
+		}
+	}
+
+	d_bar = {
+		color = { 24 95 226 }
+
+		capital = c_bar #Bar
+
+		c_bar = {
+			color = { 14 85 226 }
+
+			b_bar = {
+				province = 2388
+
+				color = { 24 95 226 }
+			}
+			b_verdun = {
+				province = 2395
+
+				color = { 24 95 226 }
+			}
+			b_argonne = {	#Displayed as Saint-Mihiel
+				province = 2081
+
+				color = { 24 95 226 }
+			}
+		}
+		c_briey = {
+			color = { 53 132 226 }
+
+			b_briey = {
+				province = 2706
+
+				color = { 53 132 226 }
+			}
+			b_hayange = {
+				province = 2080
+
+				color = { 53 132 226 }
+			}
+		}
+
+		c_vaucouleurs = {
+			color = { 15 80 220 }
+
+			b_vaucouleurs = {
+				province = 2387
+
+				color = { 15 80 220 }
+			}
+			b_toul = {
+				province = 2079
+
+				color = { 15 80 220 }
 			}
 		}
 	}
@@ -512,16 +1617,28 @@ e_france = {
 					province = 2184
 
 					color = { 18 76 240 }
+
+					cultural_names = {
+						name_list_picard = cn_anmien
+					}
 				}
 				b_corbie = {
 					province = 2185
 
 					color = { 18 76 240 }
+
+					cultural_names = {
+						name_list_picard = cn_corbeu
+					}
 				}
 				b_peronne = {
 					province = 2186
 
 					color = { 18 76 240 }
+
+					cultural_names = {
+						name_list_picard = cn_anmien
+					}
 				}
 			}
 			c_clermont = {
@@ -541,30 +1658,54 @@ e_france = {
 					province = 2187
 
 					color = { 28 58 230 }
+
+					cultural_names = {
+						name_list_dutch = cn_sint_kwintens
+					}
 				}
 			}
 			c_boulogne = {
 				color = { 78 103 165 }
+		
+				cultural_names = {
+					name_list_dutch = cn_bonen
+				}
 
 				b_boulogne = {
 					province = 2132
 
 					color = { 78 103 165 }
+		
+					cultural_names = {
+						name_list_dutch = cn_bonen
+					}
 				}
 				b_montreuil_sur_mer = {
 					province = 2136
 
 					color = { 78 103 165 }
+		
+					cultural_names = {
+						name_list_dutch = cn_monsterole
+					}
 				}
 				b_abbeville = {
 					province = 2137
 
 					color = { 78 103 165 }
+		
+					cultural_names = {
+						name_list_dutch = cn_abbekerke
+					}
 				}
 				b_hesdin = {
 					province = 2135
 
 					color = { 78 103 165 }
+		
+					cultural_names = {
+						name_list_dutch = cn_heusden
+					}
 				}
 			}
 			c_valois = {
@@ -588,6 +1729,10 @@ e_france = {
 			}
 			c_vermandois = {
 				color = { 20 50 220 }
+		
+				cultural_names = {
+					name_list_dutch = cn_vermandie
+				}
 
 				b_marle = {
 					province = 2397
@@ -1348,80 +2493,161 @@ e_france = {
 			c_brugge = {
 				color = { 65 95 180 }
 
+				cultural_names = {
+					name_list_french = cn_bruges
+					name_list_walloon = cn_bruges
+					name_list_picard = cn_bruges
+					name_list_dutch = cn_brugge
+				}
+
 				b_bruges = {
 					province = 2115
 
 					color = { 65 95 180 }
+
+					cultural_names = {
+						name_list_french = cn_bruges
+						name_list_walloon = cn_bruges
+						name_list_picard = cn_bruges
+						name_list_dutch = cn_brugge
+					}
 				}
 				b_gent = {
 					province = 2114
 
 					color = { 65 95 180 }
+
+					cultural_names = {
+						name_list_french = cn_gand
+						name_list_walloon = cn_gand
+						name_list_picard = cn_gand
+					}
 				}
 				b_roeselare = {
 					province = 2124
 
 					color = { 65 95 180 }
+
+					cultural_names = {
+						name_list_french = cn_roulers
+						name_list_walloon = cn_roulers
+						name_list_picard = cn_roulers
+					}
 				}
 			}
 
 			c_yperen = {
 				color = { 78 94 185 }
 
+				cultural_names = {
+					name_list_french = cn_ypres
+					name_list_walloon = cn_ypres
+					name_list_picard = cn_ypres
+				}
+
 				b_ypres = {
 					province = 2125
 
 					color = { 78 94 185 }
+
+					cultural_names = {
+						name_list_dutch = cn_yperen
+					}
 				}
 				b_veurne = {
 					province = 2128
 
 					color = { 78 94 185 }
+
+					cultural_names = {
+						name_list_french = cn_furnes
+						name_list_walloon = cn_furnes
+						name_list_picard = cn_furnes
+					}
 				}
 				b_dunkirk = {
 					province = 2131
 
 					color = { 78 94 185 }
+
+					cultural_names = {
+						name_list_french = cn_dunkerque
+						name_list_walloon = cn_dunkerque
+						name_list_picard = cn_dunkerque
+						name_list_dutch = cn_duinkerken
+					}
 				}
 			}
 
 			c_guines = {
 				color = { 80 90 170 }
 
+				cultural_names = {
+					name_list_dutch = cn_wijnen
+				}
+
 				b_calais = {
 					province = 2130
 
 					color = { 80 90 170 }
+
+					cultural_names = {
+						name_list_dutch = cn_kales
+					}
 				}
 				b_grevelines = {
 					province = 2129
 
 					color = { 80 90 170 }
+
+					cultural_names = {
+						name_list_dutch = cn_grevelingen
+					}
 				}
 				b_saint_omer = {
 					province = 2133
 
 					color = { 80 90 170 }
+
+					cultural_names = {
+						name_list_dutch = cn_sint_omaars
+					}
 				}
 			}
 
 			c_lille = {
 				color = { 75 115 205 }
 
+				cultural_names = {
+					name_list_dutch = cn_rijsel
+				}
+
 				b_lille = {
 					province = 2126
 
 					color = { 75 115 205 }
+
+					cultural_names = {
+						name_list_dutch = cn_rijsel
+					}
 				}
 				b_courtrai = {
 					province = 2123
 
 					color = { 75 115 205 }
+
+					cultural_names = {
+						name_list_dutch = cn_kortrijk
+					}
 				}
 				b_aire = {
 					province = 2134
 
 					color = { 75 115 205 }
+
+					cultural_names = {
+						name_list_dutch = cn_arien
+					}
 				}
 			}
 

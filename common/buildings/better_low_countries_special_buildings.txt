@@ -242,7 +242,7 @@ reims_cathedral_01 = {
 temple_of_nehalennia_01 = {
 	construction_time = very_slow_construction_time
 	
-	type_icon = "icon_structure_temple_of_uppsala.dds"
+	type_icon = "icon_structure_temple_of_nehalennia.dds"
 	
 	can_construct_potential = {
 	}
@@ -269,14 +269,14 @@ temple_of_nehalennia_01 = {
 	
 	character_modifier = {
 		monthly_piety = 1
-        add_scripted_modifier = blc_nerthas_blessing
-	}
-	province_modifier = {
-		monthly_income = 1
+		character_travel_safety_mult = 0.3
 	}
 	county_modifier = {
 		tax_mult = 0.1
-		development_growth_factor = 0.2
+		development_growth_factor = 0.1
+	}
+	province_modifier = {
+		monthly_income = 1
 	}
 
 	on_complete = {
@@ -478,6 +478,7 @@ saint_bavos_cathedral_01 = {
 	province_modifier = {
 		tax_mult = 0.1
 		levy_size = 0.1
+		monthly_income = 1
 	}
 
 	on_complete = {
@@ -561,6 +562,7 @@ antwerp_cathedral_01 = {
 	province_modifier = {
 		tax_mult = 0.1
 		levy_size = 0.1
+		monthly_income = 1
 	}
 
 	on_complete = {
@@ -598,4 +600,39 @@ antwerp_cathedral_01 = {
 	type = special
 	
 	flag = travel_point_of_interest_religious
+}
+
+upstalsboom_01 = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_upstalsboom.dds"
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = 3000
+
+	character_modifier = {
+		diplomacy_per_prestige_level = 1
+		same_culture_opinion = 20
+	}
+
+	on_complete = {
+		#Regular Mandala Boon
+		mandala_built_piety_duchy_building_t3_effect = yes
+	}
+	
+	ai_value = {
+		base = 100
+		ai_pious_building_preference_modifier = yes
+		modifier = { # Fill all building slots before going for special buildings
+			factor = 0
+			free_building_slots > 0
+		}
+	}
+	
+	type = special
+
+	flag = travel_point_of_interest_diplomatic
 }

@@ -28,7 +28,7 @@ blc_setup_on_actions = {
         title:c_lille = { set_county_culture = culture:picard }
 
         ##Dutch
-        title:c_kleve = { set_county_culture = culture:dutch }
+        title:c_cleves = { set_county_culture = culture:dutch }
         title:c_maastricht = { set_county_culture = culture:dutch }
         title:c_guines = { set_county_culture = culture:dutch }
 
@@ -55,6 +55,7 @@ blc_setup_on_actions = {
         province:2424 = { add_special_building_slot = utrecht_cathedral_01 }
         province:2115 = { add_special_building_slot = saint_bavos_cathedral_01 }
         province:2184 = { add_special_building_slot = notre_dame_amiens_01 }
+        province:2184 = { add_building = muche_01 }
         province:2322 = { add_special_building_slot = chartres_cathedral_01 }
         province:2390 = { add_special_building_slot = reims_cathedral_01 }
         province:2112 = { add_special_building_slot = temple_of_nehalennia_01 }
@@ -62,43 +63,44 @@ blc_setup_on_actions = {
 
         ##Place special buildings
         province:2417 = { add_special_building = drenthe_megaliths_01 }
+        province:2418 = { add_special_building = upstalsboom_01 }
 
 
         # Move the capital of Picardy from Vermandois to Amiens
         ## Work only on d_picardy
-        #title:d_picardy = {
-        #    # Save old capital (for the duchy-building hack)
-        #    title_capital_county = { save_scope_as = old_capital }
-        #
-        #    # Set new de jure capital
-        #    set_capital_county = title:c_amiens
-        #}
-        #hidden_effect = {
-        #    scope:old_capital ?= {
-        #        duchy = { save_scope_as = current_duchy }
-        #        random_duchy = {
-        #            limit = {
-        #                NOT = { this = scope:current_duchy }
-        #                is_noble_family_title = no
-        #                is_mercenary_company = no
-        #            }
-        #            save_scope_as = placeholder_duchy
-        #        }
-        #        scope:current_duchy = {
-        #            every_de_jure_county = {
-        #                limit = {
-        #                    NOT = { this = title:c_amiens }
-        #                }
-        #                set_de_jure_liege_title = scope:placeholder_duchy
-        #                add_to_list = correction_list
-        #            }
-        #        }
-        #        every_in_list = {
-        #            list = correction_list
-        #            set_de_jure_liege_title = scope:current_duchy
-        #        }
-        #    }
-        #}
+        title:d_picardy = {
+            # Save old capital (for the duchy-building hack)
+            title_capital_county = { save_scope_as = old_capital }
+        
+            # Set new de jure capital
+            set_capital_county = title:c_amiens
+        }
+        hidden_effect = {
+            scope:old_capital ?= {
+                duchy = { save_scope_as = current_duchy }
+                random_duchy = {
+                    limit = {
+                        NOT = { this = scope:current_duchy }
+                        is_noble_family_title = no
+                        is_mercenary_company = no
+                    }
+                    save_scope_as = placeholder_duchy
+                }
+                scope:current_duchy = {
+                    every_de_jure_county = {
+                        limit = {
+                            NOT = { this = title:c_amiens }
+                        }
+                        set_de_jure_liege_title = scope:placeholder_duchy
+                        add_to_list = correction_list
+                    }
+                }
+                every_in_list = {
+                    list = correction_list
+                    set_de_jure_liege_title = scope:current_duchy
+                }
+            }
+        }
 
 
         #Change existing cultures
@@ -107,7 +109,7 @@ blc_setup_on_actions = {
             remove_culture_tradition = tradition_zealous_people
             remove_culture_tradition = tradition_battlefield_looters
             add_culture_tradition = tradition_religious_patronage
-            add_culture_tradition = tradition_stand_and_fight #replace with rather dead than slave/frisian freedom
+            add_culture_tradition = tradition_frisian_freedom
         }
 
 

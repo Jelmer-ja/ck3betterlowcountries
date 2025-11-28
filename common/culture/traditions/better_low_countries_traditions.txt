@@ -1,10 +1,61 @@
-﻿#tradition_frisian_freedom = {
-#
-#}
+﻿tradition_frisian_freedom = {
+	category = regional
 
-#tradition_defense_of_the_somme = {
-#
-#}
+    layers = {
+		0 = martial
+		1 = western
+		4 = frisian_freedom.dds
+	}
+
+	is_shown = {
+		has_cultural_pillar = heritage_central_germanic
+	}
+
+    parameters = {
+		stubborn_trait_more_common = yes
+		honest_trait_more_common = yes
+		harder_to_convert_character_faith = yes
+    }
+
+    character_modifier = {
+		tyranny_gain_mult = 0.5
+		monthly_county_control_growth_factor = -0.3
+        opinion_of_liege = -30
+        diplomacy = -3
+		men_at_arms_recruitment_cost = 0.5
+		men_at_arms_maintenance = 0.2
+		levy_maintenance = -0.2
+		levy_size = 0.2
+		levy_toughness = 3
+		levy_attack = 3
+		health = 0.2
+	}
+}
+
+tradition_defense_of_the_somme = {
+	category = regional
+
+	layers = {
+		0 = diplo
+		1 = western
+		4 = defense_of_the_somme.dds
+	}
+	
+	is_shown = {
+		has_cultural_pillar = heritage_frankish
+	}
+
+	parameters = {
+		can_construct_muches = yes
+	}
+	
+	character_modifier = {
+		pikemen_toughness_mult = 0.30
+		pikemen_damage_mult = 0.30
+		same_culture_mercenary_hire_cost_mult = -0.30
+		learn_language_scheme_phase_duration_add = 30
+	}
+}
 
 #tradition_boars_of_the_ardennes = {
 #

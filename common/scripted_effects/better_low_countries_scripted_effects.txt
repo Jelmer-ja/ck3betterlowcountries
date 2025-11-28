@@ -249,6 +249,21 @@ form_carolingian_empire_scripted_effect = {
 			}
 			title:k_netherlands = { set_de_jure_liege_title = title:e_france }
 		}
+		if = {
+			limit = {
+				OR = {
+					#exists = title:k_new_frisia.holder
+					title:k_new_frisia = { is_titular = yes }
+					title:e_hre = {
+						any_in_de_jure_hierarchy = {
+							continue = { tier >= tier_kingdom }
+							this = title:k_new_frisia
+						}
+					}
+				}
+			}
+			title:k_new_frisia = { set_de_jure_liege_title = title:e_france }
+		}
 	}
 	# Prestige
 	add_prestige = major_prestige_gain

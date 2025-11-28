@@ -2,7 +2,7 @@
 #Creating Netherlands Kingdom
 form_netherlands_kingdom_decision = {
 	picture = {
-		reference = "gfx/interface/illustrations/decisions/decision_found_kingdom.dds"
+		reference = "gfx/interface/illustrations/decisions/decision_unite_netherlands.dds"
 	}
 	desc = form_netherlands_kingdom_decision_desc
 	selection_tooltip = form_netherlands_kingdom_decision_tooltip
@@ -71,6 +71,11 @@ form_netherlands_kingdom_decision = {
 				add = 500
 			}
 		}
+		prestige = {
+			value = major_prestige_gain
+			multiply = 3
+			round = yes
+		}
 	}
 
 	effect = {
@@ -104,7 +109,7 @@ form_netherlands_kingdom_decision = {
 
 form_new_frisia_kingdom_decision = {
 	picture = {
-		reference = "gfx/interface/illustrations/decisions/decision_found_kingdom.dds"
+		reference = "gfx/interface/illustrations/decisions/decision_found_new_frisia.dds"
 	}
 	desc = form_new_frisia_kingdom_decision_desc
 	selection_tooltip = form_new_frisia_kingdom_decision_tooltip
@@ -138,7 +143,6 @@ form_new_frisia_kingdom_decision = {
 
 	is_valid = {
 		# Independents only.
-		top_liege = this
 		prestige_level >= very_high_prestige_level
 		completely_controls_region = custom_core_greater_frisia
 		custom_tooltip = {
@@ -216,7 +220,7 @@ form_new_frisia_kingdom_decision = {
 
 form_picardy_kingdom_decision = {
 	picture = {
-		reference = "gfx/interface/illustrations/decisions/decision_found_kingdom.dds"
+		reference = "gfx/interface/illustrations/decisions/decision_found_new_picardy.dds"
 	}
 	desc = form_picardy_kingdom_decision_desc
 	selection_tooltip = form_picardy_kingdom_decision_tooltip
