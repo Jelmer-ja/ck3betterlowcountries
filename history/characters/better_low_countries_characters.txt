@@ -1,1 +1,100 @@
-﻿
+﻿121066 = {
+	name = "Ellert" #Ellert van de Ellert-en-Brammertsaga
+	dynasty_house = house_ellerting 
+	religion = "catholic"
+	culture = "saxon"
+
+	#Skills
+	diplomacy = 3
+	martial = 10
+	stewardship = 6
+	intrigue = 6
+	learning = 6
+	prowess = 14
+
+	#Personality Traits
+	trait = deceitful
+	trait = callous
+	trait = greedy
+    trait = giant
+	trait = education_martial_3
+	
+	sexuality = heterosexual
+	disallow_random_traits = yes
+	827.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+			add_character_flag = special_laamp_char
+			add_character_flag = do_not_generate_starting_family
+		}
+	}
+}
+
+121067 = {
+	name = "Brammert" #Brammert van de Ellert-en-Brammertsaga
+	dynasty_house = house_ellerting 
+	religion = "catholic"
+	culture = "saxon"
+    father = 121066
+
+	#Skills
+	diplomacy = 3
+	martial = 10
+	stewardship = 6
+	intrigue = 6
+	learning = 6
+	prowess = 14
+
+	#Personality Traits
+	trait = wrathful
+	trait = eccentric
+	trait = greedy
+    trait = giant
+	trait = education_martial_3
+	
+	sexuality = homosexual
+	disallow_random_traits = yes
+	847.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+			add_character_flag = do_not_generate_starting_family
+		}
+	}
+}
+
+121068 = {
+	name = "Marichen" #Marieke van de Ellert-en-Brammertsaga
+	religion = "catholic"
+	culture = "saxon"
+	female = yes
+
+	#Skills
+	diplomacy = 8
+	martial = 4
+	stewardship = 6
+	intrigue = 6
+	learning = 12
+	prowess = 7
+
+	#Personality Traits
+	trait = just
+	trait = calm
+	trait = vengeful
+    trait = intellect_good_1
+    trait = beauty_good_1
+	trait = education_intrigue_3
+	
+	sexuality = heterosexual
+	disallow_random_traits = yes
+	850.1.1 = {
+		birth = yes
+		effect = {
+			add_character_flag = has_scripted_appearance
+			add_character_flag = do_not_generate_starting_family
+            set_relation_rival = character:121066 #Hates giants for kidnapping her
+            set_relation_rival = character:121067
+		}
+	}
+}

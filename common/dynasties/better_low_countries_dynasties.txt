@@ -1,0 +1,4 @@
+﻿ellerting = {
+	name = "dynn_Ellerting"
+	culture = saxon
+}

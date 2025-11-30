@@ -15,6 +15,20 @@ d_north_frisia = {
 	capital = c_ditmarschen
 }
 
+d_laamp_ellert = {
+	color = { 186 96 76 }
+	capital = c_groningen
+
+	definite_form = yes
+	landless = yes
+	require_landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
 k_netherlands = {
 	color = { 235 80 30 }
 
@@ -339,7 +353,7 @@ k_frisia = {
 					name_list_french = cn_groningue
 					name_list_walloon = cn_groningue
 					name_list_picard = cn_groningue
-					name_list_Frisian = cn_grins
+					name_list_frisian = cn_grins
 				}
 			}
 			b_assen = {
@@ -982,7 +996,7 @@ k_lotharingia = {
 					name_list_swabian = cn_limburg
 					name_list_bavarian = cn_limburg
 					name_list_walloon = cn_limbourg
-					name_list_piard = cn_limbourg
+					name_list_picard = cn_limbourg
 					name_list_french = cn_limbourg
 				}
 			}

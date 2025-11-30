@@ -1,0 +1,15 @@
+﻿d_laamp_ellert = { # Ellert
+	866.12.27 = {
+		liege = 0
+		holder = 121066 # Ellert
+		government = landless_adventurer_government
+		succession_laws = { landless_adventurer_succession_law }
+		effect = {
+			create_landless_adventurer_title_history_effect = yes
+			set_variable = { name = adventurer_creation_reason value = flag:historical }
+		}
+	}
+	899.7.10 = {
+		holder = 0
+	}
+}

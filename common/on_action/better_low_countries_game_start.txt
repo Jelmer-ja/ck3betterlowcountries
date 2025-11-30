@@ -55,7 +55,7 @@ blc_setup_on_actions = {
         province:2424 = { add_special_building_slot = utrecht_cathedral_01 }
         province:2115 = { add_special_building_slot = saint_bavos_cathedral_01 }
         province:2184 = { add_special_building_slot = notre_dame_amiens_01 }
-        province:2184 = { add_building = muche_01 }
+        # province:2184 = { add_building = muche_01 }
         province:2322 = { add_special_building_slot = chartres_cathedral_01 }
         province:2390 = { add_special_building_slot = reims_cathedral_01 }
         province:2112 = { add_special_building_slot = temple_of_nehalennia_01 }
@@ -112,6 +112,20 @@ blc_setup_on_actions = {
             add_culture_tradition = tradition_frisian_freedom
         }
 
+        
+        #Assign landless characters to appropriate laamp title
+        ##Ellert
+        character:121066 ?= {
+            if = {
+                limit = {
+                    is_alive = yes
+                    has_government = landless_adventurer_government
+                }
+                add_realm_law_skip_effects = camp_purpose_brigands
+                add_courtier = character:121067 # Brammert
+                add_courtier = character:121068 # Marichen
+            }
+        }
 
         # Change the culture of existing characters
         ## House of Boulogne

@@ -241,3 +241,29 @@ d_picardy = {
 	}
 }
 
+# Wanderers
+house_ellerting = {
+	pattern="pattern__solid_designer.dds"
+	color1=red
+	color2=white
+	color3=blue
+	colored_emblem={
+		color1=white
+		texture="ce_wildman.dds"
+		instance={
+			position={ 0.700000 0.500000 }
+			scale={ -0.680000 0.680000 }
+		}
+
+		instance={
+			position={ 0.300000 0.500000 }
+			scale={ 0.680000 0.680000 }
+			depth=1.010000
+		}
+	}
+}
+
+ellerting = house_ellerting
+
+d_laamp_ellert = house_ellerting
+
