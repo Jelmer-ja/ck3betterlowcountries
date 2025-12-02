@@ -1,4 +1,4 @@
-﻿name_list_picard = {
+﻿name_list_walloon = {
 	cadet_dynasty_names = {
 		{ "dynnp_of" "dynn_Capet" }
 		"dynn_Fournier"
@@ -680,25 +680,18 @@
 	}
 
 	male_names = {
-		E_douard E_rrard E_tienne Adalbert AdE_mar Adrien Aimery Alain Aldebert AldE_ric Alphonse Amaury
-		AmE_dE_e Ancel AndrE_ Angelbert Antoine Archambaud Arnaud Arnault Arnoul Aubry Aymar BarthE_lE_mi
-		Baudouin BenoI_t BE_renger Bernard Bertrand Bohemond Boson Bouchard Centule Charles
-		Clotaire Ebbon Enguerrand Eudes Eustache Evrard Fabrice Foulques FranC_ois FrE_dE_ric GE_raud Gaucher Gaucelin
-		Gauthier Geoffroy GE_raud Gelduin Gilbert Gilles Godefroy Guichard Guiges Guilhem Guillaume
-		Guy HE_lie Hamelin Henri Herbert Hildebert Hugues Humbert Jacques JaufrE_ Jaspert Jean Josselin
-		Jourdain Julien LE_on LE_onard Lothaire Louis Loup ManassE_s Mathieu Maurice Nicolas Ogier Onfroy Orson Othon
-		Payen Philippe Pierre Raimbaut Raoul Raymond Raynaud Renaud Richard Robert Robin Roger
-		Rorgon Rorgues Roubaud Savary Sigismond Simon Thibault ThiE_baut Thierry Thomas Valeran Yves
-	}
+		Jean Henry Pierre Piron Gille Gillet Nicolas Jacque Lambert Guilleaume Matthieu
+		Gerard Francois Hubert Arnould Anthoine Leonard Martin Andre Thomas Simon Wathieu
+		Laurent Michel Louys Thierry Philippe Noel Renier Paul Toussainct Servais
+		Barthelemy Pasquay Gaspar George Denis Estienne Erasme Herman Baulduin Godefroid
+		Libert Charle Robert Engelbert Bertrand Melchior Sebastien Everard Remy Vincent
+		Adam Claude Gregoire Coune Wery Anselme Erard Quirin Alexandre Albert Bernard
+		Cornneille DieudonnE_ Eustache Remacle
+		}
 	female_names = {
-		E_lE_onore E_lodie E_tiennette AdE_le Adalmode Adelaide Adelinde Agathe AgnE_s AlE_arde Alice AliE_nor
-		Alix Almodis Amelie Anne Antoinette Arsinde Aude Aurengarde BE_atrice BE_atrix Belleassez BenoI_te BE_rengE_re
-		Berthe Blanche Bonne Bourgogne Bourguigne CE_cile CathE_rine Charlotte Constance Denise Douce Echive Eglantine
-		Elisabeth Emma Ermengarde Ermessinde Esclarmonde Euphrosine Eustachie Eve Gerberge
-		GisE_le Guillaumette HE_loise Helvis Hodierne Ide Ida IldE_garde Isabeau Isabelle Jeanne Judith
-		Julienne Mafalda Mahaut Margot Marguerite Marie Marthe Mascarose Mathilde ME_lisande
-		ME_lisende ME_lusine PE_ronelle Pernelle Perinne Pernette Plaisance Raymonde Sarrazine SolE_ne Sophie
-		StE_phanie Sybille Tiburge Valence Yolande
+		Marie Jeanne Catherine Anne Margueritte Elisabeth Barbe Adelaide Gertrude Ode
+		Idelette Agnes Gillette Martine Beatrix Adrianne Damidde Madeleine Mathilde
+		Pasquette Petronille Christine Agathe Odile Clemence Lucie Nicolle
 	}
 	dynasty_of_location_prefix = "dynnp_de"
 	grammar_transform = french
@@ -714,18 +707,15 @@
 	mat_grm_name_chance = 60
 	mother_name_chance = 10
 	
-	
-	
 	mercenary_names = {
-		{ name = "mercenary_company_tard_venus_1" }
-		{ name = "mercenary_company_french_band_1" }
-		{ name = "mercenary_company_routiers_1" }
-		{ name = "mercenary_company_french_band_2" }
+		{ name = "mercenary_company_walloon_band_1" }
+		{ name = "mercenary_company_walloon_band_2" }
+		{ name = "mercenary_company_walloon_band_3" }
+		{ name = "mercenary_company_walloon_band_4" }
 	}
 }
 
-name_list_walloon = {
-
+name_list_picard = {
 	cadet_dynasty_names = {
 		{ "dynnp_of" "dynn_Capet" }
 		"dynn_Fournier"
@@ -1407,25 +1397,20 @@ name_list_walloon = {
 	}
 
 	male_names = {
-		E_douard E_rrard E_tienne Adalbert AdE_mar Adrien Aimery Alain Aldebert AldE_ric Alphonse Amaury
-		AmE_dE_e Ancel AndrE_ Angelbert Antoine Archambaud Arnaud Arnault Arnoul Aubry Aymar BarthE_lE_mi
-		Baudouin BenoI_t BE_renger Bernard Bertrand Bohemond Boson Bouchard Centule Charles
-		Clotaire Ebbon Enguerrand Eudes Eustache Evrard Fabrice Foulques FranC_ois FrE_dE_ric GE_raud Gaucher Gaucelin
-		Gauthier Geoffroy GE_raud Gelduin Gilbert Gilles Godefroy Guichard Guiges Guilhem Guillaume
-		Guy HE_lie Hamelin Henri Herbert Hildebert Hugues Humbert Jacques JaufrE_ Jaspert Jean Josselin
-		Jourdain Julien LE_on LE_onard Lothaire Louis Loup ManassE_s Mathieu Maurice Nicolas Ogier Onfroy Orson Othon
-		Payen Philippe Pierre Raimbaut Raoul Raymond Raynaud Renaud Richard Robert Robin Roger
-		Rorgon Rorgues Roubaud Savary Sigismond Simon Thibault ThiE_baut Thierry Thomas Valeran Yves
+		Adan Ade Aliaume Amille Andriex Andrieu Anssiau Asson Auber Aubin
+		Bauduin Bekin Bernar Bertin Berton Bertran Bertremiex Bridoul
+		Clement Colar Colin Drieuon Driex Elluin Enguerran Ernoul Estevene Evain Everart
+		Franchois Flemin Gille Gillon Gontare Gore Gosselin Grigore Guerar Guerau Guilebert Guillame
+		Hainfroy Hanekin Hauy Havekin Henan Henri Herber HonnerE_ Hue Hubert Jake Jehan Lamber Leurench Lienor
+		Mahiex Martin Mathieu M_Edard Mikiel Nicaise Nicolon Oeude Onestasse Oudart Pierre Quenon
+		Raoul Renaut Renier Ricart Rikier Rober Sain Sevin Symon Tassart Tibaut Thumas Toussain
+		Vinchen Vuillain Wales Water Watier Wautier Weremon Wiet Wilart Willame Wion Wistasse
 	}
 	female_names = {
-		E_lE_onore E_lodie E_tiennette AdE_le Adalmode Adelaide Adelinde Agathe AgnE_s AlE_arde Alice AliE_nor
-		Alix Almodis Amelie Anne Antoinette Arsinde Aude Aurengarde BE_atrice BE_atrix Belleassez BenoI_te BE_rengE_re
-		Berthe Blanche Bonne Bourgogne Bourguigne CE_cile CathE_rine Charlotte Constance Denise Douce Echive Eglantine
-		Elisabeth Emma Ermengarde Ermessinde Esclarmonde Euphrosine Eustachie Eve Gerberge
-		GisE_le Guillaumette HE_loise Helvis Hodierne Ide Ida IldE_garde Isabeau Isabelle Jeanne Judith
-		Julienne Mafalda Mahaut Margot Marguerite Marie Marthe Mascarose Mathilde ME_lisande
-		ME_lisende ME_lusine PE_ronelle Pernelle Perinne Pernette Plaisance Raymonde Sarrazine SolE_ne Sophie
-		StE_phanie Sybille Tiburge Valence Yolande
+		Aelis AgnE_s Allot Anne Asseline Beetris Bourgue Deude Emme Emmeline Esteule Fourniere
+		Gillette Havis Helissent Heluys Jakemine Jehane Julienne Leurenche 
+		Margue Marguet Marguerie Marguerite Marion Maroie Marote Masille Mehaut Lilessent
+		Nicole Oeudain Perrote Roberte Sainte Sarre Thiephaine Vuaude Yde Ysabel
 	}
 	dynasty_of_location_prefix = "dynnp_de"
 	grammar_transform = french
@@ -1441,12 +1426,10 @@ name_list_walloon = {
 	mat_grm_name_chance = 60
 	mother_name_chance = 10
 	
-	
-	
 	mercenary_names = {
-		{ name = "mercenary_company_tard_venus_1" }
-		{ name = "mercenary_company_french_band_1" }
-		{ name = "mercenary_company_routiers_1" }
-		{ name = "mercenary_company_french_band_2" }
+		{ name = "mercenary_company_picard_band_1" }
+		{ name = "mercenary_company_picard_band_2" }
+		{ name = "mercenary_company_picard_band_3" }
+		{ name = "mercenary_company_picard_band_4" }
 	}
 }

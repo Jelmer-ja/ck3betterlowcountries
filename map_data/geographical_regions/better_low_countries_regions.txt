@@ -72,6 +72,9 @@ custom_core_greater_frisia = {
 		#d_slesvig
 		c_ribe
 
+		#d_utrecht
+		c_groningen
+
 		#d_holstein
 		c_stade
 		c_ditmarschen

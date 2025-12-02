@@ -10,7 +10,7 @@ d_lower_picardy = {
 }
 
 d_north_frisia = {
-	color = { 186 96 76 }
+	color = { 205 70 5 }
 
 	capital = c_ditmarschen
 }
@@ -39,6 +39,8 @@ k_new_frisia = {
 	color = { 190 90 10 }
 
 	capital = c_ostfriesland
+	
+	definite_form = yes
 }
 
 k_picardy = {
@@ -206,16 +208,22 @@ k_frisia = {
 	d_gelre = {
 		color = { 200 60 40 }
 
-		cultural_names = {
-			name_list_french = cn_gueldre
-			name_list_walloon = cn_gueldre
-			name_list_picard = cn_gueldre
-		}
-
 		capital = c_guelders #Geldern
 
 		c_guelders = {
 			color = { 200 60 40 }
+
+			cultural_names = {
+				name_list_dutch = cn_gelre
+				name_list_franconian = cn_geldern
+				name_list_saxon = cn_geldern
+				name_list_swabian = cn_geldern
+				name_list_bavarian = cn_geldern
+				name_list_french = cn_gueldre
+				name_list_walloon = cn_gueldre
+				name_list_picard = cn_gueldre
+				name_list_frisian = cn_gelderlan
+			}
 
 			b_geldern = {
 				province = 2450
@@ -226,6 +234,11 @@ k_frisia = {
 					name_list_french = cn_gueldre
 					name_list_walloon = cn_gueldre
 					name_list_picard = cn_gueldre
+					name_list_dutch = cn_gelre
+					name_list_franconian = cn_geldern
+					name_list_saxon = cn_geldern
+					name_list_swabian = cn_geldern
+					name_list_bavarian = cn_geldern
 				}
 			}
 			b_nijmegen = {
@@ -343,6 +356,9 @@ k_frisia = {
 
 		c_groningen = {
 			color = { 200 145 40 }
+			cultural_names = {
+				name_list_frisian = cn_drinte
+			}
 
 			b_groningen = {
 				province = 2417
@@ -414,6 +430,10 @@ k_frisia = {
 		c_ostfriesland = {
 			color = { 205 70 5 }
 
+			cultural_names = {
+				name_list_frisian = cn_eastfryslan
+			}
+
 			b_emden = {
 				province = 2418
 
@@ -477,6 +497,174 @@ k_frisia = {
 					name_list_frisian = cn_griend
 				}
 			}
+		}
+	}
+}
+
+d_holstein = {
+	color = { 172 112 112 }
+
+	capital = c_lubeck
+
+	c_lubeck = {
+		color = { 172 112 112 }
+
+		cultural_names = {
+			name_list_polabian = cn_liubice
+		}
+
+		b_lubeck = {
+			province = 2804
+
+			color = { 172 112 112 }
+
+			cultural_names = {
+				name_list_polabian = cn_liubice
+			}
+		}
+		b_femera = {
+			province = 2800
+
+			color = { 172 112 112 }
+		}
+		b_kiel = {
+			province = 2801
+
+			color = { 172 112 112 }
+		}
+	}
+	c_stade = {
+		color = { 175 100 115 }
+
+		cultural_names = {
+			name_list_frisian = cn_woersten
+		}
+
+		b_stade = {
+			province = 2795
+
+			color = { 175 100 115 }
+		}
+		b_bederkesa = {
+			province = 2791
+
+			color = { 175 100 115 }
+		}
+		b_cuxhaven = {
+			province = 2792
+
+			color = { 175 100 115 }
+		}
+	}
+	c_ditmarschen = {
+		color = { 165 95 100 }
+
+		cultural_names = {
+			name_list_frisian = cn_dietmarsen
+			name_list_dutch = cn_dietmarsen
+		}
+
+		b_ditmarschen = {
+			province = 2797
+
+			color = { 165 95 100 }
+
+			cultural_names = {
+				name_list_frisian = cn_dietmarsen
+				name_list_dutch = cn_dietmarsen
+			}
+		}
+		b_neumunster = {
+			province = 2799
+
+			color = { 165 95 100 }
+		}
+		b_itzehoe = {
+			province = 2798
+
+			color = { 165 95 100 }
+		}
+	}
+}
+
+d_slesvig = { # Schleswig
+	color = { 242 99 67 }
+
+	capital = c_slesvig
+
+	c_slesvig = {
+		color = { 216 89 60 }
+
+		b_hedeby = {
+			province = 62
+
+			color = { 216 89 60 }
+
+			cultural_names = {
+				name_list_norse = cn_heidabyr
+			}
+		}
+		b_aabenraa = {
+			province = 61
+
+			color = { 216 89 60 }
+
+			cultural_names = {
+				name_list_swedish = cn_abenra
+				name_list_franconian = cn_apenrade
+				name_list_saxon = cn_apenrade
+				name_list_swabian = cn_apenrade
+				name_list_bavarian = cn_apenrade
+			}
+		}
+		b_husumbro = {
+			province = 84
+
+			color = { 216 89 60 }
+		}
+	}
+
+	c_vorbasse = {
+		color = { 160 43 17 }
+
+		b_vorbasse = {
+			province = 59
+
+			color = { 160 43 17 }
+		}
+		b_taulov = {
+			province = 227
+
+			color = { 160 43 17 }
+		}
+		b_kolding = {
+			province = 434
+
+			color = { 160 43 17 }
+		}
+	}
+
+	c_ribe = {
+		color = { 186 96 76 }
+
+		cultural_names = {
+			name_list_frisian = cn_noardfryslan
+		}
+
+		b_ribe = {
+			province = 60
+
+			color = { 186 96 76 }
+		}
+		b_varde = {
+			province = 83
+
+			color = { 186 96 76 }
+		}
+		b_strand = {
+			province = 220
+
+			color = { 186 96 76 }
 		}
 	}
 }

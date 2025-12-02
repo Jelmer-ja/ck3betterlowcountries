@@ -1,0 +1,22 @@
+﻿potestate_frisian_male = {
+	type = character
+	gender = male
+	special = holder
+	tier = kingdom
+	priority = 100
+	titles = { k_new_frisia }
+}
+potestate_frisian_female = {
+	type = character
+	gender = female
+	special = holder
+	tier = kingdom
+	priority = 100
+	titles = { k_new_frisia }
+}
+potestate_frisian = {
+	type = title
+	tier = kingdom
+	priority = 100
+	titles = { k_new_frisia }
+}

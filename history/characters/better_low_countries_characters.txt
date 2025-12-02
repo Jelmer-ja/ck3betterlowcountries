@@ -65,7 +65,7 @@
 }
 
 121068 = {
-	name = "Marichen" #Marieke van de Ellert-en-Brammertsaga
+	name = "Marieke" #Marieke van de Ellert-en-Brammertsaga
 	religion = "catholic"
 	culture = "saxon"
 	female = yes

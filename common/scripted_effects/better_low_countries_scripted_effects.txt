@@ -67,12 +67,13 @@ form_new_frisia_kingdom_scripted_effect = {
 	title:d_frisia.de_jure_liege = { save_scope_as = previous_kingdom }
 
 	#De jure shifts
-	title:d_picardy = { set_de_jure_liege_title = title:k_new_frisia }
+	title:d_frisia = { set_de_jure_liege_title = title:k_new_frisia }
 	title:d_north_frisia = { set_de_jure_liege_title = title:k_new_frisia }
 	title:c_westfriesland = { set_de_jure_liege_title = title:d_frisia }
+	title:c_groningen = { set_de_jure_liege_title = title:d_frisia }
 	title:c_ditmarschen = { set_de_jure_liege_title = title:d_north_frisia }
-	title:c_ribe = { set_de_jure_liege_title = title:d_north_frisia }
 	title:c_stade = { set_de_jure_liege_title = title:d_north_frisia }
+	title:c_ribe = { set_de_jure_liege_title = title:d_north_frisia }
 
 	create_title_and_vassal_change = {
 		type = created
@@ -115,6 +116,7 @@ form_new_frisia_kingdom_scripted_effect = {
 		title:d_holland = { set_de_jure_liege_title = title:k_lotharingia }
 		title:d_gelre = { set_de_jure_liege_title = title:k_lotharingia }
 		title:d_utrecht = { set_de_jure_liege_title = title:k_lotharingia }
+		title:d_slesvig = { set_de_jure_liege_title = title:k_denmark }
 	}
 	add_prestige = major_prestige_gain
 }
@@ -175,16 +177,6 @@ form_netherlands_scripted_effect = {
 		}
 	}
 	add_prestige = major_prestige_gain
-	if = {
-		limit = {
-			OR = {
-				has_realm_law = crown_authority_0
-				has_realm_law = crown_authority_1
-				has_realm_law = crown_authority_2
-			}
-		}
-		add_realm_law_skip_effects = crown_authority_3
-	}
 }
 
 

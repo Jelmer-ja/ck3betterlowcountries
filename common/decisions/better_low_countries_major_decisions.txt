@@ -134,7 +134,6 @@ form_new_frisia_kingdom_decision = {
 		}
 		#No kings or emperors.
 		highest_held_title_tier <= tier_duchy
-		#Must be within an empire.
 		culture = culture:frisian
 		any_sub_realm_county = {
 			title_province = { geographical_region = custom_core_greater_frisia }
@@ -153,6 +152,10 @@ form_new_frisia_kingdom_decision = {
 					NOT = { culture = culture:frisian }
 				}
 			}
+		}
+		OR = {
+			top_liege = this
+			top_liege.primary_title.tier >= tier_empire
 		}
 	}
 
