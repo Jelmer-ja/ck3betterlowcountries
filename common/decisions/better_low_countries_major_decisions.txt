@@ -42,13 +42,16 @@ form_netherlands_kingdom_decision = {
 		prestige_level >= high_prestige_level
 		#And at least Holland, Brabant, Gelre, Julich, Flanders, Utrecht and Luxemburg.
 		completely_controls_region = custom_core_netherlands
+		OR = {
+			top_liege = this
+			top_liege.primary_title.tier >= tier_empire
+		}
 	}
 
 	is_valid_showing_failures_only = {
 		is_landed = yes
 		is_capable_adult = yes
 		is_imprisoned = no
-		top_liege != this
 		is_at_war = no
 	}
 

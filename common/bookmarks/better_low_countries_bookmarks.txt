@@ -1,4 +1,4 @@
-bm_867_sack_of_dorestad = {
+bm_867_dorestad = {
 	start_date = 867.1.1
 	is_playable = yes
 	group = bm_group_867
@@ -11,7 +11,7 @@ bm_867_sack_of_dorestad = {
 	# Baldwin I, Count of Flanders ID: 90109
 	character = {
 		name = "bookmark_dorestad_boudewijn"
-		dynasty = 812
+		dynasty = 724
 		dynasty_splendor_level = 1
 		type = male
 		birth = 840.1.1
@@ -27,7 +27,7 @@ bm_867_sack_of_dorestad = {
 
 		# Judith, Wife
 		character = {
-			name = "bookmark_persia_yaqub_alt_amr"
+			name = "bookmark_dorestad_boudewijn_alt_judith"
 			relation = "BOOKMARK_RELATION_WIFE"
             dynasty = 25061
 			type = female
@@ -40,9 +40,9 @@ bm_867_sack_of_dorestad = {
 
 		# Charles the Bald, liege
 		character = {
-			name = "bookmark_persia_yaqub_alt_sebuk_eri"
+			name = "bookmark_dorestad_boudewijn_alt_charles"
 			relation = "BOOKMARK_RELATION_LIEGE"
-			dynasty = turkic_Sebukid
+			dynasty = 25061
 			type = male
             birth = 823.1.14
             culture = french
@@ -52,108 +52,94 @@ bm_867_sack_of_dorestad = {
 		}
 	}
 
-	# Ubbe "Skylding" Ubbing, son of Ragnar Lothbrok, Count of Zeeland ID: 163157
+	# Ubbe "Skylding" Ubbing, son of Ragnar Lothbrok, Count of Zeeland ID: 163119
 	character = {
 		name = "bookmark_dorestad_ubbe"
-		dynasty_house = house_ubbing
+		dynasty = 7514
 		dynasty_splendor_level = 2
 		type = male
-		birth = 849.5.3
+		birth = 827.1.1
 		title = c_zeeland
 		government = feudal_government
 		culture = norse
-		religion = asatru 
-		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
-		history_id = 163157
+		religion = norse_pagan 
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
+		history_id = 163119
 		position = { 830 200 }
 		
-		animation = frontend_left_idle
+		animation = personality_callous
 
-		# Hvitserk, brother, ID: 163099
+		# Hvitserk, brother, ID: 163112
 		character = {
-			name = "bookmark_persia_ismail_alt_nasr"
-			relation = "BOOKMARK_RELATION_LIEGE_AND_BROTHER"
-			dynasty_house = house_hvitserk
+			name = "bookmark_dorestad_ubbe_alt_hvitserk"
+			relation = "BOOKMARK_RELATION_BROTHER"
+			dynasty = 7514
 			type = male
-			birth = 830.9.1
+			birth = 828.1.1
 			culture = norse
-			religion = maturidi
-			history_id = asatru
-			animation = personality_vengeful
+			religion = norse_pagan
+			history_id = 163112
+			animation = personality_callous
 		}
 	}
 
-	# Gerulf I, Count of Holland ID: 1000230509
+	# Gerald I, Count of Holland ID: 31060
 	character = {
-		name = "bookmark_persia_muhammad_ibn_abdallah"
+		name = "bookmark_dorestad_gerulf"
 		dynasty = 811
 		dynasty_splendor_level = 2
 		type = male
-		birth = 820.3.2
-		title = d_fars
-		government = clan_government
+		birth = 835.1.1
+		title = c_holland
+		government = feudal_government
 		culture = dutch
 		religion = catholic
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
-		history_id = 1000230509
+		history_id = 31060
 		position = { 375 790 }
 		
-		animation = schadenfreude
+		animation = personality_cynical
 
-		# The Caliph Al-Mu'tazz, liege lord, ID: 34014
+		#Aleidis, sister, ID: 168629
 		character = {
-			name = "bookmark_persia_muhammad_ibn_abdallah_alt_caliph"
-			relation = "BOOKMARK_RELATION_LIEGE"
-			dynasty_house = house_abbasid
-			type = male
-			birth = 847.1.1
-			culture = levantine
-			religion = ashari
-			history_id = 34014
+			name = "bookmark_dorestad_gerulf_alt_aleidis"
+			relation = "BOOKMARK_RELATION_SISTER"
+			dynasty_house = house_gerulfing
+			type = female
+			birth = 838.1.1
+			culture = dutch
+			religion = catholic
+			history_id = 168629
 			animation = personality_compassionate 
-		}
-
-		# Muhammad ibn Tahir, nephew, ID: 163100
-		character = {
-			name = "bookmark_persia_muhammad_ibn_abdallah_alt_muhammad_ibn_tahir"
-			relation = "BOOKMARK_RELATION_NEPHEW"
-			dynasty = 811
-			type = male
-			birth = 840.2.5
-			culture = tajik
-			religion = ashari
-			history_id = 163100
-			animation = war_over_loss
 		}
 	}
 
-	# Hrorekr Hemmingrson, Duke of Holland ID: 45105
+	# Hrorekr Hemmingrson, Duke of Holland ID: 167782
 	character = {
 		name = "bookmark_dorestad_rorik"
-		dynasty_house = house_bavandid
-		dynasty_splendor_level = 4
+		dynasty = 9552
 		type = male
-		birth = 845.3.5
-		title = c_mazandaran
-		government = clan_government
-		culture = daylamite
-		religion = ashari
-		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
-		history_id = 45105
+		birth = 820.1.1
+		title = d_frisia
+		government = feudal_government
+		culture = norse
+		religion = catholic
+		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
+		history_id = 167782
 		position = { 475 400 }
 		
 		animation = personality_bold
 
-		# Hasan the Missionary, liege lord, ID: 45108 # Hasan ibn Zayd
+		# Harald, brother, ID: 167783
 		character = {
-			name = "bookmark_persia_rostam_alt_hasan"
-			relation = "BOOKMARK_RELATION_LIEGE"
-			dynasty = 7296
+			name = "bookmark_dorestand_rork_alt_haraldr"
+			relation = "BOOKMARK_RELATION_NEPHEW"
+			dynasty = 9552
 			type = male
-			birth = 830.2.25
-			culture = bedouin
-			religion = zayidi
-			history_id = 45108
+			birth = 822.1.1
+			culture = norse
+			religion = norse_pagan
+			history_id = 167783
 			animation = spymaster
 		}
 	}

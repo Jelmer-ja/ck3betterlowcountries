@@ -24,6 +24,7 @@
 		}
 	}
 
+	custom_tooltip = form_picardy_modifier_tooltip
 	title:k_picardy = {
 		every_in_de_jure_hierarchy = {
 			limit = {
@@ -87,6 +88,7 @@ form_new_frisia_kingdom_scripted_effect = {
 		}
 	}
 
+	custom_tooltip = form_new_frisia_modifier_tooltip
 	title:k_new_frisia = {
 		every_in_de_jure_hierarchy = {
 			limit = {
@@ -108,7 +110,7 @@ form_new_frisia_kingdom_scripted_effect = {
 
 	resolve_title_and_vassal_change = scope:change
 	hidden_effect = { 
-		#Set primary title to Picardy
+		#Set primary title to Frisia
 		set_primary_title_to = title:k_new_frisia
 		title:k_new_frisia = {
 			set_de_jure_liege_title = scope:previous_kingdom.de_jure_liege

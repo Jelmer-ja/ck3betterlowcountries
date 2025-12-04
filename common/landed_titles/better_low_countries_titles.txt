@@ -29,6 +29,20 @@ d_laamp_ellert = {
 	ai_primary_priority = { add = @never_primary_score }
 }
 
+d_laamp_eirikr = { # Eirikr
+	color = { 100 100 100 }
+	capital = c_north_riding
+
+	definite_form = yes
+	landless = yes
+	require_landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
 k_netherlands = {
 	color = { 235 80 30 }
 
@@ -78,7 +92,7 @@ k_frisia = {
 					culture = culture:frisian
 					culture = culture:dutch
 				}
-				faith = faith:asatru
+				faith = { religion_tag = germanic_religion }
 			}
 			add = @correct_culture_primary_score
 		}
@@ -175,6 +189,7 @@ k_frisia = {
 				name_list_french = cn_zelande
 				name_list_walloon = cn_zelande
 				name_list_picard = cn_zelande
+				name_list_norse = cn_skyld
 			}
 
 			b_middelburg = {
@@ -184,6 +199,7 @@ k_frisia = {
 
 				cultural_names = {
 					name_list_frisian = cn_middelburch
+					name_list_norse = cn_walcheren
 				}
 			}
 
