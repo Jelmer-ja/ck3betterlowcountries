@@ -20,3 +20,9 @@ potestate_frisian = {
 	priority = 100
 	titles = { k_new_frisia }
 }
+haadling_frisian = {
+	type = character
+	special = holder
+	tier = county
+	priority = 7
+}

@@ -15,7 +15,7 @@ d_north_frisia = {
 	capital = c_ditmarschen
 }
 
-d_laamp_ellert = {
+d_laamp_ellert = { #Ellert
 	color = { 186 96 76 }
 	capital = c_groningen
 
@@ -32,6 +32,20 @@ d_laamp_ellert = {
 d_laamp_eirikr = { # Eirikr
 	color = { 100 100 100 }
 	capital = c_north_riding
+
+	definite_form = yes
+	landless = yes
+	require_landless = yes
+	ruler_uses_title_name = no
+	no_automatic_claims = yes
+	destroy_if_invalid_heir = yes
+
+	ai_primary_priority = { add = @never_primary_score }
+}
+
+d_laamp_radboud = { # Waldger
+	color = { 100 100 100 }
+	capital = c_westfriesland
 
 	definite_form = yes
 	landless = yes

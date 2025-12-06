@@ -315,3 +315,5 @@ house_thora = {
 }
 
 d_laamp_eirikr = house_thora
+
+d_laamp_radboud = k_frisia

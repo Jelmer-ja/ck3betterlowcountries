@@ -5,5 +5,5 @@
 
 house_thora = { # Sigurdr cadets
 	name = "dynn_Thora"
-	dynasty = 490#Sigurdr
+	dynasty = 490 #Sigurdr
 }

@@ -77,10 +77,7 @@ blc_setup_on_actions = {
         # Move the capital of Picardy from Vermandois to Amiens
         ## Work only on d_picardy
         title:d_picardy = {
-            # Save old capital (for the duchy-building hack)
             title_capital_county = { save_scope_as = old_capital }
-        
-            # Set new de jure capital
             set_capital_county = title:c_amiens
         }
         hidden_effect = {
@@ -111,7 +108,7 @@ blc_setup_on_actions = {
         }
 
         #Character preparation
-        ##Ellert
+        ##Ellert details
         character:121066 ?= {
             if = {
                 limit = {
@@ -120,7 +117,26 @@ blc_setup_on_actions = {
                 }
                 add_realm_law_skip_effects = camp_purpose_brigands
                 add_courtier = character:121067 # Brammert
-                add_courtier = character:121068 # Marichen
+                add_courtier = character:121068 # Marieke
+            }
+        }
+
+        ##Radboud details
+        character:168628 ?= {
+            if = {
+                limit = {
+                    is_alive = yes
+                    has_government = landless_adventurer_government
+                }
+                add_realm_law_skip_effects = camp_purpose_mercenaries
+                set_relation_rival = { target = character:45105 reason = rival_historical } # Rorik would face a Frisian uprising around 870
+                set_culture = culture:frisian
+                spawn_army = {
+                    name = event_troop_default_name
+                    levies = 500
+                    location = province:2405
+                    origin = province:2405
+                }
             }
         }
 
