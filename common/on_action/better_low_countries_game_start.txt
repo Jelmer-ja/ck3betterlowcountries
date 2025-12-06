@@ -6,6 +6,15 @@
 
 blc_setup_on_actions = {
     effect = {
+        #Change existing cultures
+        ##Change the traditions of the Frisian culture
+        culture:frisian = {
+            remove_culture_tradition = tradition_zealous_people
+            remove_culture_tradition = tradition_battlefield_looters
+            add_culture_tradition = tradition_religious_patronage
+            add_culture_tradition = tradition_frisian_freedom
+        }
+
         # Convert county cultures to mod standard
         ##Frisian
         title:c_westfriesland = { set_county_culture = culture:frisian }
@@ -101,8 +110,7 @@ blc_setup_on_actions = {
             }
         }
 
-
-        #Move titles between characters
+        #Character preparation
         ##Ellert
         character:121066 ?= {
             if = {

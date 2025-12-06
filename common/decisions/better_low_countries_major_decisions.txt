@@ -42,9 +42,12 @@ form_netherlands_kingdom_decision = {
 		prestige_level >= high_prestige_level
 		#And at least Holland, Brabant, Gelre, Julich, Flanders, Utrecht and Luxemburg.
 		completely_controls_region = custom_core_netherlands
-		OR = {
-			top_liege = this
-			top_liege.primary_title.tier >= tier_empire
+		custom_tooltip = {
+			text = liege_is_emperor_or_independent_requirement_tt
+			OR = {
+				top_liege = this
+				top_liege.primary_title.tier >= tier_empire
+			}
 		}
 	}
 
@@ -156,9 +159,12 @@ form_new_frisia_kingdom_decision = {
 				}
 			}
 		}
-		OR = {
-			top_liege = this
-			top_liege.primary_title.tier >= tier_empire
+		custom_tooltip = {
+			text = liege_is_emperor_or_independent_requirement_tt
+			OR = {
+				top_liege = this
+				top_liege.primary_title.tier >= tier_empire
+			}
 		}
 	}
 

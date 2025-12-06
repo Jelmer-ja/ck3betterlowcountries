@@ -1,43 +1,40 @@
 ﻿l_english:
  bm_867_dorestad:0 "The Sack of Dorestad"
- bm_867_dorestad_desc:1 ""
+ bm_867_dorestad_desc:0 ""
  
- #Boudewijn
  bookmark_dorestad_boudewijn:0 "Duke Boudewijn"
- bookmark_dorestad_boudewijn_subheading: "$BOOKMARK_SUBHEADING_DEFAULT$"
- bookmark_dorestad_boudewijn_desc:0 "#!"
+ bookmark_dorestad_boudewijn_subheading:0 "$BOOKMARK_SUBHEADING_DEFAULT$"
+ bookmark_dorestad_boudewijn_desc:0 ""
 
  bookmark_dorestad_boudewijn_alt_judith:0 "$Judith$"
+ bookmark_dorestad_boudewijn_alt_judith_desc:0 "alt desc"
  bookmark_dorestad_boudewijn_alt_charles:0 "$Charles$"
+ bookmark_dorestad_boudewijn_alt_charles_desc:0 "alt desc"
 
- #Ubbe
- bookmark_dorestad_ubbe:0 "Ubbe Skylding"
- bookmark_dorestad_ubbe_subheading: "$BOOKMARK_SUBHEADING_DEFAULT_WITH_THE$"
- bookmark_dorestad_ubbe_desc:0 "#!"
+ bookmark_dorestad_ubbe:0 "Ubbe Ragnarsson"
+ bookmark_dorestad_ubbe_subheading:0 "$BOOKMARK_SUBHEADING_DEFAULT_WITH_THE$"
+ bookmark_dorestad_ubbe_desc:0 ""
 
  bookmark_dorestad_ubbe_alt_hvitserk:0 "$Halfdan$"
  bookmark_dorestad_ubbe_alt_hvitserk_desc:0 "alt desc"
 
- #Sigurdr Snake-in-the-eye
  bookmark_dorestad_gerulf:0 "Count Gerulf"
- bookmark_dorestad_gerulf_subheading: "$BOOKMARK_SUBHEADING_DEFAULT$"
- bookmark_dorestad_gerulf_desc:1 "#!"
+ bookmark_dorestad_gerulf_subheading:0 "$BOOKMARK_SUBHEADING_DEFAULT$"
+ bookmark_dorestad_gerulf_desc:0 ""
 
  bookmark_dorestad_gerulf_alt_aleidis:0 "$Aleidis$"
  bookmark_dorestad_gerulf_alt_aleidis_desc:0 "alt desc"
 
- # Björn Ironside
  bookmark_dorestad_rorik:0 "Hrorekr Hemmingrson"
- bookmark_dorestad_rorik_subheading: "$BOOKMARK_SUBHEADING_DEFAULT$"
- bookmark_dorestad_rorik_desc:0 "#!"
+ bookmark_dorestad_rorik_subheading:0 "$BOOKMARK_SUBHEADING_DEFAULT$"
+ bookmark_dorestad_rorik_desc:0 ""
 
  bookmark_dorestad_rorik_alt_harald:0 "$Harald$"
  bookmark_dorestad_rorik_alt_harald_desc:0 "alt desc"
 
- #Earl Alfred (the great)
  bookmark_dorestad_ellert:0 "Ellert and Brammert"
- bookmark_dorestad_ellert_subheading: "$BOOKMARK_SUBHEADING_DEFAULT$"
- bookmark_dorestad_ellert_desc:0 "#!"
+ bookmark_dorestad_ellert_subheading:0 "$BOOKMARK_SUBHEADING_DEFAULT$"
+ bookmark_dorestad_ellert_desc:0 ""
 
- bookmark_dorestad_ellert_alt_brammert:0 "$Ellert$"
+ bookmark_dorestad_ellert_alt_brammert:0 "$Brammert$"
  bookmark_dorestad_ellert_alt_brammert_desc:0 "alt desc"

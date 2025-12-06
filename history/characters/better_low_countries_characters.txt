@@ -190,11 +190,10 @@
 	}
 }
 
-#Ubbe's hypothetical Frisian mother Gisla Esbjornsdotter
+#Ubbe's hypothetical Frisian mother Gisla Esbjornsdottir
 121071 = { 
 	name = "Gisla" 
 	female = yes
-	dynasty = 246
 	religion = catholic
 	culture = frisian
 	800.1.1 = {

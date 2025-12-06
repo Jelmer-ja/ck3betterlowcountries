@@ -26,6 +26,41 @@
 	}
 }
 
+k_netherlands_norse = {
+	pattern="pattern_solid.dds"
+	color1=orange
+	color2=white
+	color3=black
+	colored_emblem={
+		color1=white
+		texture="ce_rune_futhark_reid.dds"
+		instance={
+			position={ 0.720000 0.280000 }
+			scale={ 0.330000 0.330000 }
+		}
+	}
+
+	colored_emblem={
+		color1=white
+		texture="ce_norse_bird_alstad.dds"
+		instance={
+			scale={ 0.700000 0.700000 }
+			depth=2.010000
+		}
+	}
+
+	colored_emblem={
+		color1=white
+		texture="ce_rune_futhark_naudr.dds"
+		instance={
+			position={ 0.270000 0.280000 }
+			scale={ 0.350000 0.350000 }
+			depth=1.010000
+		}
+	}
+}
+
+
 k_new_frisia = {
 	pattern="temp_pattern_bendy_special.dds"
 	color1=blue_light

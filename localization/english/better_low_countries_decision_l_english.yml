@@ -26,6 +26,7 @@
  form_netherlands_kingdom_decision_effect_frisia_tooltip:1 "If you [completely_control|E] the [frisia.GetName], it will become part of [netherlands.GetName]"
  form_netherlands_kingdom_decision_effect_picardy_tooltip:1 "If you [completely_control|E] the [picardy.GetName], it will become part of [netherlands.GetName]"
  picardy_culture_requirement_tt:1 "All countries in the region of $custom_core_picardy$ must be of the [GetCultureByKey('picard').GetName] culture"
+ liege_is_emperor_or_independent_requirement_tt:0 "You are either independent or your liege must be an emperor or hegemon"
  new_frisia_culture_requirement_tt:1 "All countries in the region of $custom_core_greater_frisia$ must be of the [GetCultureByKey('frisian').GetName] culture"
  form_picardy_modifier_tooltip:0 "All countries in the $custom_core_picardy$ region will receive the [GetModifier('new_picardy_modifier').GetNameWithTooltip] modifier for 40 years."
  form_new_frisia_modifier_tooltip:0 "All countries in the $custom_core_greater_frisia$ region will receive the [GetModifier('new_frisia_modifier').GetNameWithTooltip] modifier 40 years."
