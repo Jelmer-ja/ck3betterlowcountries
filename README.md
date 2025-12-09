@@ -1,11 +1,11 @@
-An flavor mod for the Low Countries region. The current features are as follows:
+A flavor mod for the Low Countries region. The current features are as follows:
 
 * New culture setup with two new cultures, Picard and Walloon, as well as a reworked Frisian culture. Picard and Frisian each get a new unique tradition. Picard and Walloon have their own separate name lists, though house and dynasty names will still use the French list. 
 * New title localization for counties and baronies in Dutch, French, Walloon, Picard and Frisian for the Low Countries region
 * A new de jure setup with Picardy as a separate duchy
-* Three new realm decisions (Unite the Netherlands, A New Frisian Realm and Picard Nationhood).
+* Four new realm decisions (Unite the Netherlands, Restore Old Saxony, A New Frisian Realm and Picard Nationhood).
 * 12 new special buildings for the Low Countries region and northern France. Some of these are nerfed versions of buildings taken from Europa Magnifica, others are original.
-* A new bookmark for 867 with a slightly revised character setup. Ubbe Ragnarsson now rules Zeeland (based on the historical theory that he was based in Walcheren before leaving to support the Great Heathen Army) and is involved in his brothers' wars against the Saxons. Gerulf has been moved to the County of Holland. Three new wanderers have been added as well, including Ragnar's missing sons Eirikr and Agnarr, the legendary giants Ellert and Brammert, and the Frisian Waldger Radboudszoon. 
+* A new bookmark for 867 with a slightly revised character setup. Ubbe Ragnarsson now rules Zeeland (based on the historical theory that he was based in Walcheren before leaving to support the Great Heathen Army) and is involved in his brothers' wars against the Saxons. Gerulf has been moved to the County of Holland. Three new wanderers have been added as well, including Ragnar's missing sons Eirikr and Agnarr, the legendary giants Ellert and Brammert, and the Frisian Radboud Waldgerszoon. 
 
 Currently in development:
 * Various folklore-related events and characters

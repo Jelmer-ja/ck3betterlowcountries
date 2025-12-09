@@ -86,3 +86,13 @@ custom_core_greater_frisia = {
 		c_ditmarschen
 	}
 }
+
+custom_core_saxony = {
+	duchies = {
+		#k_east_francia
+		d_ostfalen
+		d_westfalen
+		d_angria
+		d_holstein
+	}
+}

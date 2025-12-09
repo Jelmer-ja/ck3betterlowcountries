@@ -1,0 +1,6 @@
+#mx_cue_better_low_countries_giants = {
+#	music = "event:/MUSIC/Cues/Events/Sacral Happening/mx_cue_epic_sacral_moment"
+#	pause_factor = 25
+#	# Cooldown
+#	years = 2
+#}

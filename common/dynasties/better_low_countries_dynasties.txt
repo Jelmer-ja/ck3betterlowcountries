@@ -2,3 +2,7 @@
 	name = "dynn_Ellerting"
 	culture = saxon
 }
+esbjorning = {
+	name = "dynn_Esbjorning"
+	culture = frisian
+}

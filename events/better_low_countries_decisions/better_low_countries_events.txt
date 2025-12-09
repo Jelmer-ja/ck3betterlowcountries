@@ -135,3 +135,24 @@ better_low_countries_decisions.0004 = {
 		name = better_low_countries_decisions.0004.a
 	}
 }
+
+#Restore Saxony
+better_low_countries_decisions.0005 = {
+	type = character_event
+	title = better_low_countries_decisions.0005.t
+	desc = better_low_countries_decisions.0005.desc
+	theme = realm
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		restore_pagan_saxony_scripted_effect = yes
+		legend_seed_new_title_effect = yes
+	}
+	option = {
+		name = better_low_countries_decisions.0005.a
+	}
+}

@@ -190,16 +190,33 @@
 	}
 }
 
-#Ubbe's hypothetical Frisian mother Gisla Esbjornsdottir
+#Ubbe's hypothetical Frisian mother Gisla Esbjornsdottir and her father
 121071 = { 
-	name = "Gisla" 
+	name = "Gisla"
+	dynasty_house = house_esbjorning
 	female = yes
 	religion = catholic
 	culture = frisian
+	trait = shy
+	father = 121072
 	800.1.1 = {
 		birth = yes
 	}
 	848.1.1 = {
+		death = yes
+	}
+}
+
+121072 = { 
+	name = "Esbjorn"
+	dynasty_house = house_esbjorning
+	religion = catholic
+	culture = frisian
+	trait = stubborn
+	733.1.1 = {
+		birth = yes
+	}
+	810.1.1 = {
 		death = yes
 	}
 }

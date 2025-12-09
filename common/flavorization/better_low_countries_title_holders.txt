@@ -20,9 +20,21 @@ potestate_frisian = {
 	priority = 100
 	titles = { k_new_frisia }
 }
-haadling_frisian = {
+count_feudal_male_frisian = {
 	type = character
+	gender = male
 	special = holder
 	tier = county
-	priority = 7
+	priority = 100
+	governments = { tribal_government feudal_government }
+	name_lists = { name_list_frisian }
+}
+count_feudal_female_frisian = {
+	type = character
+	gender = female
+	special = holder
+	tier = county
+	priority = 100
+	governments = { tribal_government feudal_government }
+	name_lists = { name_list_frisian }
 }

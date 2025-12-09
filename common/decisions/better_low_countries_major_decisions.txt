@@ -82,6 +82,11 @@ form_netherlands_kingdom_decision = {
 			multiply = 3
 			round = yes
 		}
+		piety = {
+			value = major_piety_gain
+			multiply = 3
+			round = yes
+		}
 	}
 
 	effect = {
@@ -329,6 +334,112 @@ form_picardy_kingdom_decision = {
 			}
 			set_global_variable = {
 				name = flag_formed_picardy_kingdom
+				value = root
+			}
+		}
+	}
+	
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+restore_pagan_saxony_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_restore_pagan_saxony.dds"
+	}
+	desc = restore_pagan_saxony_desc
+	selection_tooltip = restore_pagan_saxony_decision_tooltip
+	decision_group_type = major
+
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 120
+		kingdom = 120
+		empire = 0
+		hegemony = 0
+	}
+
+	is_shown = {
+		NOT = { exists = title:k_saxony.holder }
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_restored_pagan_saxony
+			}
+		}
+		any_sub_realm_county = {
+			title_province = { geographical_region = custom_core_saxony }
+		}
+		faith.religion = faith:norse_pagan.religion
+	}
+
+	is_valid = {
+		# Independents only.
+		top_liege = this
+		prestige_level >= high_prestige_level
+		completely_controls_region = custom_core_saxony		
+	}
+
+	is_valid_showing_failures_only = {
+		is_landed = yes
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_at_war = no
+	}
+
+	cost = {
+		gold = {
+			value = 0
+			if = {
+				limit = {
+					has_treasury = no
+				}
+				add = 500
+			}
+		}
+		treasury = {
+			value = 0
+			if = {
+				limit = {
+					has_treasury = yes
+				}
+				add = 500
+			}
+		}
+		prestige = {
+			value = major_prestige_gain
+			multiply = 3
+			round = yes
+		}
+		piety = {
+			value = major_piety_gain
+			multiply = 3
+			round = yes
+		}
+	}
+
+	effect = {
+		gain_heroic_legend_seed_tooltip_effect = yes
+
+		show_as_tooltip = {
+			restore_pagan_saxony_scripted_effect = yes
+		}
+		trigger_event = {
+			id = better_low_countries_decisions.0005
+		}
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_restored_pagan_saxony
+			}
+			set_global_variable = {
+				name = flag_restored_pagan_saxony
 				value = root
 			}
 		}
