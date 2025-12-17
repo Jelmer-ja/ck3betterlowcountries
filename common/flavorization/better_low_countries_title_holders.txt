@@ -38,3 +38,31 @@ count_feudal_female_frisian = {
 	governments = { tribal_government feudal_government }
 	name_lists = { name_list_frisian }
 }
+title_prince = {
+	type = character
+	gender = male
+	special = holder
+	priority = 60
+	titles = { k_switzerland k_armenian_principality }
+	flavourization_rules = { 
+		top_liege = no
+	}
+}
+title_princess = {
+	type = character
+	gender = female
+	special = holder
+	priority = 60
+	titles = { k_switzerland k_armenian_principality }
+	flavourization_rules = { 
+		top_liege = no
+	}
+}
+title_principality = {
+	type = title
+	titles = { k_armenian_principality }
+	priority = 60
+	flavourization_rules = { 
+		top_liege = no
+	}
+}

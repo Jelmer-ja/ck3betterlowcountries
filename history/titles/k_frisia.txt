@@ -1076,10 +1076,8 @@ c_ostfriesland = {
 		holder = 212908
 	}
 	1142.1.1 = {
-		holder = 212600 # Henry the Lion
-	}
-	1180.9.16 = {
 		liege = "e_hre"
+		holder = frisian0001 # Replacement for Henry the Lion
 	}
 	1195.8.6 = {
 		holder = 462801

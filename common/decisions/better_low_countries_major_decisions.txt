@@ -352,7 +352,7 @@ restore_pagan_saxony_decision = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/decision_restore_pagan_saxony.dds"
 	}
-	desc = restore_pagan_saxony_desc
+	desc = restore_pagan_saxony_decision_desc
 	selection_tooltip = restore_pagan_saxony_decision_tooltip
 	decision_group_type = major
 
