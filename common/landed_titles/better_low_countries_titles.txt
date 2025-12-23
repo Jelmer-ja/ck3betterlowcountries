@@ -80,7 +80,7 @@ k_picardy = {
 k_frisia = {
 	color = { 245 100 20 }
 
-	capital = c_holland #Holland
+	capital = c_utrecht #Holland
 
 	can_create_on_partition = {
 		faith = { religion_tag = germanic_religion }

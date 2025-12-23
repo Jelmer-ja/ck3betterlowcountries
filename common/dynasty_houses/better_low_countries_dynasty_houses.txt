@@ -8,7 +8,12 @@ house_thora = { # Sigurdr cadets
 	dynasty = 490 #Sigurdr
 }
 
-house_esbjorning {
+house_esbjorning = {
 	name = "dynn_Esbjorning"
 	dynasty = esbjorning
+}
+
+house_lagertha = { # Sigurdr cadets
+	name = "dynn_Lagertha"
+	dynasty = 490 #Sigurdr
 }

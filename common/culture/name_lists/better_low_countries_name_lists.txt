@@ -686,12 +686,12 @@
 		Barthelemy Pasquay Gaspar George Denis Estienne Erasme Herman Baulduin Godefroid
 		Libert Charle Robert Engelbert Bertrand Melchior Sebastien Everard Remy Vincent
 		Adam Claude Gregoire Coune Wery Anselme Erard Quirin Alexandre Albert Bernard
-		Cornneille DieudonnE_ Eustache Remacle
+		Cornneille DieudonnE_ Eustache Remacle TchantchE_s
 		}
 	female_names = {
 		Marie Jeanne Catherine Anne Margueritte Elisabeth Barbe Adelaide Gertrude Ode
 		Idelette Agnes Gillette Martine Beatrix Adrianne Damidde Madeleine Mathilde
-		Pasquette Petronille Christine Agathe Odile Clemence Lucie Nicolle
+		Pasquette Petronille Christine Agathe Odile Clemence Lucie Nicolle Nanesse
 	}
 	dynasty_of_location_prefix = "dynnp_de"
 	grammar_transform = french

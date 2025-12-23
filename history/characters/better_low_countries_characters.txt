@@ -1,4 +1,29 @@
-﻿121065 = {
+﻿#Lagertha, first wife of Ragnarr Lodbrok
+121064 = {
+	name = "Lagertha" 
+	female = yes
+	religion = "norse_pagan"
+	culture = "norse"
+	diplomacy = 5
+	martial = 10
+	stewardship = 6
+	intrigue = 5
+	learning = 7
+	trait = strong
+	trait = brave
+	trait = wrathful
+	trait = shieldmaiden
+	trait = education_martial_3
+	798.1.1 = {
+		birth = yes
+	}
+	860.1.1 = {
+		death = yes
+	}
+}
+
+#Thora, second wife of Ragnarr Lodbrok
+121065 = {
 	name = "Thora" 
 	female = yes
 	religion = "norse_pagan"
@@ -20,8 +45,9 @@
 	}
 }
 
+#Ellert van de Ellert-en-Brammertsaga
 121066 = {
-	name = "Ellert" #Ellert van de Ellert-en-Brammertsaga
+	name = "Ellert" 
 	dynasty_house = house_ellerting 
 	religion = "catholic"
 	culture = "saxon"
@@ -53,8 +79,9 @@
 	}
 }
 
+#Brammert van de Ellert-en-Brammertsaga
 121067 = {
-	name = "Brammert" #Brammert van de Ellert-en-Brammertsaga
+	name = "Brammert" 
 	dynasty_house = house_ellerting 
 	religion = "catholic"
 	culture = "saxon"
@@ -86,8 +113,9 @@
 	}
 }
 
+#Marieke van de Ellert-en-Brammertsaga
 121068 = {
-	name = "Marieke" #Marieke van de Ellert-en-Brammertsaga
+	name = "Marieke" 
 	religion = "catholic"
 	culture = "saxon"
 	female = yes
@@ -136,6 +164,7 @@
 	trait = brave
 	trait = viking
 	trait = education_martial_3
+	trait = lifestyle_mystic 
 	father = 163109 #Ragnarr Lodbrok
 	mother = 121065 #Thora
 	
@@ -143,18 +172,11 @@
 		birth = yes
 		effect = { add_character_flag = do_not_generate_starting_family }
 	}
-	866.11.1 = {
-		employer = 163112
-	}
-	876.1.1 = {
-		effect = {
-			set_relation_rival = { target = character:163103 reason = rival_historical } # Aella of Northumberland, killed father
-		}
-	}
-	878.6.6 = {
+	862.6.6 = {
 		death = yes
 	}
 }
+
 #Agnarr Ragnarsson #Replacement for Ubbe in his LAAMP
 121070 = {
 	name = "Agnarr" # Ragnarsson
@@ -177,15 +199,7 @@
 		birth = yes
 		effect = { add_character_flag = do_not_generate_starting_family }
 	}
-	866.11.1 = {
-		employer = 163112
-	}
-	876.1.1 = {
-		effect = {
-			set_relation_rival = { target = character:163103 reason = rival_historical } # Aella of Northumberland, killed father
-		}
-	}
-	878.6.6 = {
+	862.6.6 = {
 		death = yes
 	}
 }
@@ -221,6 +235,39 @@
 	}
 }
 
+#Fridleif, Ragnarr Lodbrok's first son
+121073 = {
+	name = "Fridleif" # Ragnarsson
+	dynasty_house = house_lagertha
+	religion = "norse_pagan"
+	culture = norse
+	martial = 6
+	stewardship = 4
+	diplomacy = 5
+	intrigue = 4
+	learning = 2
+	trait = lifestyle_hunter
+	trait = brave
+	trait = viking
+	trait = education_martial_3
+	father = 163109 #Ragnarr Lodbrok
+	mother = 121064 #Lagertha
+	
+	820.1.1 = {
+		birth = yes
+		effect = { add_character_flag = do_not_generate_starting_family }
+	}
+	876.1.1 = {
+		effect = {
+			set_relation_rival = { target = character:163103 reason = rival_historical } # Aella of Northumberland, killed father
+		}
+	}
+	878.6.6 = {
+		death = yes
+	}
+}
+
+#Placeholder for East Frisia in 1187
 frisian0001 = {
 	name = "Douwe"
 	religion = "catholic"
