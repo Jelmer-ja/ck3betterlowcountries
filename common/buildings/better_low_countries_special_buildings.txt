@@ -636,7 +636,7 @@ munster_paulus_dom_01 = {
 	
 	construction_time = very_slow_construction_time
 
-	type_icon = "icon_structure_wawel_cathedral.dds"
+	type_icon = "icon_structure_munster_cathedral.dds"
 	
 	can_construct_potential = {
 		building_requirement_tribal = no

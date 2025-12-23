@@ -49,7 +49,7 @@ blc_setup_on_actions = {
         ##Start date specific
         if = {
             limit = { current_date < 900.1.1 }
-            title:c_luxembourg = { set_county_culture = culture:walloon }
+            title:c_luxembourg = { set_county_culture = culture:franconian }
         }
         if = {
             limit = { current_date >= 900.1.1 }

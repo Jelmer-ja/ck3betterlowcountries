@@ -60,7 +60,6 @@ k_netherlands_norse = {
 	}
 }
 
-
 k_new_frisia = {
 	pattern="temp_pattern_bendy_special.dds"
 	color1=blue_light
@@ -74,7 +73,6 @@ k_new_frisia = {
 		}
 	}
 }
-
 
 k_picardy = {
 	pattern="pattern_checkers_02.dds"
@@ -276,6 +274,30 @@ d_picardy = {
 	}
 }
 
+k_saxony = {
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "white"
+	colored_emblem = {
+		texture = "ce_horse_rampant.dds" # horse saillant
+		color1 = "white"
+		color2 = "white"
+		color3 = "black"
+		instance = { position = { 0.5 0.48 } scale = { 0.9 0.9 }  }
+	}
+}
+
+k_saxony_norse = {
+	pattern = "pattern_solid.dds"
+	color1 = "black"
+	colored_emblem = {
+		texture = "ce_irminsul.dds"
+		color1 = "yellow"
+		color2 = "green"
+		instance = { scale = { 0.8 0.8 }  }
+	}
+}
+
 # Wanderers
 house_ellerting = {
 	pattern="pattern__solid_designer.dds"
@@ -304,6 +326,18 @@ d_laamp_ellert = house_ellerting
 
 house_thora = { 
 	pattern = "pattern_solid.dds"
+	color1 = "green"
+	color2 = "red"
+	colored_emblem = {
+		texture = "ce_ship_longship.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { position = { 0.512 0.48 } scale = { 0.9 0.9 }  }
+	}
+}
+
+house_lagertha = { 
+	pattern = "pattern_solid.dds"
 	color1 = "blue"
 	color2 = "red"
 	colored_emblem = {
@@ -314,6 +348,6 @@ house_thora = {
 	}
 }
 
-d_laamp_eirikr = house_thora
+d_laamp_eirikr = house_lagertha
 
 d_laamp_radboud = k_frisia

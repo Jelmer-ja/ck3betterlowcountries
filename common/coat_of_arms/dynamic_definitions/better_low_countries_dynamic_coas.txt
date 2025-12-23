@@ -6,3 +6,12 @@
 		coat_of_arms = k_netherlands_norse
 	}
 }
+
+k_saxony = {
+	item = {
+		trigger = {
+			coa_switch_to_norse_trigger = yes
+		}
+		coat_of_arms = k_saxony_norse
+	}
+}
