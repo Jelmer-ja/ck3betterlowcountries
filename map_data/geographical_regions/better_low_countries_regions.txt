@@ -96,3 +96,14 @@ custom_core_saxony = {
 		d_holstein
 	}
 }
+
+custom_core_new_saxony = {
+	duchies = {
+		#k_east_francia
+		d_ostfalen
+		d_westfalen
+		d_angria
+		d_holstein
+		d_anhalt
+	}
+}

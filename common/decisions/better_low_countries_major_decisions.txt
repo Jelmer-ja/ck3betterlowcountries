@@ -1,5 +1,4 @@
-﻿
-#Creating Netherlands Kingdom
+﻿#Creating Netherlands Kingdom
 form_netherlands_kingdom_decision = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/decision_unite_netherlands.dds"
@@ -235,6 +234,124 @@ form_new_frisia_kingdom_decision = {
 	}
 }
 
+form_new_saxony_kingdom_decision = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_found_new_saxony.dds"
+	}
+	desc = form_new_saxony_kingdom_decision_desc
+	selection_tooltip = form_new_saxony_kingdom_decision_tooltip
+	decision_group_type = major
+
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 120
+		kingdom = 0
+		empire = 0
+		hegemony = 0
+	}
+
+	is_shown = {
+		NOT = { exists = title:k_saxony.holder }
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_formed_new_saxony_kingdom
+			}
+		}
+		#No kings or emperors.
+		highest_held_title_tier <= tier_duchy
+		culture = culture:saxon
+		faith.religion = faith:catholic.religion
+		any_sub_realm_county = {
+			title_province = { geographical_region = custom_core_new_saxony }
+		}
+	}
+
+	is_valid = {
+		# Independents only.
+		prestige_level >= very_high_prestige_level
+		completely_controls_region = custom_core_new_saxony
+		custom_tooltip = {
+			text = new_saxony_culture_requirement_tt
+			NOT = {
+				any_county_in_region = {
+					region = custom_core_new_saxony
+					NOT = { culture = culture:saxon }
+				}
+			}
+		}
+		custom_tooltip = {
+			text = liege_is_emperor_or_independent_requirement_tt
+			OR = {
+				top_liege = this
+				top_liege.primary_title.tier >= tier_empire
+			}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_landed = yes
+		is_capable_adult = yes
+		is_imprisoned = no
+		is_at_war = no
+	}
+
+	cost = {
+		gold = {
+			value = 0
+			if = {
+				limit = {
+					has_treasury = no
+				}
+				add = 500
+			}
+		}
+		treasury = {
+			value = 0
+			if = {
+				limit = {
+					has_treasury = yes
+				}
+				add = 500
+			}
+		}
+		prestige = {
+			value = major_prestige_gain
+			multiply = 3
+			round = yes
+		}
+	}
+
+	effect = {
+		gain_heroic_legend_seed_tooltip_effect = yes
+		show_as_tooltip = {
+			form_new_saxony_kingdom_scripted_effect = yes
+		}
+		trigger_event = {
+			id = better_low_countries_decisions.0006
+		}
+		hidden_effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_formed_new_saxony_kingdom
+			}
+			set_global_variable = {
+				name = flag_formed_new_saxony_kingdom
+				value = root
+			}
+		}
+	}
+	
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
 form_picardy_kingdom_decision = {
 	picture = {
 		reference = "gfx/interface/illustrations/decisions/decision_found_new_picardy.dds"
@@ -447,6 +564,131 @@ restore_pagan_saxony_decision = {
 	
 	ai_potential = {
 		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}
+
+merge_frisia_decision = { #Based on France and Aquitaine
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_found_kingdom.dds"
+	}
+	title = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					primary_title = title:k_frisia
+				}
+				desc = merge_frisia_decision_alt
+			}
+			desc = merge_frisia_decision
+		}
+	}
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					primary_title = title:k_frisia
+				}
+				desc = merge_frisia_decision_desc_frisia
+			}
+			desc = merge_frisia_decision_desc
+		}
+		desc = merge_frisia_decision_desc_outro
+	}
+	decision_group_type = major
+	sort_order = 50
+
+	is_shown = {
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:merged_frisia
+			}
+		}
+		OR = {
+			culture = { has_cultural_pillar = heritage_frankish }
+			culture = { has_cultural_pillar = heritage_central_germanic }
+		}
+		OR = {
+			has_title = title:k_frisia
+			has_title = title:k_lotharingia
+		}
+		NOR = {
+			title:k_frisia = { is_titular = yes }
+			title:k_lotharingia = { is_titular = yes }
+		}
+	}
+
+	is_valid = {
+		has_title = title:k_frisia
+		has_title = title:k_lotharingia
+		top_liege = this
+		prestige_level >= 3
+	}
+
+	effect = {
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:merged_frisia
+		}
+
+		save_scope_as = rightful_liege
+
+		add_legitimacy_effect = { LEGITIMACY = massive_legitimacy_gain }
+		dynasty ?= { add_dynasty_prestige = massive_dynasty_prestige_value }
+
+		if = {
+			limit = {
+				primary_title = { this = title:k_frisia}
+			}
+			merge_frisia_effect = {
+				PRIMARY = k_frisia
+				SECONDARY = k_france
+				TEXT = alt
+			}
+		}
+		else = {
+			merge_frisia_effect = {
+				PRIMARY = k_france
+				SECONDARY = k_frisia
+				TEXT = original
+			}
+		}
+
+		trigger_event = better_low_countries_decisions.0007
+		every_vassal_or_below = {
+			trigger_event = better_low_countries_decisions.0007
+		}
+	}
+
+	cost = {
+		prestige = {
+			if = {
+				limit = {
+					is_ai = no
+				}
+				value = 1000
+			}
+			else = {
+				value = 0
+			}
+		}
+	}
+
+	ai_check_interval_by_tier = {
+		barony = 0
+		county = 0
+		duchy = 0
+		kingdom = 60
+		empire = 60
+		hegemony = 60
+	}
+
+	ai_potential = {
+		is_ruler = yes
 	}
 
 	ai_will_do = {

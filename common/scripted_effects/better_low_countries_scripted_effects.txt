@@ -123,6 +123,80 @@ form_new_frisia_kingdom_scripted_effect = {
 	add_prestige = major_prestige_gain
 }
 
+form_new_saxony_kingdom_scripted_effect = {
+	save_scope_as = scoped_ruler
+	title:k_saxony = { save_scope_as = saxony }
+	title:d_utrecht = { save_scope_as = utrecht }
+	title:d_gelre = { save_scope_as = gelre }
+	title:d_nordmark = { save_scope_as = nordmark }
+	title:d_ostmark = { save_scope_as = ostmark }
+
+	#De jure shifts
+	title:d_westfalen = { set_de_jure_liege_title = title:k_saxony }
+	title:d_ostfalen = { set_de_jure_liege_title = title:k_saxony }
+	title:d_angria = { set_de_jure_liege_title = title:k_saxony }
+	title:d_holstein = { set_de_jure_liege_title = title:k_saxony }
+	title:d_anhalt = { set_de_jure_liege_title = title:k_saxony }
+	if = {
+		limit = { completely_controls = title:d_gelre }
+		title:d_gelre = { set_de_jure_liege_title = title:k_saxony }
+	}
+	else = { custom_tooltip = form_new_saxony_decision_effect_gelre_tooltip }
+	if = {
+		limit = { completely_controls = title:d_utrecht }
+		title:d_utrecht = { set_de_jure_liege_title = title:k_saxony }
+	}
+	else = { custom_tooltip = form_new_saxony_decision_effect_utrecht_tooltip }
+	if = {
+		limit = { completely_controls = title:d_nordmark }
+		title:d_nordmark = { set_de_jure_liege_title = title:k_saxony }
+	}
+	else = { custom_tooltip = form_new_saxony_decision_effect_nordmark_tooltip }
+	if = {
+		limit = { completely_controls = title:d_ostmark }
+		title:d_ostmark = { set_de_jure_liege_title = title:k_saxony }
+	}
+	else = { custom_tooltip = form_new_saxony_decision_effect_ostmark_tooltip }
+
+	create_title_and_vassal_change = {
+		type = created
+		save_scope_as = change
+		add_claim_on_loss = no
+	}
+	title:k_saxony = {
+		change_title_holder = {
+			holder = root
+			change = scope:change
+		}
+	}
+
+	custom_tooltip = form_new_saxony_modifier_tooltip
+	title:k_saxony = {
+		every_in_de_jure_hierarchy = {
+			limit = {
+				tier = tier_county
+				holder = {
+					OR = {
+						this = root
+						target_is_liege_or_above = root
+					}
+				}
+			}
+			add_county_modifier = {
+				modifier = new_saxony_modifier
+				years = 40
+			}
+		}
+	}
+
+	resolve_title_and_vassal_change = scope:change
+	hidden_effect = { 
+		#Set primary title to Saxony
+		set_primary_title_to = title:k_saxony
+	}
+	add_prestige = major_prestige_gain
+}
+
 form_netherlands_scripted_effect = {
 	#Determine scope
 	save_scope_as = scoped_ruler
@@ -132,6 +206,7 @@ form_netherlands_scripted_effect = {
 	title:k_lotharingia.holder = { save_scope_as = scoped_king_lotharingia }
 	title:d_frisia = { save_scope_as = frisia }
 	title:d_picardy = { save_scope_as = picardy }
+	title:d_lower_picardy = { save_scope_as = lower_picardy }
 	title:k_netherlands = { save_scope_as = netherlands }
 	
 	#Check current liege of Brabant
@@ -154,11 +229,12 @@ form_netherlands_scripted_effect = {
 		limit = { completely_controls = title:d_picardy }
 		title:d_picardy = { set_de_jure_liege_title = title:k_netherlands }
 	}
+	else = { custom_tooltip = form_netherlands_kingdom_decision_effect_picardy_tooltip }
 	if = {
 		limit = { completely_controls = title:d_lower_picardy }
 		title:d_lower_picardy = { set_de_jure_liege_title = title:k_netherlands }
 	}
-	else = { custom_tooltip = form_netherlands_kingdom_decision_effect_picardy_tooltip }
+	else = { custom_tooltip = form_netherlands_kingdom_decision_effect_lower_picardy_tooltip }
 	
 	create_title_and_vassal_change = {
 		type = created
@@ -172,6 +248,26 @@ form_netherlands_scripted_effect = {
 		}
 	}
 	resolve_title_and_vassal_change = scope:change
+
+	custom_tooltip = form_netherlands_modifier_tooltip
+	title:k_netherlands = {
+		every_in_de_jure_hierarchy = {
+			limit = {
+				tier = tier_county
+				holder = {
+					OR = {
+						this = root
+						target_is_liege_or_above = root
+					}
+				}
+			}
+			add_county_modifier = {
+				modifier = new_netherlands_modifier
+				years = 40
+			}
+		}
+	}
+
 	hidden_effect = { 
 		set_primary_title_to = title:k_netherlands 
 		title:k_netherlands = {
@@ -340,4 +436,71 @@ form_carolingian_empire_scripted_effect = {
 			add_innovation = innovation_heraldry
 		}
 	}
+}
+
+merge_frisia_effect = {
+	title:$PRIMARY$ = {
+		save_scope_as = rightful_title
+		every_in_de_jure_hierarchy = {
+			custom = merge_frisia_decision_vassal_$TEXT$
+			limit = {
+				tier < tier_kingdom
+			}
+			holder ?= {
+				if = {
+					limit = {
+						NOR = { 
+							is_in_list = merge_frisia_list 
+							this = root
+						}
+					}
+					add_opinion = {
+						modifier = rightful_king_opinion
+						target = root
+						opinion = 20
+					}
+					add_to_temporary_list = merge_frisia_list
+				}
+			}
+			custom_tooltip = merge_frisia_opinion
+		}
+	}
+	title:$SECONDARY$ = {
+		save_scope_as = destroyed_title
+		every_in_de_jure_hierarchy = {
+			custom = merge_frisia_culture_tooltip_$TEXT$
+			limit = {
+				tier = tier_county
+			}
+			hidden_effect = {
+				culture ?= {
+					if = {
+						limit = {
+							NOR = { 
+								is_in_list = merge_frisia_list 
+								this = root.culture
+								any_parent_culture_or_above = { this = root.culture }
+							}
+						}
+						change_cultural_acceptance = {
+							target = root.culture
+							value = -25
+							desc = cultural_acceptance_merge_frisia
+						}
+						add_to_list = merge_frisia_list
+					}
+				}
+			}
+			custom_tooltip = merge_frisia_culture_tooltip
+		}
+		every_in_de_jure_hierarchy = {
+			custom = merge_frisia_decision_tooltip_$TEXT$
+			limit = {
+				tier = tier_duchy
+			}
+			hidden_effect = { set_de_jure_liege_title = title:$PRIMARY$ }
+			custom_tooltip = merge_frisia_decision_tooltip_2_$TEXT$
+		}
+	}
+	destroy_title = title:$SECONDARY$
 }

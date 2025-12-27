@@ -6,7 +6,7 @@
 
 blc_setup_on_actions = {
     effect = {
-        #Change existing cultures
+        # Change existing cultures
         ##Change the traditions of the Frisian culture
         culture:frisian = {
             remove_culture_tradition = tradition_zealous_people
@@ -45,6 +45,7 @@ blc_setup_on_actions = {
         title:c_zutphen = { set_county_culture = culture:saxon }
         title:c_groningen = { set_county_culture = culture:saxon }
         title:c_oversticht = { set_county_culture = culture:saxon }
+        title:c_arnhem = { set_county_culture = culture:saxon }
 
         ##Start date specific
         if = {
@@ -56,8 +57,212 @@ blc_setup_on_actions = {
             title:c_ribe = { set_county_culture = culture:frisian }
         }
 
+        # Add minority cultures (only available in Rajas)
+        ##Dutch
+        ###Large
+        add_culture_minority_effect = {
+            CULTURE = culture:dutch
+            SIZE = large
+            COUNTY = title:c_hainaut
+        }
+        add_culture_minority_effect = {
+            CULTURE = culture:dutch
+            SIZE = large
+            COUNTY = title:c_lille
+        }
+        add_culture_minority_effect = {
+            CULTURE = culture:dutch
+            SIZE = large
+            COUNTY = title:c_liege
+        }
+        add_culture_minority_effect = {
+            CULTURE = culture:dutch
+            SIZE = large
+            COUNTY = title:c_westfriesland
+        }
+        add_culture_minority_effect = {
+            CULTURE = culture:dutch
+            SIZE = large
+            COUNTY = title:c_zutphen
+        }
+        add_culture_minority_effect = {
+            CULTURE = culture:dutch
+            SIZE = large
+            COUNTY = title:c_arnhem
+        }
+        ###Small
+        add_culture_minority_effect = {
+            CULTURE = culture:dutch
+            SIZE = small
+            COUNTY = title:c_boulogne
+        }
+        add_culture_minority_effect = {
+            CULTURE = culture:dutch
+            SIZE = small
+            COUNTY = title:c_namur
+        }
+        add_culture_minority_effect = {
+            CULTURE = culture:dutch
+            SIZE = small
+            COUNTY = title:c_namur
+        }
+        add_culture_minority_effect = {
+            CULTURE = culture:dutch
+            SIZE = small
+            COUNTY = title:c_oversticht
+        }
 
-        #Place special building slots and buildings
+        ##Picard
+        ###Large
+        add_culture_minority_effect = {
+            CULTURE = culture:picard
+            SIZE = large
+            COUNTY = title:c_brabant
+        }
+        add_culture_minority_effect = {
+            CULTURE = culture:picard
+            SIZE = large
+            COUNTY = title:c_antwerpen
+        }
+        add_culture_minority_effect = {
+            CULTURE = culture:picard
+            SIZE = large
+            COUNTY = title:c_ypres
+        }
+        add_culture_minority_effect = {
+            CULTURE = culture:picard
+            SIZE = large
+            COUNTY = title:c_valois
+        }
+        ###Small
+        add_culture_minority_effect = {
+            CULTURE = culture:picard
+            SIZE = small
+            COUNTY = title:c_brugge
+        }
+        add_culture_minority_effect = {
+            CULTURE = culture:picard
+            SIZE = small
+            COUNTY = title:c_namur
+        }
+
+        ##Walloon
+        ###Large
+        add_culture_minority_effect = {
+            CULTURE = culture:walloon
+            SIZE = large
+            COUNTY = title:c_hainaut
+        }
+        add_culture_minority_effect = {
+            CULTURE = culture:walloon
+            SIZE = large
+            COUNTY = title:c_luxembourg
+        }
+        ###Small
+        add_culture_minority_effect = {
+            CULTURE = culture:walloon
+            SIZE = large
+            COUNTY = title:c_cambray
+        }
+
+        ##Saxon
+        ###Small
+        add_culture_minority_effect = {
+            CULTURE = culture:saxon
+            SIZE = small
+            COUNTY = title:c_guelders
+        }
+
+        ##Frisian
+        ###Large
+        add_culture_minority_effect = {
+            CULTURE = culture:frisian
+            SIZE = large
+            COUNTY = title:c_groningen
+        }
+        add_culture_minority_effect = {
+            CULTURE = culture:frisian
+            SIZE = large
+            COUNTY = title:c_stade
+        }
+        ###Small
+        add_culture_minority_effect = {
+            CULTURE = culture:frisian
+            SIZE = small
+            COUNTY = title:c_holland
+        }
+        add_culture_minority_effect = {
+            CULTURE = culture:frisian
+            SIZE = small
+            COUNTY = title:c_zeeland
+        }
+        add_culture_minority_effect = {
+            CULTURE = culture:frisian
+            SIZE = small
+            COUNTY = title:c_utrecht
+        }
+        add_culture_minority_effect = {
+            CULTURE = culture:frisian
+            SIZE = small
+            COUNTY = title:c_oldenburg
+        }
+
+        ##Franconian
+        ###Large
+        add_culture_minority_effect = {
+            CULTURE = culture:franconian
+            SIZE = large
+            COUNTY = title:c_aachen
+        }
+        add_culture_minority_effect = {
+            CULTURE = culture:franconian
+            SIZE = large
+            COUNTY = title:c_cleves
+        }
+        ###Small
+        add_culture_minority_effect = {
+            CULTURE = culture:franconian
+            SIZE = small
+            COUNTY = title:c_guelders
+        }
+
+        ##867: Germanic pagan minority in coastal counties due to viking occupation
+        if = {
+            limit = { current_date < 900.1.1 }
+            add_faith_minority_effect = {
+				FAITH = faith:norse_pagan
+				SIZE = small
+				COUNTY = title:c_zeeland
+			}
+            add_faith_minority_effect = {
+				FAITH = faith:norse_pagan
+				SIZE = small
+				COUNTY = title:c_holland
+			}
+            add_faith_minority_effect = {
+				FAITH = faith:norse_pagan
+				SIZE = small
+				COUNTY = title:c_westfriesland
+			}
+            add_faith_minority_effect = {
+				FAITH = faith:norse_pagan
+				SIZE = small
+				COUNTY = title:c_frisia
+			}
+            add_faith_minority_effect = {
+				FAITH = faith:norse_pagan
+				SIZE = small
+				COUNTY = title:c_dokkum
+			}
+            add_faith_minority_effect = {
+				FAITH = faith:norse_pagan
+				SIZE = small
+				COUNTY = title:c_ostfriesland
+			}
+        }
+
+
+        # Place special building slots and buildings
         ##Place special building slots
         province:2105 = { add_special_building_slot = koudenberg_palace_01 }
         province:2125 = { add_special_building_slot = ypres_cloth_hall_01 }
@@ -76,7 +281,6 @@ blc_setup_on_actions = {
         province:2670 = { add_special_building = munster_paulus_dom_01 }
 
         # Move the capital of Picardy from Vermandois to Amiens
-        ## Work only on d_picardy
         title:d_picardy = {
             title_capital_county = { save_scope_as = old_capital }
             set_capital_county = title:c_amiens
@@ -108,7 +312,7 @@ blc_setup_on_actions = {
             }
         }
 
-        #Character preparation
+        # Character preparation
         ##Ellert details
         character:121066 ?= {
             if = {
@@ -151,7 +355,7 @@ blc_setup_on_actions = {
                 destroy_title = title:d_laamp_ubbe
                 set_relation_rival = { target = character:163103 reason = rival_historical } # Aella of Northumberland
 			    add_gold = 300
-                add_prestige = 1000
+                add_prestige = 3000
 		        give_nickname = nick_skylding
                 spawn_army = {
                     name = event_troop_default_name

@@ -156,3 +156,107 @@ better_low_countries_decisions.0005 = {
 		name = better_low_countries_decisions.0005.a
 	}
 }
+
+#New Saxony
+better_low_countries_decisions.0006 = {
+	type = character_event
+	title = better_low_countries_decisions.0006.t
+	desc = better_low_countries_decisions.0006.desc
+	theme = realm
+	left_portrait = {
+		character = root
+		animation = personality_bold
+	}
+
+	immediate = {
+		play_music_cue = "mx_cue_epic_sacral_moment"
+		restore_pagan_saxony_scripted_effect = yes
+		legend_seed_new_title_effect = yes
+	}
+	option = {
+		name = better_low_countries_decisions.0006.a
+	}
+}
+
+better_low_countries_decisions.0007 = {
+	type = character_event
+	title = better_low_countries_decisions.0007.t
+	desc = better_low_countries_decisions.0007.desc
+	theme = realm
+	left_portrait =	{
+		trigger = {
+			this != scope:rightful_liege
+		}
+		character = root
+		triggered_animation = {
+			trigger = {
+				NOR = {
+					opinion = {
+						target = scope:rightful_liege
+						value >= 25
+					}
+					root.culture = scope:rightful_liege.culture
+					culture = { any_parent_culture_or_above = { this = scope:rightful_liege.culture } }
+				}
+			}
+			animation = disapproval
+		}
+		animation = obsequious_bow
+	}
+
+	right_portrait = {
+		character = scope:rightful_liege
+		animation = personality_honorable
+	}
+
+	immediate = {
+		show_as_tooltip = {
+			destroy_title = scope:destroyed_title
+			scope:rightful_title = {
+				if = {
+					limit = {
+						this = title:k_frisia
+					}
+					every_in_de_jure_hierarchy = {
+						custom = merge_frisia_decision_tooltip_alt
+						custom_tooltip = merge_frisia_decision_tooltip_2_alt
+					}
+				}
+				else = {
+					every_in_de_jure_hierarchy = {
+						custom = merge_frisia_decision_tooltip_original
+						custom_tooltip = merge_frisia_decision_tooltip_2_original
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = better_low_countries_decisions.0007.a
+		trigger = {
+			NOR = {
+				opinion = {
+					target = scope:rightful_liege
+					value >= 25
+				}
+				root.culture = scope:rightful_liege.culture
+				culture = { any_parent_culture_or_above = { this = scope:rightful_liege.culture } }
+			}
+		}
+	}
+
+	option = {
+		name = better_low_countries_decisions.0007.b
+		trigger = {
+			OR = {
+				opinion = {
+					target = scope:rightful_liege
+					value >= 25
+				}
+				root.culture = scope:rightful_liege.culture
+				culture = { any_parent_culture_or_above = { this = scope:rightful_liege.culture } }
+			}
+		}
+	}
+}

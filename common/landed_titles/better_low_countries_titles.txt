@@ -296,16 +296,34 @@ k_frisia = {
 				province = 2428
 
 				color = { 235 45 30 }
+
+				cultural_names = {
+					name_list_saxon = cn_arnheim
+					name_list_swabian = cn_arnheim
+					name_list_bavarian = cn_arnheim
+					name_list_franconian = cn_ernem
+					name_list_frisian = cn_arnhim
+				}
 			}
 			b_apeldoorn = {
 				province = 2427
 
 				color = { 235 45 30}
+				
+				cultural_names = {
+					name_list_frisian = cn_apeldoarn
+					name_list_saxon = cn_apeldoorne
+				}
 			}
 			b_harderwijk = {
 				province = 2426
 
 				color = { 235 45 30 }
+				
+				cultural_names = {
+					name_list_saxon = cn_harderwiek
+					name_list_frisian = cn_harderwyk
+				}
 			}
 		}
 
@@ -316,16 +334,29 @@ k_frisia = {
 				province = 2429
 
 				color = { 195 30 5 }
+				
+				cultural_names = {
+					name_list_saxon = cn_zutfent
+					name_list_frisian = cn_sutfen
+				}
 			}
 			b_borculo = {
 				province = 2432
 
 				color = { 195 30 5 }
+
+				cultural_names = {
+					name_list_saxon = cn_borklo
+				}
 			}
 			b_bredevoort = {
 				province = 2434
 
 				color = { 195 30 5 }
+
+				cultural_names = {
+					name_list_saxon = cn_brevoort
+				}
 			}
 		}
 	}
@@ -334,14 +365,22 @@ k_frisia = {
 		color = { 170 100 10 }
 
 		capital = c_nedersticht #Utrecht
-
+		
 		c_nedersticht = {
 			color = { 160 100 10 }
+
+			cultural_names = {
+				name_list_frisian = cn_utert
+			}
 
 			b_utrecth = {
 				province = 2424
 
 				color = { 160 100 10 }
+				
+				cultural_names = {
+					name_list_frisian = cn_utert
+				}
 			}
 			b_amersfoort = {
 				province = 2451
@@ -356,11 +395,19 @@ k_frisia = {
 
 		c_oversticht = {
 			color = { 180 120 10 }
+				
+			cultural_names = {
+				name_list_frisian = cn_oerisel
+			}
 
 			b_zwolle = {
 				province = 2421
 
 				color = { 180 120 10 }
+				
+				cultural_names = {
+					name_list_frisian = cn_swol
+				}
 			}
 			b_kampen = {
 				province = 2416
@@ -371,6 +418,10 @@ k_frisia = {
 				province = 2423
 
 				color = { 180 120 10 }
+				
+				cultural_names = {
+					name_list_saxon = cn_ommn
+				}
 			}
 			b_almelo = {
 				province = 2431
@@ -381,6 +432,10 @@ k_frisia = {
 				province = 2422
 
 				color = { 180 120 10 }
+				
+				cultural_names = {
+					name_list_saxon = cn_coevern
+				}
 			}
 		}
 
