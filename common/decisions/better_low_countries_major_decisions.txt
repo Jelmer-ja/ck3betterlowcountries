@@ -272,6 +272,7 @@ form_new_saxony_kingdom_decision = {
 		# Independents only.
 		prestige_level >= very_high_prestige_level
 		completely_controls_region = custom_core_new_saxony
+		top_liege = this
 		custom_tooltip = {
 			text = new_saxony_culture_requirement_tt
 			NOT = {
@@ -279,13 +280,6 @@ form_new_saxony_kingdom_decision = {
 					region = custom_core_new_saxony
 					NOT = { culture = culture:saxon }
 				}
-			}
-		}
-		custom_tooltip = {
-			text = liege_is_emperor_or_independent_requirement_tt
-			OR = {
-				top_liege = this
-				top_liege.primary_title.tier >= tier_empire
 			}
 		}
 	}
@@ -670,7 +664,7 @@ merge_frisia_decision = { #Based on France and Aquitaine
 				limit = {
 					is_ai = no
 				}
-				value = 1000
+				value = 5000
 			}
 			else = {
 				value = 0

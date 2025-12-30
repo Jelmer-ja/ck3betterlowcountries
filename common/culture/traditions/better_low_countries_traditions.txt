@@ -24,7 +24,7 @@
         diplomacy = -3
 		men_at_arms_recruitment_cost = 0.5
 		men_at_arms_maintenance = 0.2
-		levy_size = 0.2
+		levy_size = 0.2s
 		levy_toughness = 3
 		levy_attack = 3
 		health = 0.2
@@ -46,6 +46,8 @@ tradition_defense_of_the_somme = {
 
 	parameters = {
 		can_construct_muches = yes
+		more_likely_to_be_laamps = yes
+		wanderers_gain_extra_combat_skills = yes
 	}
 	
 	character_modifier = {
@@ -56,6 +58,27 @@ tradition_defense_of_the_somme = {
 	}
 }
 
-#tradition_boars_of_the_ardennes = {
-#
-#}
+tradition_arsenal_of_francia = {
+	category = regional
+
+	layers = {
+		0 = martial
+		1 = western
+		4 = arsenal_of_francia.dds
+	}
+	
+	is_shown = {
+		has_cultural_pillar = heritage_frankish
+	}
+
+	parameters = {
+		more_expensive_weapon_inspiration = yes
+		improved_weapon_inspiration = yes
+		improved_artisan_inspiration = yes
+	}
+	
+	character_modifier = {
+		men_at_arms_recruitment_cost = -0.10
+		army_maintenance_mult = -0.05
+	}
+}

@@ -292,6 +292,14 @@ k_frisia = {
 		c_arnhem = {
 			color = { 235 45 30 }
 
+			cultural_names = {
+				name_list_saxon = cn_arnheim
+				name_list_swabian = cn_arnheim
+				name_list_bavarian = cn_arnheim
+				name_list_franconian = cn_ernem
+				name_list_frisian = cn_arnhim
+			}
+
 			b_arnhem = {
 				province = 2428
 
@@ -329,6 +337,11 @@ k_frisia = {
 
 		c_zutphen = {
 			color = { 195 30 5 }
+
+			cultural_names = {
+				name_list_saxon = cn_zutfent
+				name_list_frisian = cn_sutfen
+			}
 
 			b_zutphen = {
 				province = 2429

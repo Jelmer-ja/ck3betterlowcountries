@@ -3,4 +3,6 @@
  tradition_frisian_freedom_desc:0 "Driven to hardihood by the North Sea, the people of this culture are fond of proclaiming that they will never kneel to anyone and intend to make good on that promise."
  tradition_defense_of_the_somme_name:0 "Defense of the Somme"
  tradition_defense_of_the_somme_desc:0 "In the face of constant invasions from their neighbors, the people of this culture have become experts in defensive warfare and have made a name for themselves as mercenaries."
+ tradition_arsenal_of_francia_name:0 "Arsenal of Francia"
+ tradition_arsenal_of_francia_desc:0 "Based in the geologically Ardennes, the people of this culture have become masters of metalworking."
  culture_parameter_can_construct_muches:0 "Gain access to the #V $building_type_muche_01$#! line of [buildings|E]"

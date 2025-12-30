@@ -43,9 +43,10 @@ walloon = {
 	martial_custom = martial_custom_male_only
 	head_determination = head_determination_domain
 	traditions = {
-		tradition_hunters
 		tradition_chivalry
+		tradition_festivities
 		tradition_hill_dwellers
+		tradition_where_are_we_going
 	}
 	
 	name_list = name_list_walloon
