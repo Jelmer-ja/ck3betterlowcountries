@@ -68,7 +68,7 @@ blc_setup_on_actions = {
         province:2390 = { add_special_building_slot = reims_cathedral_01 }
         province:2112 = { add_special_building_slot = temple_of_nehalennia_01 }
         province:2106 = { add_special_building_slot = antwerp_cathedral_01 }
-        province:2097 = { add_special_building_slot = liege_cathedral_01 }
+        province:2097 = { add_special_building_slot = liege_city_cathedral_01 }
 
         ##Place special buildings
         province:2417 = { add_special_building = drenthe_megaliths_01 }

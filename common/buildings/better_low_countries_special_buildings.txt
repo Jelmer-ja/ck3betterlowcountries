@@ -69,6 +69,19 @@
 utrecht_cathedral_01 = {
 	type_icon = "icon_structure_utrecht_cathedral.dds"
 	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	
+	can_construct = {
+		scope:holder = {
+			religion = religion:christianity_religion
+			culture = {
+				has_innovation = innovation_windmills
+			}
+		}
+	}
+	
 	is_enabled = {
 		scope:holder = {
 			faith = { religion_tag = christianity_religion }
@@ -704,8 +717,7 @@ munster_paulus_dom_01 = {
 	type = special
 }
 
-liege_cathedral_01 = {
-	
+liege_city_cathedral_01 = {
 	construction_time = very_slow_construction_time
 
 	type_icon = "icon_structure_liege_cathedral_2.dds"

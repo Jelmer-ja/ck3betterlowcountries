@@ -46,7 +46,7 @@ walloon = {
 		tradition_chivalry
 		tradition_festivities
 		tradition_hill_dwellers
-		tradition_where_are_we_going
+		tradition_arsenal_of_francia
 	}
 	
 	name_list = name_list_walloon
