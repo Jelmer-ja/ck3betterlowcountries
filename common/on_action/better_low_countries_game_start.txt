@@ -253,10 +253,6 @@ blc_setup_on_actions = {
             set_culture = culture:picard
         }
 
-        character:10072 = {
-            set_culture = culture:picard
-        }
-
         character:10073 = {
             set_culture = culture:picard
         }
@@ -487,6 +483,10 @@ blc_setup_on_actions = {
         }
 
         #Walloons
+        character:10072 = { #Godfrey of Bouillon
+            set_culture = culture:walloon
+        }
+
         character:131715 = {
             set_culture = culture:walloon
         }

@@ -87,16 +87,7 @@ k_frisia = {
 	}
 
 	can_create = {
-		trigger_if = {
-			limit = {
-				is_ai = yes
-			}
-			OR = {
-				culture = culture:frisian
-				culture = culture:dutch
-			}
-			faith = { religion_tag = germanic_religion }
-		}
+		faith = { religion_tag = germanic_religion }
 	}
 
 	ai_primary_priority = {
@@ -499,6 +490,10 @@ k_frisia = {
 
 		c_dokkum = {
 			color = { 190 90 10 }
+
+			cultural_names = {
+				name_list_frisian = cn_ommelannen
+			}
 
 			b_dokkum = {
 				province = 2414
@@ -1302,6 +1297,12 @@ k_lotharingia = {
 		}
 		c_maastricht = {
 			color = { 145 125 195 }
+
+			cultural_names = {
+				name_list_french = cn_looz
+				name_list_picard = cn_looz
+				name_list_walloon = cn_looz
+			}
 
 			b_maastricht = {
 				province = 2099
