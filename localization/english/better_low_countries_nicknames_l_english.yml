@@ -1,3 +1,5 @@
 ﻿l_english:
  nick_skylding:0 "Skylding"
  nick_skylding_desc:1 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] leads a feared contingent of Viking raiders who have chosen the Scheldt river as their base of operations."
+ nick_iron_arm:0 "Iron-Arm"
+ nick_iron_arm_desc:1 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] impaled a bear to a tree with an iron lance purely through the strength of his limbs."

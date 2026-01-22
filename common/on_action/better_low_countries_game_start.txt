@@ -108,6 +108,18 @@ blc_setup_on_actions = {
         }
 
         # Character preparation
+        ##Count Boudewijn
+        character:90109 ?= {
+            give_nickname = nick_iron_arm
+            add_trait = strong
+            if = {
+                limit = {
+                    is_alive = yes
+                }
+                set_relation_soulmate = character:25061 # Judith Karling
+            }
+        }
+
         ##Ellert details
         character:121066 ?= {
             if = {

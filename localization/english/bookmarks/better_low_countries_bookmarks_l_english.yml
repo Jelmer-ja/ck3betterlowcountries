@@ -1,7 +1,8 @@
 ﻿l_english:
  bm_867_dorestad:0 "The Sack of Dorestad"
- bm_867_dorestad_desc:0 ""
+ bm_867_dorestad_desc:0 "The "
  
+ bookmark_dorestad_boudewijn:0 "Duke Boudewijn 'Iron-Arm'"
  bookmark_dorestad_boudewijn_subheading:0 "$BOOKMARK_SUBHEADING_DEFAULT$"
  bookmark_dorestad_boudewijn_desc:0 ""
 
