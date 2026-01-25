@@ -107,7 +107,7 @@
  		eye_accessory={ "normal_eyes" 149 "normal_eyes" 149 }
  		teeth_accessory={ "normal_teeth" 0 "normal_teeth" 0 }
  		eyelashes_accessory={ "normal_eyelashes" 92 "normal_eyelashes" 92 }
- 		beards={ "ep2_beards" 60 "no_beard" 0 }
+ 		beards={ "western_beards_straight" 132 "no_beard" 0 }
  		cloaks={ "camp_purpose_brigands_cloaks" 60 "no_cloak" 0 }
  		gene_bs_cloak={ "cloak" 255 "no_cloak" 0 }
  		hairstyles={ "western_hairstyles_curly" 74 "all_hairstyles" 0 }

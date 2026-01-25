@@ -124,7 +124,7 @@ blc_setup_on_actions = {
                 limit = {
                     is_alive = yes
                 }
-                add_piety = 50 #Enough to attack Ubbe should he wish to do so
+                add_piety = 100 #Enough to attack Ubbe should he wish to do so
                 set_relation_soulmate = character:90110 # Judith Karling
                 set_sexuality = heterosexual
             }
@@ -148,7 +148,7 @@ blc_setup_on_actions = {
 
         ##Duke Hrorekr details
         character:117782 ?= {
-            add_piety = 50 #Enough to attack Ubbe should he wish to do so
+            add_piety = 100 #Enough to attack Ubbe should he wish to do so
         }
 
         ##Ellert details
