@@ -51,6 +51,13 @@ blc_setup_on_actions = {
         if = {
             limit = { current_date < 900.1.1 }
             title:c_luxembourg = { set_county_culture = culture:franconian }
+
+            #Add viking unrest modifier to norse counties
+            title:c_zeeland = { add_county_modifier = { modifier = viking_unrest_modifier years = 10 } }
+            title:c_westfriesland = { add_county_modifier = { modifier = viking_unrest_modifier years = 10 } }
+            title:c_frisia = { add_county_modifier = { modifier = viking_unrest_modifier years = 10 } }
+            title:c_dokkum = { add_county_modifier = { modifier = viking_unrest_modifier years = 10 } }
+            title:c_ostfriesland = { add_county_modifier = { modifier = viking_unrest_modifier years = 10 } }
         }
         if = {
             limit = { current_date >= 900.1.1 }
@@ -108,7 +115,8 @@ blc_setup_on_actions = {
         }
 
         # Character preparation
-        ##Count Boudewijn
+        ##Count Boudewijn details
+        ##He and Judith are hardcoded to heterosexual, his son who in history died in 870 is killed at the start of the game. 
         character:90109 ?= {
             give_nickname = nick_iron_arm
             add_trait = strong
@@ -116,8 +124,31 @@ blc_setup_on_actions = {
                 limit = {
                     is_alive = yes
                 }
-                set_relation_soulmate = character:25061 # Judith Karling
+                add_piety = 50 #Enough to attack Ubbe should he wish to do so
+                set_relation_soulmate = character:90110 # Judith Karling
+                set_sexuality = heterosexual
             }
+        }
+        character:168235 ?= {
+            if = {
+                limit = {
+                    is_alive = yes
+                }
+                death = { death_reason = death_sickly }
+            }
+        }
+        character:90110 ?= {
+            if = {
+                limit = {
+                    is_alive = yes
+                }
+                set_sexuality = heterosexual
+            }
+        }
+
+        ##Duke Hrorekr details
+        character:117782 ?= {
+            add_piety = 50 #Enough to attack Ubbe should he wish to do so
         }
 
         ##Ellert details
@@ -130,6 +161,10 @@ blc_setup_on_actions = {
                 add_realm_law_skip_effects = camp_purpose_brigands
                 add_courtier = character:121067 # Brammert
                 add_courtier = character:121068 # Marieke
+                #trigger_event = {
+				#	id = ellert.1000
+				#	days = 1
+				#}
             }
         }
 

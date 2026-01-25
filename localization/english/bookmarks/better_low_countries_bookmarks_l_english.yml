@@ -1,10 +1,10 @@
 ﻿l_english:
  bm_867_dorestad:0 "The Sack of Dorestad"
- bm_867_dorestad_desc:0 "The "
+ bm_867_dorestad_desc:1 "The peace once established in the Rhine delta by Charlemagne is long gone, and his beleaguered and incapable heirs are stuck in conflicts with the church and each other, unable to control the whims of their own children, much less defend the borders of their realms.\n\nThe Northmen have struck this region with ruthless efficiency, putting its cities to the torch and forcing Lothaire II, King of Lotharingia, to cede nearly all of Frisia as a fief to the vikings.\n\nBut resistance among the peasants is brewing, and many among the local nobility are less than happy with their new overlords.\n\n#bold Will you consolidate Norse rule or drive the accursed vikings back into the sea?#!"
  
  bookmark_dorestad_boudewijn:0 "Duke Boudewijn 'Iron-Arm'"
  bookmark_dorestad_boudewijn_subheading:0 "$BOOKMARK_SUBHEADING_DEFAULT$"
- bookmark_dorestad_boudewijn_desc:0 ""
+ bookmark_dorestad_boudewijn_desc:0 "Boudewijn made an enemy of one of the most powerful men in Europe when he eloped with Judith, the daughter of King of Charles of West-Francia, and the couple had to spend years as fugitives in foreign courts.\n\nIn the end true love prevailed, with a little help from the Vatican, and Charles agreed to invest Boudewijn and Judith with a fiefdom. However, in his spite he has chosen Flanders, a poor, remote and swampy region at the edge of the kingdom, subject to perpetual viking raids.\n\n#bold With centuries of hard work, Boudewijn and his descendants managed to turn their poor county into one of the richest and most developed regions in Europe. Will you follow in their footsteps?#!"
 
  bookmark_dorestad_boudewijn_alt_judith:0 "$Judith$"
  bookmark_dorestad_boudewijn_alt_judith_desc:0 "alt desc"
@@ -13,28 +13,31 @@
 
  bookmark_dorestad_ubbe:0 "Ubbe Ragnarsson"
  bookmark_dorestad_ubbe_subheading:0 "$BOOKMARK_SUBHEADING_DEFAULT_WITH_THE$"
- bookmark_dorestad_ubbe_desc:0 ""
+ bookmark_dorestad_ubbe_desc:0 "After years of terrorizing the Low Countries from his base in Walcheren, Ubbe Ragnarsson has joined his brothers in England to avenge their father's death at the hands of the Saxons, marking the beginning in a long series of wars in England that would eventually claim his life\n\n#bold Will you avenge yourself on your father's murderers or turn your attention back to the continent?#!"
 
  bookmark_dorestad_ubbe_alt_hvitserk:0 "$Halfdan$"
  bookmark_dorestad_ubbe_alt_hvitserk_desc:0 "alt desc"
 
  bookmark_dorestad_gerulf:0 "Count Gerulf"
  bookmark_dorestad_gerulf_subheading:0 "$BOOKMARK_SUBHEADING_DEFAULT$"
- bookmark_dorestad_gerulf_desc:0 ""
+ bookmark_dorestad_gerulf_desc:0 "Gerulf's ancestors once ruled as Kings of Frisia, but his family's holdings have long since dwindled to a tiny country at the edge of the North Sea, subject not even to the Franks, but to the unwashed heathens of the north.\n\nResistance has so far proven useless, but perhaps the dagger will succeed where the sword has failed...\n\n#bold In 885, Gerulf will help to assassinate the last viking ruler of Frisia, laying the foundations of the County of Holland. Will you follow in his footsteps?#!"
 
  bookmark_dorestad_gerulf_alt_aleidis:0 "$Aleidis$"
  bookmark_dorestad_gerulf_alt_aleidis_desc:0 "alt desc"
 
- bookmark_dorestad_rorik:0 "Hrorekr Hemmingrson"
+ bookmark_dorestad_rorik:0 "Hrörekr Hemmingrson"
  bookmark_dorestad_rorik_subheading:0 "$BOOKMARK_SUBHEADING_DEFAULT$"
- bookmark_dorestad_rorik_desc:0 ""
+ bookmark_dorestad_rorik_desc:0 "By threatening the very heart of Frankish power and cleverly playing the Carolingian kings against each other, Hrörekr and his brother Harald have claimed control over almost the entire Frisian coast, with Hrörekr becoming the sole ruler upon his brother's death. As the Lotharingian kingdom teeters on the edge of collapse, Hrörekr is presented with a unique opportunity to carve out his own realm.\n\nBut his hold over the country is fragile, and many Frisians still object to being ruled by the man who sacked so many of their towns.\n\n#bold Can Hrörekr and his family hold on to power? Or will his rule prove to be as shallow and ephemeral as the tide flats?#!"
 
- bookmark_dorestad_rorik_alt_harald:0 "$Harald$"
- bookmark_dorestad_rorik_alt_harald_desc:0 "alt desc"
+ bookmark_dorestad_rorik_alt_haraldr:0 "$Hrodulf$"
+ bookmark_dorestad_rorik_alt_haraldr_desc:0 "alt desc"
 
  bookmark_dorestad_ellert:0 "Ellert and Brammert"
  bookmark_dorestad_ellert_subheading:0 "$BOOKMARK_SUBHEADING_DEFAULT$"
- bookmark_dorestad_ellert_desc:0 ""
+ bookmark_dorestad_ellert_desc:0 "Two infamous robbers of enormous size, Ellert and his son Brammert prey on travelers in the heath of Drenthe and are amassing a great fortune together.\n\nHowever, not everything is going according to plan for Ellert. His son is starting to develop philosophical inclinations, and Marieke, a serving girl kidnapped from the local village, seems to have less than friendly intentions towards her captors...\n\n#bold Can Ellert bring his career of crime to a succesful end, or will he end up as just another passage in someone else's folktale?#!"
 
  bookmark_dorestad_ellert_alt_brammert:0 "$Brammert$"
  bookmark_dorestad_ellert_alt_brammert_desc:0 "alt desc"
+
+ bookmark_dorestad_ellert_alt_marieke:0 "$Marieke$"
+ bookmark_dorestad_ellert_alt_marieke_desc:0 "alt desc"

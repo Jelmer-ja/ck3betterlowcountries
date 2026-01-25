@@ -25,3 +25,8 @@ new_netherlands_modifier = {
 	build_gold_cost = -0.05
 	development_growth_factor = small_development_growth_gain
 }
+
+viking_unrest_modifier = {
+	icon = dread_negative
+	county_opinion_add = -30
+}

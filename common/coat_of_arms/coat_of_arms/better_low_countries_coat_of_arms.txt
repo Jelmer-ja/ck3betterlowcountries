@@ -348,6 +348,18 @@ house_lagertha = {
 	}
 }
 
+house_ubbing = { 
+	pattern = "pattern_solid.dds"
+	color1 = "red"
+	color2 = "red"
+	colored_emblem = {
+		texture = "ce_ship_longship.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { position = { 0.512 0.48 } scale = { 0.9 0.9 }  }
+	}
+}
+
 d_laamp_eirikr = house_lagertha
 
 d_laamp_radboud = k_frisia

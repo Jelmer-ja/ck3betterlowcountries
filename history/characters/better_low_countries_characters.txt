@@ -255,7 +255,6 @@
 	
 	820.1.1 = {
 		birth = yes
-		effect = { add_character_flag = do_not_generate_starting_family }
 	}
 	876.1.1 = {
 		effect = {
@@ -263,6 +262,56 @@
 		}
 	}
 	878.6.6 = {
+		death = yes
+	}
+}
+
+#Fridleif's sisters
+121074 = {
+	name = T_O_rdI_s # Ragnarsson
+	dynasty_house = house_lagertha
+	female = yes
+	religion = "norse_pagan"
+	culture = norse
+	trait = vengeful
+	trait = education_stewardship_2
+	father = 163109 #Ragnarr Lodbrok
+	mother = 121064 #Lagertha
+	
+	821.1.1 = {
+		birth = yes
+	}
+	876.1.1 = {
+		effect = {
+			set_relation_rival = { target = character:163103 reason = rival_historical } # Aella of Northumberland, killed father
+		}
+	}
+	880.6.6 = {
+		death = yes
+	}
+}
+121075 = {
+	name = SigrI_D_r # Ragnarsson
+	dynasty_house = house_lagertha
+	female = yes
+	religion = "norse_pagan"
+	culture = norse
+	trait = brave
+	trait = shieldmaiden
+	trait = education_intrigue_2
+	father = 163109 #Ragnarr Lodbrok
+	mother = 121064 #Lagertha
+	
+	821.12.1 = {
+		birth = yes
+		effect = { add_character_flag = do_not_generate_starting_family }
+	}
+	876.1.1 = {
+		effect = {
+			set_relation_rival = { target = character:163103 reason = rival_historical } # Aella of Northumberland, killed father
+		}
+	}
+	880.6.6 = {
 		death = yes
 	}
 }

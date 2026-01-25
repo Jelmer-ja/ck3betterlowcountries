@@ -1,4 +1,4 @@
-bm_867_dorestad = {
+﻿bm_867_dorestad = {
 	start_date = 867.1.1
 	is_playable = yes
 	group = bm_group_867
@@ -21,7 +21,7 @@ bm_867_dorestad = {
 		religion = catholic 
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
 		history_id = 90109
-		position = { 1130 770 }
+		position = { 300 600 }
 		
 		animation = personality_bold
 
@@ -55,7 +55,7 @@ bm_867_dorestad = {
 	# Ubbe "Skylding" Ubbing, son of Ragnar Lothbrok, Count of Zeeland ID: 163119
 	character = {
 		name = "bookmark_dorestad_ubbe"
-		dynasty = 7514
+		dynasty_house = house_ubbing
 		dynasty_splendor_level = 2
 		type = male
 		birth = 827.1.1
@@ -65,7 +65,7 @@ bm_867_dorestad = {
 		religion = norse_pagan 
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
 		history_id = 163119
-		position = { 830 200 }
+		position = { 575 440 }
 		
 		animation = personality_callous
 
@@ -83,10 +83,10 @@ bm_867_dorestad = {
 		}
 	}
 
-	# Gerald I, Count of Holland ID: 31060
+	# Gerulf I, Count of Holland ID: 31060
 	character = {
 		name = "bookmark_dorestad_gerulf"
-		dynasty = 811
+		dynasty_house = house_gerulfing
 		dynasty_splendor_level = 2
 		type = male
 		birth = 835.1.1
@@ -96,7 +96,7 @@ bm_867_dorestad = {
 		religion = catholic
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_HARD"
 		history_id = 31060
-		position = { 375 790 }
+		position = { 750 300 }
 		
 		animation = personality_cynical
 
@@ -126,13 +126,13 @@ bm_867_dorestad = {
 		religion = catholic
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_EASY"
 		history_id = 167782
-		position = { 475 400 }
+		position = { 1100 120 }
 		
 		animation = personality_bold
 
-		# Harald, brother, ID: 167783
+		# Hrodulf, nephew, ID: 167783
 		character = {
-			name = "bookmark_dorestand_rork_alt_haraldr"
+			name = "bookmark_dorestad_rorik_alt_haraldr"
 			relation = "BOOKMARK_RELATION_NEPHEW"
 			dynasty = 9552
 			type = male
@@ -157,7 +157,7 @@ bm_867_dorestad = {
 		religion = catholic 
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
 		history_id = 121066
-		position = { 920 435 }
+		position = { 1150 550 }
 		
 		animation = personality_greedy
 
@@ -172,6 +172,19 @@ bm_867_dorestad = {
             religion = catholic 
 			history_id = 121067
 			animation = personality_bold
+		}
+
+		
+		# Marieke, his rival
+		character = {
+			name = "bookmark_dorestad_ellert_alt_marieke"
+			relation = "BOOKMARK_RELATION_RIVAL"
+			type = female
+			birth = 850.1.1
+            culture = saxon
+            religion = catholic
+			history_id = 121068
+			animation = spymaster
 		}
 	}	
 }
