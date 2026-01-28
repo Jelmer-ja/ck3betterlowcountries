@@ -124,7 +124,6 @@ blc_setup_on_actions = {
                 limit = {
                     is_alive = yes
                 }
-                add_piety = 100 #Enough to attack Ubbe should he wish to do so
                 set_relation_soulmate = character:90110 # Judith Karling
                 set_sexuality = heterosexual
             }
@@ -147,20 +146,20 @@ blc_setup_on_actions = {
         }
 
         ##Duke Hrorekr details
-        character:117782 ?= {
-            add_piety = 100 #Enough to attack Ubbe should he wish to do so
-        }
+        #character:117782 ?= {
+        #    add_piety = 100 #Enough to attack Ubbe should he wish to do so
+        #}
 
         ##Ellert details
-        character:121066 ?= {
+        character:941003 ?= {
             if = {
                 limit = {
                     is_alive = yes
                     has_government = landless_adventurer_government
                 }
                 add_realm_law_skip_effects = camp_purpose_brigands
-                add_courtier = character:121067 # Brammert
-                add_courtier = character:121068 # Marieke
+                add_courtier = character:941004 # Brammert
+                add_courtier = character:941005 # Marieke
                 #trigger_event = {
 				#	id = ellert.1000
 				#	days = 1
@@ -184,6 +183,11 @@ blc_setup_on_actions = {
                     location = province:2405
                     origin = province:2405
                 }
+                add_unpressed_claim = title:d_frisia
+                add_unpressed_claim = title:d_holland
+                add_unpressed_claim = title:c_dokkum
+                add_unpressed_claim = title:c_frisia
+                add_unpressed_claim = title:c_westfriesland
             }
         }
 
@@ -217,7 +221,7 @@ blc_setup_on_actions = {
         }
 
         ##Fridleif details
-        character:121073 ?= {
+        character:941009 ?= {
             if = {
                 limit = {
                     is_alive = yes
@@ -231,8 +235,8 @@ blc_setup_on_actions = {
                         stacks = 1
                     }
                     levies = 300
-                    location = province:2112
-                    origin = province:2112
+                    location = province:1595
+                    origin = province:1595
                 }
             }
         }

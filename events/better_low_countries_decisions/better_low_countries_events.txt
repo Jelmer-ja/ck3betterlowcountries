@@ -346,6 +346,20 @@ better_low_countries_decisions.0008 = {
 				}
 				root = { destroy_title = prev }
 			}
+			spawn_army = {
+				name = event_troop_default_name
+				men_at_arms = {
+					type = varangian_veterans
+					stacks = 2
+				}
+				men_at_arms = {
+					type = bondi
+					stacks = 2
+				}
+				levies = 1600
+				location = province:2112
+				origin = province:2112
+			}
 		}
 	}
 

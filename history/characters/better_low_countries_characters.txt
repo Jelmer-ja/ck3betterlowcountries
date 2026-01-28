@@ -1,5 +1,5 @@
 ﻿#Lagertha, first wife of Ragnarr Lodbrok
-121064 = {
+941001 = {
 	name = "Lagertha" 
 	female = yes
 	religion = "norse_pagan"
@@ -23,7 +23,7 @@
 }
 
 #Thora, second wife of Ragnarr Lodbrok
-121065 = {
+941002 = {
 	name = "Thora" 
 	female = yes
 	religion = "norse_pagan"
@@ -46,9 +46,9 @@
 }
 
 #Ellert van de Ellert-en-Brammertsaga
-121066 = {
+941003 = {
 	name = "Ellert" 
-	dna = "121066_ellert"
+	dna = "941003_ellert"
 	dynasty_house = house_ellerting 
 	religion = "catholic"
 	culture = "saxon"
@@ -81,13 +81,13 @@
 }
 
 #Brammert van de Ellert-en-Brammertsaga
-121067 = {
+941004 = {
 	name = "Brammert" 
-	dna = "121067_brammert"
+	dna = "941004_brammert"
 	dynasty_house = house_ellerting 
 	religion = "catholic"
 	culture = "saxon"
-    father = 121066
+    father = 941003
 
 	#Skills
 	diplomacy = 3
@@ -116,9 +116,9 @@
 }
 
 #Marieke van de Ellert-en-Brammertsaga
-121068 = {
+941005 = {
 	name = "Marieke" 
-	dna = "121068_marieke"
+	dna = "941005_marieke"
 	religion = "catholic"
 	culture = "saxon"
 	female = yes
@@ -146,14 +146,14 @@
 		effect = {
 			add_character_flag = has_scripted_appearance
 			add_character_flag = do_not_generate_starting_family
-            set_relation_rival = character:121066 #Hates giants for kidnapping her
-            set_relation_rival = character:121067
+            set_relation_rival = character:941003 #Hates giants for kidnapping her
+            set_relation_rival = character:941004
 		}
 	}
 }
 
 #Eirikr Ragnarsson #Replacement for Ubbe in his LAAMP
-121069 = {
+941006 = {
 	name = "Eiríkr" # Ragnarsson
 	dynasty_house = house_thora
 	religion = "norse_pagan"
@@ -169,7 +169,7 @@
 	trait = education_martial_3
 	trait = lifestyle_mystic 
 	father = 163109 #Ragnarr Lodbrok
-	mother = 121065 #Thora
+	mother = 941002 #Thora
 	
 	823.1.1 = {
 		birth = yes
@@ -181,7 +181,7 @@
 }
 
 #Agnarr Ragnarsson #Replacement for Ubbe in his LAAMP
-121070 = {
+941007 = {
 	name = "Agnarr" # Ragnarsson
 	dynasty_house = house_thora
 	religion = "norse_pagan"
@@ -196,7 +196,7 @@
 	trait = viking
 	trait = education_martial_1
 	father = 163109 #Ragnarr Lodbrok
-	mother = 121065 #Thora
+	mother = 941002 #Thora
 	
 	823.1.1 = {
 		birth = yes
@@ -208,7 +208,7 @@
 }
 
 #Ubbe's hypothetical Frisian mother Gisla Esbjornsdottir and her father
-121071 = { 
+941008 = { 
 	name = "Gisla"
 	dynasty_house = house_esbjorning
 	female = yes
@@ -239,7 +239,7 @@
 }
 
 #Fridleif, Ragnarr Lodbrok's first son
-121073 = {
+941009 = {
 	name = "Fridleif" # Ragnarsson
 	dynasty_house = house_lagertha
 	religion = "norse_pagan"
@@ -254,7 +254,7 @@
 	trait = viking
 	trait = education_martial_3
 	father = 163109 #Ragnarr Lodbrok
-	mother = 121064 #Lagertha
+	mother = 941001 #Lagertha
 	
 	820.1.1 = {
 		birth = yes
@@ -270,7 +270,7 @@
 }
 
 #Fridleif's sisters
-121074 = {
+941010 = {
 	name = T_O_rdI_s # Ragnarsson
 	dynasty_house = house_lagertha
 	female = yes
@@ -279,7 +279,7 @@
 	trait = vengeful
 	trait = education_stewardship_2
 	father = 163109 #Ragnarr Lodbrok
-	mother = 121064 #Lagertha
+	mother = 941001 #Lagertha
 	
 	821.1.1 = {
 		birth = yes
@@ -293,7 +293,7 @@
 		death = yes
 	}
 }
-121075 = {
+941011 = {
 	name = SigrI_D_r # Ragnarsson
 	dynasty_house = house_lagertha
 	female = yes
@@ -303,7 +303,7 @@
 	trait = shieldmaiden
 	trait = education_intrigue_2
 	father = 163109 #Ragnarr Lodbrok
-	mother = 121064 #Lagertha
+	mother = 941001 #Lagertha
 	
 	821.12.1 = {
 		birth = yes

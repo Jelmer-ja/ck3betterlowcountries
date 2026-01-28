@@ -799,34 +799,7 @@ ubbe_abandon_walcheren_decision = {
 				years = 5
 			}
 		}
-		trigger_event = { id = ep3_laamps.0030 }
-		# Debug tracking
-		if = {
-			limit = {
-				is_ai = yes
-				debug_only = yes
-			}
-			if = {
-				limit = { exists = global_var:ai_voluntary_laamp_count }
-				change_global_variable = {
-					name = ai_voluntary_laamp_count
-					add = 1
-				}
-			}
-			else = {
-				set_global_variable = {
-					name = ai_voluntary_laamp_count
-					value = 1
-				}
-			}
-			debug_log = "AI became adventurer voluntarily"
-			debug_log_scopes = yes
-		}
-		stress_impact = {
-			craven = minor_stress_impact_gain
-			content = minor_stress_impact_gain
-			lazy = minor_stress_impact_gain
-		}
+		trigger_event = { id = better_low_countries_decisions.0008 }
 	}
 
 	ai_potential = {

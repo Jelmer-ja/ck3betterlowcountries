@@ -144,7 +144,7 @@
 		}
 	}
 
-	# Ellert Ellerting of Ellert and Brammert ID: 121066
+	# Ellert Ellerting of Ellert and Brammert ID: 941003
 	character = {
 		name = "bookmark_dorestad_ellert"
 		dynasty_house = house_ellerting
@@ -156,7 +156,7 @@
 		culture = saxon
 		religion = catholic 
 		difficulty = "BOOKMARK_CHARACTER_DIFFICULTY_MEDIUM"
-		history_id = 121066
+		history_id = 941003
 		position = { 1150 550 }
 		
 		animation = personality_greedy
@@ -165,12 +165,12 @@
 		character = {
 			name = "bookmark_dorestad_ellert_alt_brammert"
 			relation = "BOOKMARK_RELATION_SON"
-			dynasty = 12106
+			dynasty_house = house_ellerting
 			type = male
 			birth = 847.1.1
             culture = saxon
             religion = catholic 
-			history_id = 121067
+			history_id = 941004
 			animation = personality_bold
 		}
 
@@ -183,7 +183,7 @@
 			birth = 850.1.1
             culture = saxon
             religion = catholic
-			history_id = 121068
+			history_id = 941005
 			animation = spymaster
 		}
 	}	

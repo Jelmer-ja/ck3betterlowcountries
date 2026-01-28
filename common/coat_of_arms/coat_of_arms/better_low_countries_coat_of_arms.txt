@@ -362,4 +362,6 @@ house_ubbing = {
 
 d_laamp_eirikr = house_lagertha
 
-d_laamp_radboud = k_frisia
+d_laamp_radboud = k_new_frisia
+
+246 = k_new_frisia #House/dynasty Folcwalding

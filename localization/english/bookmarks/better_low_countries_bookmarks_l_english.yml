@@ -1,6 +1,6 @@
 ﻿l_english:
  bm_867_dorestad:0 "The Sack of Dorestad"
- bm_867_dorestad_desc:1 "The peace once established in the Rhine delta by Charlemagne is long gone, and his beleaguered and incapable heirs are stuck in conflicts with the church and each other, unable to control the whims of their own children, much less defend the borders of their realms.\n\nThe Northmen have struck this region with ruthless efficiency, putting its cities to the torch and forcing Lothaire II, King of Lotharingia, to cede nearly all of Frisia as a fief to the vikings.\n\nBut resistance among the peasants is brewing, and many among the local nobility are less than happy with their new overlords.\n\n#bold Will you consolidate Norse rule or drive the accursed vikings back into the sea?#!"
+ bm_867_dorestad_desc:1 "The peace once established in the Rhine delta by Charlemagne is long gone, and his beleaguered and incapable heirs are stuck in conflicts with the church and each other, unable to control the whims of their own children, much less defend the borders of their realms.\n\nThe Northmen have struck this region without mercy, putting its cities to the torch and forcing Lothaire II, King of Lotharingia, to cede a great part Frisia as fiefs to the vikings.\n\nBut resistance among the peasants is brewing, and many among the local nobility are less than happy with their new overlords.\n\n#bold Will you consolidate Norse rule or drive the accursed vikings back into the sea?#!"
  
  bookmark_dorestad_boudewijn:0 "Duke Boudewijn 'Iron-Arm'"
  bookmark_dorestad_boudewijn_subheading:0 "$BOOKMARK_SUBHEADING_DEFAULT$"
@@ -13,21 +13,21 @@
 
  bookmark_dorestad_ubbe:0 "Ubbe Ragnarsson"
  bookmark_dorestad_ubbe_subheading:0 "$BOOKMARK_SUBHEADING_DEFAULT_WITH_THE$"
- bookmark_dorestad_ubbe_desc:0 "After years of terrorizing the Low Countries from his base in Walcheren, Ubbe Ragnarsson has joined his brothers' war to avenge their father's death at the hands of the Saxons. Unfortunately for him, this long series of wars in England would eventually claim his life.\n\n#bold Will you avenge yourself on your father's murderers or turn your attention back to the continent?#!"
+ bookmark_dorestad_ubbe_desc:0 "After years of terrorizing the Low Countries from his base in Walcheren, Ubbe Ragnarsson has joined his brothers' war to avenge their father's death at the hands of the Saxons. Unfortunately for him, this long series of wars in England would gain him little, and eventually cost him his life.\n\n#bold Will you avenge yourself on your father's murderers or turn your attention back to the continent?#!"
 
  bookmark_dorestad_ubbe_alt_hvitserk:0 "$Halfdan$"
  bookmark_dorestad_ubbe_alt_hvitserk_desc:0 "alt desc"
 
  bookmark_dorestad_gerulf:0 "Count Gerulf"
  bookmark_dorestad_gerulf_subheading:0 "$BOOKMARK_SUBHEADING_DEFAULT$"
- bookmark_dorestad_gerulf_desc:0 "Gerulf's ancestors once ruled as Kings of Frisia, but his family's holdings have long since dwindled to a tiny country at the edge of the North Sea, subject not even to the Franks, but to the unwashed heathens of the north.\n\nResistance has so far proven useless, but perhaps the dagger will succeed where the sword has failed...\n\n#bold In 885, Gerulf will help to assassinate the last viking ruler of Frisia, laying the foundations of the County of Holland. Will you follow in his footsteps?#!"
+ bookmark_dorestad_gerulf_desc:0 "Gerulf's ancestors once ruled as Kings of Frisia, but his family's holdings have long since dwindled to a tiny country at the edge of the North Sea, subject not even to the Franks, but to the unwashed heathens of the north.\n\nResistance has so far proven useless, but perhaps the dagger will succeed where the sword has failed...\n\n#bold In 885, Gerulf will help to assassinate the last viking ruler of Frisia, laying the foundations for the County of Holland. Will you follow in his footsteps?#!"
 
  bookmark_dorestad_gerulf_alt_aleidis:0 "$Aleidis$"
  bookmark_dorestad_gerulf_alt_aleidis_desc:0 "alt desc"
 
  bookmark_dorestad_rorik:0 "Hrörekr Hemmingrson"
  bookmark_dorestad_rorik_subheading:0 "$BOOKMARK_SUBHEADING_DEFAULT$"
- bookmark_dorestad_rorik_desc:0 "By threatening the very heart of Frankish power and cleverly playing the Carolingian kings against each other, Hrörekr and his brother Harald have claimed control over almost the entire Frisian coast, with Hrörekr becoming the sole ruler upon his brother's death. As the Lotharingian kingdom teeters on the edge of collapse, Hrörekr is presented with a unique opportunity to carve out his own realm.\n\nBut his hold over the country is fragile, and many Frisians still object to being ruled by the man who sacked so many of their towns.\n\n#bold Can Hrörekr and his family hold on to power? Or will his rule prove to be as shallow and ephemeral as the tide flats?#!"
+ bookmark_dorestad_rorik_desc:0 "By threatening the very heart of Frankish power and cleverly playing the Carolingian kings against one another, Hrörekr and his brother Harald have claimed control over almost the entire Frisian coast, with Hrörekr becoming the sole ruler upon his brother's death. As the Lotharingian kingdom teeters on the brink of collapse, Hrörekr is presented with a unique opportunity to carve out his own realm.\n\nBut his hold over the country is fragile, and many Frisians still object to being ruled by the man who sacked so many of their towns.\n\n#bold Can Hrörekr and his family hold on to power? Or will his rule prove to be as shallow and ephemeral as the tide flats?#!"
 
  bookmark_dorestad_rorik_alt_haraldr:0 "$Hrodulf$"
  bookmark_dorestad_rorik_alt_haraldr_desc:0 "alt desc"

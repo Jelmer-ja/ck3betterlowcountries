@@ -787,3 +787,81 @@ liege_city_cathedral_01 = {
 	
 	type = special
 }
+
+irminsul_01 = {
+	construction_time = very_slow_construction_time
+
+	type_icon = "icon_structure_irminsul.dds"
+	
+	can_construct_potential = {
+        scope:holder = {
+            faith = { religion_tag = germanic_religion }
+        }
+	}
+	
+	is_enabled = {
+		custom_description = {
+			text = holy_site_germanic_or_holy_site_trigger
+			scope:holder = {
+            	faith = { religion_tag = germanic_religion }
+			}
+		}
+	}
+	
+	show_disabled = yes
+	
+	cost_gold = 1000
+
+	character_modifier = {
+		monthly_piety = 1
+		dread_baseline_add = 20
+	}
+
+	county_modifier = {
+		development_growth_factor = 0.1
+		development_growth = 0.1
+	}
+	
+	province_modifier = {
+		tax_mult = 0.1
+		levy_size = 0.1
+		monthly_income = 1
+	}
+
+	on_complete = {
+		county.holder = { 
+			add_piety = 600
+			add_legitimacy = 200
+			dynasty = {
+				add_dynasty_prestige = 200
+			}
+		}
+		if = {
+			limit = {
+				county.holder.culture = {
+					has_cultural_parameter = more_fervor_on_church_construction
+				}
+			}
+			county.holder.faith = {
+				change_fervor = {
+					value = 10
+					desc = fervor_gain_built_temple_holding
+				}
+			}
+		}
+		else = {
+			county.holder.faith = {
+				change_fervor = {
+					value = 3
+					desc = fervor_gain_built_temple_holding
+				}
+			}
+		}
+	}
+	
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+}
