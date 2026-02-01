@@ -715,6 +715,12 @@ ubbe_abandon_walcheren_decision = {
 		this = character:163119
 		is_landed = yes
 		domain_size <= 3
+		NOT = {  #Can only do it once.
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_ubbe_left
+			}
+		}
 
 		# Relevant cultures/faiths
 		save_temporary_scope_as = potential_laamp_temp
@@ -798,6 +804,10 @@ ubbe_abandon_walcheren_decision = {
 				modifier = ep3_voluntary_laamp_character_modifier
 				years = 5
 			}
+		}
+		set_global_variable = {
+			name = flag_ubbe_left
+			value = true
 		}
 		trigger_event = { id = better_low_countries_decisions.0008 }
 	}

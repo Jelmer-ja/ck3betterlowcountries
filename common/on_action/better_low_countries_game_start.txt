@@ -197,7 +197,7 @@ blc_setup_on_actions = {
                 limit = {
                     is_alive = yes
                 }
-	            set_mother = character:121071
+	            set_mother = character:941008
                 destroy_title = title:d_laamp_ubbe
                 set_relation_rival = { target = character:163103 reason = rival_historical } # Aella of Northumberland
 			    add_gold = 300

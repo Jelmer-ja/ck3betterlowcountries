@@ -1,3 +1,3 @@
-holy_site_germanic_or_holy_site_trigger = {
+﻿holy_site_germanic_or_holy_site_trigger = {
 	global_not = holy_site_germanic_or_holy_site_trigger
 }

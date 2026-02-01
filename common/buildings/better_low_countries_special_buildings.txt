@@ -69,6 +69,8 @@
 utrecht_cathedral_01 = {
 	type_icon = "icon_structure_utrecht_cathedral.dds"
 	
+	construction_time = very_slow_construction_time
+	
 	can_construct_potential = {
 		building_requirement_tribal = no
 	}
