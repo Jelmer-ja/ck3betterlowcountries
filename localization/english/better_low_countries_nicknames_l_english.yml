@@ -1,5 +1,7 @@
 ﻿l_english:
  nick_skylding:0 "Skylding"
- nick_skylding_desc:1 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] leads a feared contingent of Viking raiders who have chosen the Scheldt river as their base of operations."
+ nick_skylding_desc:1 "This character is the leader of a feared contingent of Viking raiders who have chosen the Scheldt river as their base of operations."
  nick_iron_arm:0 "Iron-Arm"
- nick_iron_arm_desc:1 "[CHARACTER.GetShortUINameNoTooltipNoFormat|U] impaled a bear to a tree with an iron lance purely through the strength of his limbs."
+ nick_iron_arm_desc:1 "This character impaled a bear to a tree with an iron lance purely through the strength of their limbs."
+ nick_giantslayer:0 "Giantslayer"
+ nick_giantslayer_desc:1 "This character has killed one of the infamous giants of Ellertsveld."

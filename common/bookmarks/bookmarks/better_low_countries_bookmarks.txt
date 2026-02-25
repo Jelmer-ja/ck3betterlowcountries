@@ -118,6 +118,7 @@
 	character = {
 		name = "bookmark_dorestad_rorik"
 		dynasty = 9552
+		dynasty_splendor_level = 1
 		type = male
 		birth = 820.1.1
 		title = d_frisia

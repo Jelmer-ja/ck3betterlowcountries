@@ -1,0 +1,3753 @@
+﻿
+#--- 1. Duchy of Flanders ---
+
+d_flanders={
+	pattern="pattern__solid_designer.dds"
+	color1=yellow
+	color2=white
+	color3=black
+	colored_emblem={
+		color1=rgb { 36 35 33 }
+		color2=white
+		color3=red
+		texture="Flanders.dds"
+		instance={
+			scale={ 0.850000 0.850000 }
+		}
+
+	}
+
+}
+
+#--- 1.1. County of Bruges ---
+
+c_brugge={
+	pattern="pattern_solid.dds"
+	color1=rgb { 179 176 175 }
+	color2=red
+	colored_emblem={
+		color1=rgb { 179 176 175 }
+		color2=rgb { 132 63 53 }
+		texture="ce_paly_06.dds"
+		instance={
+			position={ 0.495000 0.635000 }
+			depth=1.010000
+			rotation=90
+		}
+
+	}
+
+	colored_emblem={
+		color1=rgb { 29 82 131 }
+		color2=red
+		color3=yellow
+		texture="Gent.dds"
+		instance={
+			scale={ 0.950000 0.950000 }
+		}
+
+	}
+
+}
+b_bruges = c_brugge
+
+
+b_gent={
+	pattern="pattern_solid.dds"
+	color1=black
+	color2=white
+	colored_emblem={
+		color1=rgb { 185 185 185 }
+		color2=rgb { 255 0 0 }
+		color3=rgb { 212 170 0 }
+		texture="Gent.dds"
+		instance={
+			scale={ 0.950000 0.950000 }
+		}
+
+	}
+
+}
+
+
+b_roeselare={
+	pattern="pattern_solid.dds"
+	color1=white
+	color2=white
+	colored_emblem={
+		color1=black
+		texture="Roeselare.dds"
+		instance={
+			scale={ 0.760000 0.760000 }
+		}
+
+	}
+
+}
+
+
+#--- 1.2. County of Lille ---
+
+
+c_lille={
+	pattern="pattern_solid.dds"
+	color1=red
+	color2=white
+	colored_emblem={
+		color1=white
+		texture="ce_fleur.dds"
+		instance={
+			scale={ 0.800000 0.800000 }
+		}
+
+	}
+
+}
+b_lille = c_lille
+
+b_courtrai={
+	pattern="pattern_shield_02.dds"
+	color1=white
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=red
+		texture="ce_chevron_in_chief.dds"
+		instance={
+			position={ 0.500000 0.550000 }
+			depth=6.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=red
+		texture="ce_fess_engrailed.dds"
+		instance={
+			position={ 0.775000 0.870000 }
+			rotation=142
+		}
+
+		instance={
+			position={ 0.225000 0.870000 }
+			depth=1.010000
+			rotation=218
+		}
+
+	}
+
+	colored_emblem={
+		color1=red
+		texture="ce_cross_engrailed_large.dds"
+		instance={
+			position={ 1.000000 1.000000 }
+			depth=2.010000
+		}
+
+		instance={
+			position={ 0.000000 1.000000 }
+			depth=3.010000
+		}
+
+		instance={
+			position={ 1.000000 0.000000 }
+			depth=4.010000
+		}
+
+		instance={
+			position={ 0.000000 0.000000 }
+			depth=5.010000
+		}
+
+	}
+
+}
+
+b_aire ={
+	pattern="pattern_solid.dds"
+	color1=rgb { 123 36 24 }
+	color2=black
+	colored_emblem={
+		color1=rgb { 123 36 24 }
+		texture="ce_label_03.dds"
+		instance={
+			position={ 0.520000 0.500000 }
+			scale={ 0.355000 0.430000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=blue_light
+		color2=blue
+		texture="ce_escutcheon.dds"
+		instance={
+			position={ 0.520000 0.525000 }
+			scale={ 0.600000 0.600000 }
+			depth=12.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_fleur.dds"
+		instance={
+			position={ 0.655000 0.445000 }
+			scale={ 0.100000 0.100000 }
+			depth=1.010000
+		}
+
+		instance={
+			position={ 0.395000 0.445000 }
+			scale={ 0.100000 0.100000 }
+			depth=2.010000
+		}
+
+		instance={
+			position={ 0.525000 0.445000 }
+			scale={ 0.100000 0.100000 }
+			depth=3.010000
+		}
+
+		instance={
+			position={ 0.590000 0.500000 }
+			scale={ 0.100000 0.100000 }
+			depth=4.010000
+		}
+
+		instance={
+			position={ 0.460000 0.500000 }
+			scale={ 0.100000 0.100000 }
+			depth=5.010000
+		}
+
+		instance={
+			position={ 0.655000 0.555000 }
+			scale={ 0.100000 0.100000 }
+			depth=6.010000
+		}
+
+		instance={
+			position={ 0.395000 0.555000 }
+			scale={ 0.100000 0.100000 }
+			depth=7.010000
+		}
+
+		instance={
+			position={ 0.525000 0.555000 }
+			scale={ 0.100000 0.100000 }
+			depth=8.010000
+		}
+
+		instance={
+			position={ 0.590000 0.610000 }
+			scale={ 0.100000 0.100000 }
+			depth=9.010000
+		}
+
+		instance={
+			position={ 0.460000 0.610000 }
+			scale={ 0.100000 0.100000 }
+			depth=10.010000
+		}
+
+		instance={
+			position={ 0.525000 0.665000 }
+			scale={ 0.100000 0.100000 }
+			depth=11.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=rgb { 182 119 27 }
+		color2=blue
+		color3=rgb { 144 94 19 }
+		texture="ce_lion_rampant.dds"
+		instance={
+			depth=13.010000
+		}
+
+	}
+
+}
+
+
+#--- 1.3. County of Guines ---
+
+c_guines={
+	pattern="pattern_solid.dds"
+	color1=blue
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=white
+		color2=blue
+		texture="ce_crown_head.dds"
+		instance={
+			position={ 0.500000 0.175000 }
+			scale={ 0.400000 0.400000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		texture="ce_crescent_random.dds"
+		instance={
+			position={ 0.500000 0.715000 }
+			scale={ 0.645000 0.720000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		texture="ce_fleur.dds"
+		instance={
+			position={ 0.500000 0.485000 }
+			scale={ 0.400000 0.400000 }
+			depth=2.010000
+		}
+
+	}
+
+}
+b_calais = c_guines
+
+b_saint_omer={
+	pattern="pattern_solid.dds"
+	color1=red
+	color2=white
+	colored_emblem={
+		color1=white
+		texture="ce_cross_patriarchal.dds"
+	}
+
+}
+
+b_grevelines={
+	pattern="pattern_solid.dds"
+	color1=yellow
+	color2=black
+	colored_emblem={
+		color1=black
+		color2=red
+		color3=white
+		texture="ce_lion_rampant.dds"
+		instance={
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=red
+		color2=white
+		texture="ce_horizontal_stripes_03.dds"
+		instance={
+			position={ 0.500000 0.925000 }
+		}
+
+	}
+
+}
+
+#--- 1.4. County of Bolougne ---
+
+c_boulogne={
+	pattern="pattern_solid.dds"
+	color1=yellow
+	color2=red
+	colored_emblem={
+		color1=red
+		color2=red
+		texture="ce_circle.dds"
+		instance={
+			position={ 0.500000 0.890000 }
+			scale={ 0.350000 0.350000 }
+			depth=1.010000
+		}
+
+		instance={
+			position={ 0.850000 0.150000 }
+			scale={ 0.350000 0.350000 }
+			depth=3.010000
+		}
+
+		instance={
+			position={ 0.150000 0.150000 }
+			scale={ 0.350000 0.350000 }
+			depth=4.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		color2=black
+		texture="ce_swan.dds"
+		instance={
+			position={ 0.500000 0.450000 }
+			scale={ 0.450000 0.450000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=red
+		texture="ce_escutcheon.dds"
+		instance={
+			position={ 0.500000 0.480000 }
+			scale={ 0.750000 0.750000 }
+			depth=2.010000
+		}
+
+	}
+
+}
+b_boulogne = c_boulogne
+
+
+b_abbeville={
+	pattern="temp_pattern_bendy_special.dds"
+	color1=blue
+	color2=white
+	color3=black
+	colored_emblem={
+		color1=blue
+		texture="ce_block_02.dds"
+		instance={
+			position={ 0.500000 0.175000 }
+			scale={ 1.000000 0.340000 }
+			depth=4.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=red
+		texture="ce_border_shield.dds"
+		instance={
+			depth=5.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_fleur.dds"
+		instance={
+			position={ 0.850000 0.150000 }
+			scale={ 0.250000 0.250000 }
+		}
+
+		instance={
+			position={ 0.620000 0.150000 }
+			scale={ 0.250000 0.250000 }
+			depth=1.010000
+		}
+
+		instance={
+			position={ 0.380000 0.150000 }
+			scale={ 0.250000 0.250000 }
+			depth=2.010000
+		}
+
+		instance={
+			position={ 0.150000 0.150000 }
+			scale={ 0.250000 0.250000 }
+			depth=3.010000
+		}
+
+	}
+
+}
+
+b_montreuil_sur_mer={
+	pattern="pattern_solid.dds"
+	color1=blue
+	color2=black
+	colored_emblem={
+		color1=red
+		color2=white
+		texture="ce_horizontal_stripes_02.dds"
+		instance={
+			position={ 0.500000 0.820000 }
+			scale={ 0.970000 1.000000 }
+			depth=3.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_fleur.dds"
+		instance={
+			position={ 0.500000 0.150000 }
+			scale={ 0.300000 0.300000 }
+		}
+
+		instance={
+			position={ 0.800000 0.150000 }
+			scale={ 0.300000 0.300000 }
+			depth=1.010000
+		}
+
+		instance={
+			position={ 0.200000 0.150000 }
+			scale={ 0.305000 0.300000 }
+			depth=2.010000
+		}
+
+	}
+
+}
+
+b_hesdin={
+	pattern="pattern_vertical_split_01.dds"
+	color1=white
+	color2=red
+	color3=black
+	colored_emblem={
+		color1=white
+		texture="ce_star_05.dds"
+		instance={
+			position={ 0.750000 0.500000 }
+			scale={ 0.500000 0.500000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=red
+		texture="ce_star_05.dds"
+		instance={
+			position={ 0.250000 0.500000 }
+			scale={ 0.500000 0.500000 }
+			depth=1.010000
+		}
+
+	}
+
+}
+
+
+#--- 1.5. County of Ypres ---
+
+c_ypres={
+	pattern="pattern_solid.dds"
+	color1=red
+	color2=yellow
+	color3=red
+	colored_emblem={
+		color1=white
+		texture="ce_block_02.dds"
+		instance={
+			position={ 0.500000 0.160000 }
+			scale={ 1.000000 0.320000 }
+			depth=12.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		texture="ce_vair_single.dds"
+		instance={
+			position={ 0.075000 0.650000 }
+			scale={ 0.200000 0.150000 }
+			rotation=270
+		}
+
+		instance={
+			position={ 0.290000 0.650000 }
+			scale={ 0.200000 0.150000 }
+			depth=1.010000
+			rotation=270
+		}
+
+		instance={
+			position={ 0.925000 0.645000 }
+			scale={ 0.200000 0.150000 }
+			depth=2.010000
+			rotation=90
+		}
+
+		instance={
+			position={ 0.710000 0.650000 }
+			scale={ 0.200000 0.150000 }
+			depth=3.010000
+			rotation=90
+		}
+
+		instance={
+			position={ 0.500000 0.890000 }
+			scale={ 0.150000 0.200000 }
+			depth=4.010000
+			rotation=180
+		}
+
+		instance={
+			position={ 0.500000 0.665000 }
+			scale={ 0.150000 0.200000 }
+			depth=5.010000
+			rotation=180
+		}
+
+	}
+
+	colored_emblem={
+		color1=red
+		texture="ce_block_02.dds"
+		instance={
+			position={ 0.500000 0.225000 }
+			scale={ 0.485000 0.060000 }
+			depth=9.010000
+		}
+
+		instance={
+			position={ 0.500000 0.125000 }
+			scale={ 0.345000 0.060000 }
+			depth=10.010000
+		}
+
+		instance={
+			position={ 0.500000 0.170000 }
+			scale={ 0.060000 0.300000 }
+			depth=11.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		color2=black
+		texture="ce_vair_single.dds"
+		instance={
+			position={ 0.500000 0.435000 }
+			scale={ 0.150000 0.200000 }
+			depth=6.010000
+			rotation=180
+		}
+
+	}
+
+	colored_emblem={
+		color1=black
+		texture="ce_block_02.dds"
+		instance={
+			position={ 0.500000 0.825000 }
+			scale={ 0.150000 1.000000 }
+			depth=7.010000
+		}
+
+		instance={
+			position={ 0.500000 0.655000 }
+			scale={ 1.000000 0.160000 }
+			depth=8.010000
+		}
+
+	}
+
+}
+b_yperen = c_ypres
+
+b_veurne={
+	pattern="pattern_solid.dds"
+	color1=yellow
+	color2=black
+	colored_emblem={
+		color1=rgb { 25 22 19 }
+		color2=grey
+		color3=rgb { 47 41 34 }
+		texture="Flanders.dds"
+		instance={
+			scale={ 0.900000 0.900000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=green_light
+		texture="ce_shamrock.dds"
+		instance={
+			position={ 0.480000 0.350000 }
+			scale={ 0.200000 0.200000 }
+		}
+
+	}
+
+}
+
+b_dunkirk={
+	pattern="pattern_horizontal_split_01.dds"
+	color1=yellow
+	color2=rgb { 177 176 176 }
+	color3=black
+	colored_emblem={
+		color1=blue_light
+		color2=blue
+		color3=black
+		texture="ce_dolphin.dds"
+		instance={
+			position={ 0.500000 0.760000 }
+			scale={ 0.750000 0.650000 }
+			rotation=270
+		}
+
+	}
+
+	colored_emblem={
+		color1=black
+		color2=red
+		texture="ce_lion_passant_random.dds"
+		instance={
+			position={ 0.500000 0.255000 }
+			scale={ 0.920000 0.960000 }
+			depth=1.010000
+		}
+
+	}
+
+}
+
+
+
+#--- 2. Duchy of Brabant ---
+
+d_brabant={
+	pattern="pattern_solid.dds"
+	color1=black
+	color2=yellow
+	colored_emblem={
+		color1=yellow
+		color2=black
+		color3=rgb { 213 54 32 }
+		texture="Brabant.dds"
+		instance={
+			scale={ 0.880000 0.880000 }
+		}
+
+	}
+
+}
+
+#--- 2.1 County of Hainaut ---
+
+c_hainaut={
+	pattern="pattern_checkers_02.dds"
+	color1=yellow
+	color2=yellow
+	color3=red
+	colored_emblem={
+		color1=black
+		color2=red
+		texture="ce_lion_rampant.dds"
+		instance={
+			position={ 0.750000 0.750000 }
+			scale={ 0.500000 0.500000 }
+			depth=1.010000
+		}
+
+		instance={
+			position={ 0.250000 0.250000 }
+			scale={ 0.500000 0.500000 }
+			depth=3.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=red
+		color2=blue
+		texture="ce_lion_rampant.dds"
+		instance={
+			position={ 0.250000 0.750000 }
+			scale={ 0.500000 0.500000 }
+		}
+
+		instance={
+			position={ 0.750000 0.250000 }
+			scale={ 0.500000 0.500000 }
+			depth=2.010000
+		}
+
+	}
+
+}
+
+b_mons={
+	pattern="pattern_solid.dds"
+	color1=rgb { 129 55 45 }
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=yellow_light
+		color2=green_light
+		color3=rgb { 184 183 183 }
+		texture="Mons.dds"
+		instance={
+			position={ 0.475000 0.615000 }
+			scale={ 1.000000 0.955000 }
+		}
+
+	}
+
+}
+
+
+b_tournai={
+	pattern="pattern_solid.dds"
+	color1=red
+	color2=white
+	color3=blue
+	colored_emblem={
+		color1=black
+		color2=black
+		color3=white
+		texture="Tournai.dds"
+		instance={
+			scale={ 0.850000 0.850000 }
+		}
+
+	}
+
+}
+
+
+b_ath={
+	pattern="pattern_solid.dds"
+	color1=yellow
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=black
+		color2=black
+		color3=black
+		texture="ce_eagle_double.dds"
+		instance={
+			scale={ 0.995000 0.935000 }
+			depth=3.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=black
+		texture="ce_border_banner.dds"
+		instance={
+			scale={ 0.400000 0.400000 }
+			depth=2.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_border_banner.dds"
+		instance={
+			scale={ 0.370000 0.370000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=black
+		color2=black
+		color3=black
+		texture="ce_lion_rampant_forked.dds"
+		instance={
+			position={ 0.500000 0.490000 }
+			scale={ 0.320000 0.320000 }
+		}
+
+	}
+
+}
+
+#--- 2.2 County of Brabant ---
+
+c_brabant={
+	pattern="pattern_solid.dds"
+	color1=red
+	color2=white
+	colored_emblem={
+		color1=white
+		color2=white
+		texture="ce_ordinary_fess_5.dds"
+		instance={
+			position={ 0.500000 0.450000 }
+			scale={ 1.000000 1.400000 }
+		}
+
+	}
+
+}
+
+
+b_brussels={
+	pattern="pattern_solid.dds"
+	color1=rgb { 129 55 45 }
+	color2=yellow
+	color3=red
+	colored_emblem={
+		color1=rgb { 126 126 126 }
+		color2=black
+		color3=rgb { 126 126 126 }
+		texture="Brussels.dds"
+		instance={
+			scale={ 0.850000 0.850000 }
+		}
+
+	}
+
+}
+
+b_leuven=c_brabant
+
+b_turnhout={
+	pattern="pattern_solid.dds"
+	color1=grey
+	color2=white
+	color3=brown
+	colored_emblem={
+		color1=green_light
+		texture="ce_block_02.dds"
+		instance={
+			position={ 0.500000 1.000000 }
+			scale={ 1.000000 0.385000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=blue
+		color2=white
+		color3=brown
+		texture="Turnhout.dds"
+		instance={
+			scale={ 0.800000 0.800000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=green_light
+		texture="ce_fess_dancetty.dds"
+		instance={
+			position={ 0.500000 0.800000 }
+			scale={ 1.000000 0.250000 }
+			depth=2.010000
+		}
+
+	}
+
+}
+
+
+#--- 2.3 County of Cambrai ---
+
+c_cambray={
+	pattern="pattern_solid.dds"
+	color1=yellow
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=black
+		color2=red
+		color3=white
+		texture="ce_eagle_double.dds"
+		instance={
+			scale={ 0.995000 0.935000 }
+			depth=4.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=blue
+		color2=blue
+		texture="ce_lion_rampant.dds"
+		instance={
+			position={ 0.500000 0.575000 }
+			scale={ 0.180000 0.180000 }
+		}
+
+		instance={
+			position={ 0.575000 0.420000 }
+			scale={ 0.180000 0.180000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=blue
+		color2=blue
+		color3=blue
+		texture="ce_lion_rampant.dds"
+		instance={
+			position={ 0.430000 0.420000 }
+			scale={ 0.180000 0.180000 }
+			depth=2.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_shield_01.dds"
+		instance={
+			scale={ 0.370000 0.370000 }
+			depth=3.010000
+		}
+
+	}
+
+}
+b_cambrai = c_cambray
+
+b_valenciennes={
+	pattern="pattern_solid.dds"
+	color1=red
+	color2=white
+	color3=blue
+	colored_emblem={
+		color1=yellow
+		color2=black
+		texture="ce_lion_rampant.dds"
+		instance={
+			scale={ 1.000000 0.985000 }
+		}
+
+	}
+
+}
+
+b_malboden={
+	pattern="pattern_checkers_02.dds"
+	color1=white
+	color2=yellow
+	color3=red
+	colored_emblem={
+		color1=black
+		color2=red
+		texture="ce_lion_rampant.dds"
+		instance={
+			position={ 0.750000 0.750000 }
+			scale={ 0.500000 0.500000 }
+			depth=1.010000
+		}
+
+		instance={
+			position={ 0.250000 0.250000 }
+			scale={ 0.500000 0.500000 }
+			depth=3.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=red
+		color2=blue
+		texture="ce_lion_rampant.dds"
+		instance={
+			position={ 0.250000 0.750000 }
+			scale={ 0.500000 0.500000 }
+		}
+
+		instance={
+			position={ 0.750000 0.250000 }
+			scale={ 0.500000 0.500000 }
+			depth=2.010000
+		}
+
+	}
+
+}
+
+#--- 2.4  County of Antwerpen---
+
+c_antwerpen={
+	pattern="pattern__solid_designer.dds"
+	color1=red
+	color2=yellow
+	color3=red
+	colored_emblem={
+		color1=rgb { 155 153 153 }
+		color2=white
+		color3=green
+		texture="Antwerpen.dds"
+		instance={
+			position={ 0.500000 0.475000 }
+			scale={ 0.710000 0.720000 }
+		}
+
+	}
+
+}
+
+b_antwerpen = c_antwerpen
+
+
+b_breda={
+	pattern="pattern_solid.dds"
+	color1=red
+	color2=black
+	colored_emblem={
+		color1=white
+		texture="ce_ordinary_cross_4.dds"
+		instance={
+			position={ 0.500000 0.705000 }
+			scale={ 0.300000 0.300000 }
+			rotation=135
+		}
+
+		instance={
+			position={ 0.750000 0.300000 }
+			scale={ 0.300000 0.300000 }
+			depth=1.010000
+			rotation=135
+		}
+
+		instance={
+			position={ 0.250000 0.300000 }
+			scale={ 0.300000 0.300000 }
+			depth=2.010000
+			rotation=135
+		}
+
+	}
+
+}
+
+b_rosendaal={
+	pattern="pattern_solid.dds"
+	color1=rgb { 181 177 174 }
+	color2=rgb { 194 103 91 }
+	color3=rgb { 194 103 91 }
+	colored_emblem={
+		color1=red
+		color2=rgb { 205 94 77 }
+		color3=rgb { 205 94 77 }
+		texture="ce_flower.dds"
+		instance={
+			position={ 0.500000 0.875000 }
+			scale={ 0.300000 0.300000 }
+			depth=1.010000
+		}
+
+		instance={
+			position={ 0.200000 0.150000 }
+			scale={ 0.300000 0.300000 }
+			depth=2.010000
+		}
+
+		instance={
+			position={ 0.800000 0.150000 }
+			scale={ 0.300000 0.300000 }
+			depth=3.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=black
+		color2=red
+		color3=red
+		texture="ce_lion_rampant_wide_stance_crown.dds"
+		instance={
+			scale={ 0.500000 0.500000 }
+		}
+
+	}
+
+}
+
+
+#--- 3. Duchy of Holland ---
+
+#--- 3.1. County of Zeeland ---
+
+c_zeeland ={
+	pattern="pattern_solid.dds"
+	color1=yellow
+	color2=red
+	colored_emblem={
+		color1=white
+		texture="ce_block_02.dds"
+		instance={
+			position={ 0.500000 0.845000 }
+			scale={ 1.000000 0.615000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=blue
+		color2=white
+		texture="ce_pales_undy_04.dds"
+		instance={
+			position={ 0.500000 0.815000 }
+			rotation=90
+		}
+
+	}
+
+	colored_emblem={
+		color1=red
+		color2=blue
+		color3=white
+		texture="ce_lion_rampant.dds"
+		instance={
+			depth=2.010000
+		}
+
+	}
+
+}
+b_middelburg = c_zeeland
+
+b_bergen_op_zoom={
+	pattern="pattern_solid.dds"
+	color1=red
+	color2=black
+	colored_emblem={
+		color1=white
+		texture="ce_ordinary_cross_4.dds"
+		instance={
+			position={ 0.500000 0.600000 }
+			scale={ 0.300000 0.300000 }
+			depth=3.010000
+			rotation=135
+		}
+
+		instance={
+			position={ 0.750000 0.250000 }
+			scale={ 0.300000 0.300000 }
+			depth=4.010000
+			rotation=135
+		}
+
+		instance={
+			position={ 0.250000 0.250000 }
+			scale={ 0.300000 0.300000 }
+			depth=5.010000
+			rotation=135
+		}
+
+	}
+
+	colored_emblem={
+		color1=green
+		texture="ce_heart.dds"
+		instance={
+			position={ 0.500000 1.000000 }
+			scale={ 1.000000 0.700000 }
+			rotation=180
+		}
+
+		instance={
+			position={ 0.295000 1.000000 }
+			scale={ 1.000000 0.700000 }
+			depth=1.010000
+			rotation=179
+		}
+
+		instance={
+			position={ 0.705000 1.000000 }
+			scale={ 1.000000 0.700000 }
+			depth=2.010000
+			rotation=180
+		}
+
+	}
+
+}
+
+b_brielle={
+	pattern="pattern_vertical_stripes_02.dds"
+	color1=white
+	color2=red
+	color3=red
+}
+
+#--- 3.2. County of Holland ---
+
+b_delft ={
+	pattern="pattern_vertical_stripes_02.dds"
+	color1=white
+	color2=black
+	color3=red
+}
+
+b_dort={
+	pattern="pattern_vertical_stripes_02.dds"
+	color1=red
+	color2=white
+	color3=red
+}
+
+b_rotterdam={
+	pattern="pattern_checkers_02.dds"
+	color1=yellow
+	color2=yellow
+	color3=red
+	colored_emblem={
+		color1=red
+		color2=blue
+		texture="ce_lion_passant.dds"
+		instance={
+			position={ 0.300000 0.350000 }
+			scale={ 0.300000 0.255000 }
+			depth=2.010000
+		}
+
+		instance={
+			position={ 0.700000 0.150000 }
+			scale={ 0.300000 0.250000 }
+			depth=4.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=black
+		color2=red
+		texture="ce_lion_passant.dds"
+		instance={
+			position={ 0.700000 0.350000 }
+			scale={ 0.300000 0.250000 }
+			depth=3.010000
+		}
+
+		instance={
+			position={ 0.300000 0.150000 }
+			scale={ 0.300000 0.250000 }
+			depth=5.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=green
+		texture="ce_block_02.dds"
+		instance={
+			position={ 0.500000 0.810000 }
+			scale={ 1.000000 0.720000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		texture="ce_block_03.dds"
+		instance={
+			position={ 0.500000 0.950000 }
+			rotation=90
+		}
+
+	}
+
+}
+
+#--- 3.3. County of Westfriesland ---
+
+c_westfriesland={
+	custom=yes
+	pattern="pattern_solid.dds"
+	color1=red
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=yellow
+		color2=white
+		texture="ce_sword_simple.dds"
+		instance={
+			position={ 0.500000 0.550000 }
+			scale={ 0.800000 0.805000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		texture="ce_star_06.dds"
+		instance={
+			position={ 0.750000 0.750000 }
+			scale={ 0.300000 0.300000 }
+			depth=2.010000
+		}
+
+		instance={
+			position={ 0.250000 0.750000 }
+			scale={ 0.300000 0.300000 }
+			depth=3.010000
+		}
+
+		instance={
+			position={ 0.250000 0.255000 }
+			scale={ 0.300000 0.300000 }
+			depth=4.010000
+		}
+
+		instance={
+			position={ 0.750000 0.250000 }
+			scale={ 0.300000 0.300000 }
+			depth=5.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		color2=white
+		texture="ce_cross_06.dds"
+		instance={
+			position={ 0.500000 0.150000 }
+			scale={ 0.150000 0.150000 }
+		}
+
+	}
+
+}
+b_haarlem = c_westfriesland
+
+b_edam={
+	pattern="pattern_solid.dds"
+	color1=red
+	color2=white
+	color3=black
+	colored_emblem={
+		color1=yellow
+		texture="ce_star_06.dds"
+		instance={
+			position={ 0.250000 0.200000 }
+			scale={ 0.300000 0.300000 }
+			depth=1.010000
+		}
+
+		instance={
+			position={ 0.500000 0.200000 }
+			scale={ 0.300000 0.300000 }
+			depth=2.010000
+		}
+
+		instance={
+			position={ 0.750000 0.200000 }
+			scale={ 0.300000 0.300000 }
+			depth=3.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		color2=white
+		color3=grey
+		texture="ce_bull_passant.dds"
+		instance={
+			position={ 0.500000 0.700000 }
+			scale={ 0.800000 0.800000 }
+		}
+
+	}
+
+}
+
+b_medemblik ={
+	pattern="pattern_vertical_stripes_02.dds"
+	color1=black
+	color2=yellow_light
+	color3=red
+}
+
+b_aalkmar={
+	pattern="pattern_solid.dds"
+	color1=red
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=black
+		color2=black
+		color3=rgb { 171 168 165 }
+		texture="Alkmaar.dds"
+		instance={
+			scale={ 0.700000 0.700000 }
+		}
+
+	}
+
+}
+
+
+#--- 4. Duchy of Utrecht ---
+
+d_utrecht ={
+	pattern="pattern_solid.dds"
+	color1=white
+	color2=red
+	colored_emblem={
+		color1=red
+		color2=white
+		texture="ce_per_bend.dds"
+	}
+
+}
+
+#--- 4.1. County of Utrecht ---
+
+c_utrecht = d_utrecht
+
+b_amersfoort={
+	pattern="pattern_cross_01.dds"
+	color1=white
+	color2=red
+	color3=red
+}
+
+#--- 4.2. County of Groningen ---
+
+c_groningen={
+	pattern="pattern_solid.dds"
+	color1=yellow
+	color2=green
+	colored_emblem={
+		color1=black
+		color2=white
+		color3=white
+		texture="Groningen.dds"
+		instance={
+			scale={ 0.850000 0.850000 }
+		}
+
+	}
+
+}
+
+b_groningen = c_groningen
+
+b_emmen={
+	pattern="pattern_checkers_diagonal_01.dds"
+	color1=white
+	color2=green_light
+	color3=red
+}
+
+b_steenwijk={
+	pattern="pattern_horizontal_split_01.dds"
+	color1=blue
+	color2=red
+	color3=red
+	colored_emblem={
+		color1=yellow
+		texture="ce_anchor.dds"
+	}
+
+}
+
+b_assen={
+	pattern="pattern_solid.dds"
+	color1=blue
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=white
+		color2=yellow
+		color3=rgb { 157 96 146 }
+		texture="Assen.dds"
+		instance={
+			position={ 0.500000 0.480000 }
+			scale={ 0.750000 0.750000 }
+		}
+
+	}
+
+}
+
+#--- 4.3. County of Oversticht ---
+
+b_ommen={
+	pattern="pattern_solid.dds"
+	color1=blue
+	color2=red
+	color3=yellow
+	colored_emblem={
+		color1=rgb { 192 155 99 }
+		texture="ce_star_06.dds"
+		instance={
+			position={ 0.800000 0.200000 }
+			scale={ 0.300000 0.300000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		color2=white
+		color3=white
+		texture="Emmen.dds"
+		instance={
+			scale={ 0.800000 0.800000 }
+			depth=3.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=rgb { 192 155 99 }
+		color2=rgb { 192 155 99 }
+		color3=rgb { 192 155 99 }
+		texture="ce_eagle.dds"
+		instance={
+			position={ 0.800000 0.650000 }
+			scale={ 0.400000 0.400000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=rgb { 192 155 99 }
+		color2=rgb { 192 155 99 }
+		color3=rgb { 192 155 99 }
+		texture="ce_lion_rampant_per_pale.dds"
+		instance={
+			position={ 0.200000 0.650000 }
+			scale={ -0.400000 0.400000 }
+			depth=2.010000
+		}
+
+	}
+
+}
+
+b_kampen={
+	custom=yes
+	pattern="pattern_solid.dds"
+	color1=blue
+	color2=yellow
+	color3=red
+	colored_emblem={
+		color1=white
+		color2=black
+		color3=black
+		texture="Kampen.dds"
+		instance={
+			position={ 0.500000 0.480000 }
+			scale={ 0.850000 0.850000 }
+		}
+
+	}
+
+}
+
+b_almelo={
+	custom=yes
+	pattern="pattern_solid.dds"
+	color1=blue
+	color2=white
+	color3=black
+	colored_emblem={
+		color1=white
+		texture="ce_block_02.dds"
+		instance={
+			position={ 0.500000 0.700000 }
+			scale={ 0.200000 0.200000 }
+			rotation=45
+		}
+
+		instance={
+			position={ 0.750000 0.300000 }
+			scale={ 0.200000 0.200000 }
+			depth=1.010000
+			rotation=45
+		}
+
+		instance={
+			position={ 0.250000 0.300000 }
+			scale={ 0.200000 0.200000 }
+			depth=2.010000
+			rotation=45
+		}
+
+	}
+
+}
+
+b_coevorden={
+	pattern="pattern_solid.dds"
+	color1=blue
+	color2=yellow
+	color3=red
+	colored_emblem={
+		color1=yellow
+		color2=yellow_light
+		color3=yellow_light
+		texture="Coevorden1.dds"
+		instance={
+			position={ 0.300000 0.500000 }
+			scale={ 0.750000 0.750000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		color2=yellow_light
+		color3=yellow_light
+		texture="Coevorden2.dds"
+		instance={
+			position={ 0.700000 0.500000 }
+			scale={ 0.750000 0.750000 }
+		}
+
+	}
+
+}
+
+
+#--- 5. Duchy of Frisia ---
+
+#--- 5.1. County of Frisia ---
+
+d_frisia={
+	pattern="pattern_solid.dds"
+	color1=blue
+	color2=yellow
+	colored_emblem={
+		color1=yellow
+		color2=yellow
+		color3=black
+		texture="ce_leopard_passant_guardant.dds"
+		instance={
+			position={ 0.500000 0.230000 }
+			scale={ 0.880000 1.000000 }
+		}
+
+		instance={
+			position={ 0.500000 0.580000 }
+			scale={ 0.880000 1.000000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		color2=white
+		texture="ce_circle.dds"
+		instance={
+			position={ 0.690000 0.415000 }
+			scale={ 0.100000 0.100000 }
+		}
+
+		instance={
+			position={ 0.420000 0.430000 }
+			scale={ 0.100000 0.100000 }
+			rotation=35
+		}
+
+		instance={
+			position={ 0.240000 0.430000 }
+			scale={ 0.100000 0.100000 }
+			rotation=35
+		}
+
+		instance={
+			position={ 0.400000 0.800000 }
+			scale={ 0.100000 0.100000 }
+		}
+
+		instance={
+			position={ 0.690000 0.770000 }
+			scale={ 0.100000 0.100000 }
+		}
+
+		instance={
+			position={ 0.230000 0.780000 }
+			scale={ 0.100000 0.100000 }
+			rotation=-10
+		}
+
+		instance={
+			position={ 0.520000 0.880000 }
+			scale={ 0.100000 0.100000 }
+		}
+
+		instance={
+			position={ 0.240000 0.080000 }
+			scale={ 0.100000 0.100000 }
+		}
+
+		instance={
+			position={ 0.680000 0.070000 }
+			scale={ 0.100000 0.100000 }
+			rotation=10
+		}
+
+		instance={
+			position={ 0.425000 0.080000 }
+			scale={ 0.100000 0.100000 }
+			rotation=35
+		}
+
+		instance={
+			position={ 0.865000 0.160000 }
+			scale={ 0.100000 0.100000 }
+			rotation=35
+		}
+
+		instance={
+			position={ 0.850000 0.430000 }
+			scale={ 0.100000 0.100000 }
+			rotation=35
+		}
+
+	}
+
+}
+
+b_staveren={
+	pattern="pattern_horizontal_split_01.dds"
+	color1=yellow_light
+	color2=orange
+	color3=blue
+	colored_emblem={
+		color1=red
+		texture="ce_block_03.dds"
+		instance={
+			scale={ 1.000000 0.685000 }
+		}
+
+	}
+
+}
+
+b_harlingen={
+	pattern="pattern_checkers_02.dds"
+	color1=red
+	color2=blue
+	color3=blue
+	colored_emblem={
+		color1=yellow
+		color2=yellow_light
+		texture="ce_angel.dds"
+		instance={
+			position={ 0.750000 0.750000 }
+			scale={ 0.500000 0.500000 }
+		}
+
+		instance={
+			position={ 0.250000 0.250000 }
+			scale={ 0.500000 0.500000 }
+			depth=1.010000
+		}
+
+	}
+
+}
+
+b_wadeilannen={
+	pattern="temp_pattern_bendy_special.dds"
+	color1=yellow
+	color2=black
+	color3=red
+	colored_emblem={
+		color1=blue
+		texture="ce_block_02.dds"
+		instance={
+			position={ 0.795000 0.500000 }
+			scale={ 0.595000 1.000000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		texture="ce_crescent_bone.dds"
+		instance={
+			position={ 0.725000 0.500000 }
+			scale={ -0.750000 0.750000 }
+			rotation=270
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_block_02.dds"
+		instance={
+			position={ 0.460000 0.070000 }
+			scale={ 0.375000 0.365000 }
+			depth=2.010000
+			rotation=45
+		}
+
+	}
+
+}
+
+#--- 5.2. County of Dokkum ---
+
+c_dokkum={
+	pattern="pattern_solid.dds"
+	color1=blue
+	color2=white
+	colored_emblem={
+		color1=white
+		texture="ce_crescent_random.dds"
+		instance={
+			position={ 0.500000 0.300000 }
+			scale={ 0.700000 -0.700000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		color2=white
+		texture="ce_star_06.dds"
+		instance={
+			scale={ 0.350000 0.350000 }
+			depth=1.010000
+		}
+
+		instance={
+			position={ 0.680000 0.750000 }
+			scale={ 0.350000 0.350000 }
+			depth=2.010000
+		}
+
+		instance={
+			position={ 0.320000 0.750000 }
+			scale={ 0.350000 0.350000 }
+			depth=3.010000
+		}
+
+	}
+
+}
+
+b_dokkum = c_dokkum
+
+b_delfzijl={
+	pattern="pattern__solid_designer.dds"
+	color1=black
+	color2=yellow
+	color3=blue
+	colored_emblem={
+		color1=yellow
+		texture="ce_star_06.dds"
+		instance={
+			position={ 0.365000 0.200000 }
+			scale={ 0.200000 0.200000 }
+		}
+
+		instance={
+			position={ 0.630000 0.200000 }
+			scale={ 0.200000 0.200000 }
+			depth=1.010000
+		}
+
+		instance={
+			position={ 0.280000 0.800000 }
+			scale={ 0.200000 0.200000 }
+			depth=2.010000
+		}
+
+		instance={
+			position={ 0.720000 0.800000 }
+			scale={ 0.200000 0.200000 }
+			depth=3.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		color2=yellow
+		color3=yellow
+		texture="Delfzijl.dds"
+		instance={
+			scale={ 0.900000 0.900000 }
+			depth=4.010000
+		}
+
+	}
+
+}
+
+b_appingedam={
+	pattern="pattern_solid.dds"
+	color1=blue
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=white
+		color2=yellow
+		color3=rgb { 180 129 160 }
+		texture="Appingedam2.dds"
+		instance={
+			position={ 0.480000 0.450000 }
+			scale={ 0.750000 0.750000 }
+			depth=2.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		color2=white
+		color3=rgb { 180 129 160 }
+		texture="Appingedam1.dds"
+		instance={
+			position={ 0.800000 0.545000 }
+			scale={ -0.555000 0.555000 }
+		}
+
+		instance={
+			position={ 0.200000 0.545000 }
+			scale={ 0.550000 0.550000 }
+			depth=1.010000
+		}
+
+	}
+
+}
+
+#--- 5.3. County of Ostfriesland ---
+
+c_ostfriesland={
+	pattern="pattern__solid_designer.dds"
+	color1=black
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=yellow
+		color2=red
+		color3=white
+		texture="Emden.dds"
+		instance={
+			position={ 0.500000 0.630000 }
+			scale={ 0.950000 0.950000 }
+		}
+
+	}
+
+}
+b_emden = c_ostfriesland
+
+b_varel={
+	pattern="pattern_solid.dds"
+	color1=blue
+	color2=white
+	colored_emblem={
+		color1=white
+		color2=black
+		texture="Varel.dds"
+		instance={
+			position={ 0.500000 0.580000 }
+		}
+
+	}
+
+}
+
+b_wilhelmshaven={
+	pattern="pattern_solid.dds"
+	color1=blue_light
+	color2=green
+	colored_emblem={
+		color1=black
+		color2=yellow
+		color3=white
+		texture="ce_eagle.dds"
+		instance={
+			position={ 0.500000 0.535000 }
+			scale={ 0.400000 0.400000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		color2=yellow
+		texture="ce_sword_simple.dds"
+		instance={
+			position={ 0.415000 0.455000 }
+			depth=2.010000
+			rotation=146
+		}
+
+		instance={
+			position={ 0.565000 0.455000 }
+			scale={ 1.000000 -1.000000 }
+			depth=3.010000
+			rotation=34
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_anchor.dds"
+		instance={
+			scale={ 1.000000 0.900000 }
+			depth=4.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		texture="ce_escutcheon.dds"
+		instance={
+			position={ 0.500000 0.525000 }
+			scale={ 0.500000 0.500000 }
+			depth=1.010000
+		}
+
+	}
+
+}
+
+
+#--- 6. Duchy of Guelders ---
+
+d_gelre={
+	pattern="pattern_solid.dds"
+	color1=blue
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=white
+		color2=grey
+		color3=grey
+		texture="ce_flower.dds"
+		instance={
+			position={ 0.150000 0.650000 }
+			scale={ 0.200000 0.200000 }
+		}
+
+		instance={
+			position={ 0.850000 0.650000 }
+			scale={ 0.200000 0.200000 }
+			depth=1.010000
+		}
+
+		instance={
+			position={ 0.500000 0.870000 }
+			scale={ 0.200000 0.200000 }
+			depth=2.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow_light
+		color2=red
+		color3=red
+		texture="Geldern.dds"
+		instance={
+			position={ 0.500000 0.435000 }
+			scale={ 0.730000 0.750000 }
+			depth=3.010000
+		}
+
+	}
+
+}
+
+#--- 6.1. County of Guelders ---
+c_guelders = d_gelre
+b_geldern = c_guelders
+
+b_nijmegen={
+	pattern="pattern_solid.dds"
+	color1=yellow
+	color2=white
+	color3=blue
+	colored_emblem={
+		color1=black
+		color2=yellow
+		color3=yellow
+		texture="Nijwegen.dds"
+		instance={
+			scale={ 0.880000 0.880000 }
+			depth=3.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=black
+		texture="ce_escutcheon.dds"
+		instance={
+			scale={ 0.440000 0.440000 }
+			depth=2.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=black
+		color2=grey
+		color3=grey
+		texture="ce_lion_rampant_small.dds"
+		instance={
+			position={ 0.500000 0.480000 }
+			scale={ 0.270000 0.270000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		texture="ce_escutcheon.dds"
+		instance={
+			scale={ 0.400000 0.400000 }
+			depth=1.010000
+		}
+
+	}
+
+}
+
+b_tiel={
+	pattern="pattern_solid.dds"
+	color1=orange
+	color2=white
+	color3=blue
+	colored_emblem={
+		color1=yellow
+		color2=blue_light
+		texture="Tiel.dds"
+		instance={
+			position={ 0.500000 0.440000 }
+			scale={ 0.300000 0.300000 }
+			depth=2.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=black
+		texture="ce_lion_rampant_per_pale.dds"
+		instance={
+			position={ 0.560000 0.430000 }
+			scale={ 0.200000 0.200000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=black
+		color2=red
+		color3=red
+		texture="ce_eagle_double.dds"
+		instance={
+			depth=3.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_lion_rampant_per_pale.dds"
+		instance={
+			position={ 0.445000 0.425000 }
+			scale={ -0.200000 0.200000 }
+			depth=1.010000
+		}
+
+	}
+
+}
+
+
+#--- 6.2. County of Arnhem ---
+
+c_arnhem={
+	pattern="pattern_solid.dds"
+	color1=blue
+	color2=white
+	colored_emblem={
+		color1=white
+		color2=yellow
+		color3=black
+		texture="ce_eagle_double.dds"
+		instance={
+			scale={ 0.900000 1.000000 }
+		}
+
+	}
+
+}
+
+b_harderwijk={
+	pattern="pattern_solid.dds"
+	color1=blue
+	color2=black
+	color3=white
+	colored_emblem={
+		color1=white
+		texture="ce_block_02.dds"
+		instance={
+			position={ 0.345000 0.070000 }
+			scale={ 0.050000 0.050000 }
+		}
+
+		instance={
+			position={ 0.710000 0.060000 }
+			scale={ 0.050000 0.050000 }
+			depth=1.010000
+		}
+
+		instance={
+			position={ 0.865000 0.065000 }
+			scale={ 0.050000 0.050000 }
+			depth=2.010000
+		}
+
+		instance={
+			position={ 0.875000 0.645000 }
+			scale={ 0.050000 0.050000 }
+			depth=3.010000
+		}
+
+		instance={
+			position={ 0.465000 0.890000 }
+			scale={ 0.050000 0.050000 }
+			depth=4.010000
+		}
+
+		instance={
+			position={ 0.610000 0.770000 }
+			scale={ 0.050000 0.050000 }
+			depth=5.010000
+		}
+
+		instance={
+			position={ 0.170000 0.715000 }
+			scale={ 0.050000 0.050000 }
+			depth=7.010000
+		}
+
+		instance={
+			position={ 0.170000 0.375000 }
+			scale={ 0.050000 0.050000 }
+			depth=8.010000
+		}
+
+		instance={
+			position={ 0.170000 0.070000 }
+			scale={ 0.050000 0.050000 }
+			depth=9.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		color3=white
+		texture="ce_block_02.dds"
+		instance={
+			position={ 0.360000 0.640000 }
+			scale={ 0.050000 0.050000 }
+			depth=6.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		color2=red
+		color3=red
+		texture="ce_lion_rampant_wide_stance.dds"
+		instance={
+			depth=10.010000
+		}
+
+	}
+
+}
+
+b_apeldoorn={
+	pattern="pattern_solid.dds"
+	color1=yellow
+	color2=yellow
+	color3=red
+	colored_emblem={
+		color1=rgb { 119 116 116 }
+		texture="ce_key.dds"
+		instance={
+			position={ 0.500000 0.430000 }
+			scale={ 0.500000 -0.500000 }
+			rotation=270
+		}
+
+	}
+
+	colored_emblem={
+		color1=orange
+		color2=blue
+		color3=blue_light
+		texture="ce_eagle_small.dds"
+		instance={
+			position={ 0.500000 0.460000 }
+			depth=1.010000
+		}
+
+	}
+
+}
+
+
+
+#--- 6.2. County of Zutphen ---
+
+c_zutphen={
+	pattern="pattern_solid.dds"
+	color1=white
+	color2=red
+	colored_emblem={
+		color1=blue
+		texture="ce_block_02.dds"
+		instance={
+			position={ 0.500000 0.165000 }
+			scale={ 1.000000 0.640000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_lion_passant_small.dds"
+		instance={
+			position={ 0.500000 0.300000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=red
+		color2=red
+		texture="ce_cross_moline.dds"
+		instance={
+			position={ 0.500000 0.750000 }
+			scale={ 0.600000 0.600000 }
+			depth=2.010000
+		}
+
+	}
+
+}
+b_zutphen = c_zutphen
+
+b_borculo={
+	pattern="pattern_solid.dds"
+	color1=blue
+	color2=yellow
+	color3=black
+	colored_emblem={
+		color1=yellow
+		texture="ce_circle_mask.dds"
+		instance={
+			position={ 0.500000 0.700000 }
+			scale={ 0.200000 0.200000 }
+			depth=1.010000
+		}
+
+		instance={
+			position={ 0.750000 0.500000 }
+			scale={ 0.200000 0.200000 }
+			depth=2.010000
+		}
+
+		instance={
+			position={ 0.250000 0.500000 }
+			scale={ 0.200000 0.200000 }
+			depth=3.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_boathooks.dds"
+	}
+
+}
+
+b_bredevoort={
+	pattern="pattern_solid.dds"
+	color1=red
+	color2=yellow
+	color3=red
+	colored_emblem={
+		color1=white
+		color2=white
+		color3=white
+		texture="Geldern.dds"
+		instance={
+			scale={ 0.880000 0.880000 }
+		}
+
+	}
+
+}
+
+#--- 7. Duchy of Julich ---
+
+#--- 7.1. County of Maastricht ---
+
+b_tilburg={
+	pattern="pattern_solid.dds"
+	color1=rgb { 34 81 125 }
+	color2=white
+	color3=black
+	colored_emblem={
+		color1=yellow
+		color2=yellow
+		color3=yellow
+		texture="Tilburg.dds"
+		instance={
+			position={ 0.500000 0.555000 }
+		}
+
+	}
+
+}
+
+
+b_eindhoven={
+	pattern="pattern_vertical_split_01.dds"
+	color1=white
+	color2=red
+	color3=black
+	colored_emblem={
+		color1=white
+		color2=black
+		texture="ce_bugle_horn_random.dds"
+		instance={
+			position={ 0.750000 0.750000 }
+			scale={ 0.350000 0.300000 }
+			depth=1.010000
+		}
+
+		instance={
+			position={ 0.750000 0.500000 }
+			scale={ 0.350000 0.300000 }
+			depth=2.010000
+		}
+
+		instance={
+			position={ 0.750000 0.250000 }
+			scale={ 0.350000 0.300000 }
+			depth=3.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=red
+		color2=black
+		texture="ce_lion_rampant_per_pale.dds"
+		instance={
+			position={ 0.285000 0.500000 }
+			scale={ 0.800000 0.800000 }
+		}
+
+	}
+
+}
+
+#--- 7.2. County of Kleve ---
+b_moers =={
+	pattern="pattern_horizontal_stripes_01.dds"
+	color1=yellow
+	color2=black
+	color3=black
+	colored_emblem={
+		color1=white
+		texture="ce_block_02.dds"
+		instance={
+			position={ 0.140000 0.505000 }
+			scale={ 0.735000 1.000000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=black
+		color2=black
+		color3=red
+		texture="Tournai.dds"
+		instance={
+			position={ 0.250000 0.500000 }
+			scale={ 0.500000 0.550000 }
+		}
+
+	}
+
+}
+
+b_gladbach={
+	pattern="pattern__solid_designer.dds"
+	color1=blue
+	color2=yellow
+	color3=black
+	colored_emblem={
+		color1=white
+		texture="ce_crozier.dds"
+		instance={
+			position={ 0.250000 0.585000 }
+			scale={ -0.625000 0.625000 }
+			depth=5.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=rgb { 189 189 189 }
+		texture="ce_bend_embattled.dds"
+		instance={
+			position={ 0.500000 0.125000 }
+			scale={ 1.000000 0.405000 }
+			rotation=315
+		}
+
+	}
+
+	colored_emblem={
+		color1=red
+		texture="ce_block_02.dds"
+		instance={
+			position={ 0.500000 0.110000 }
+			scale={ 1.000000 0.230000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_block_02.dds"
+		instance={
+			position={ 1.000000 0.500000 }
+			depth=4.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=black
+		texture="ce_block_02.dds"
+		instance={
+			position={ 0.750000 0.500000 }
+			scale={ 0.080000 1.000000 }
+			depth=2.010000
+		}
+
+		instance={
+			position={ 1.000000 0.500000 }
+			scale={ 1.000000 0.080000 }
+			depth=3.010000
+		}
+
+	}
+
+}
+
+b_wezel={
+	pattern="pattern_solid.dds"
+	color1=red
+	color2=white
+	color3=black
+	colored_emblem={
+		color1=white
+		color2=orange
+		texture="ce_escutcheon.dds"
+		instance={
+			scale={ 0.500000 0.500000 }
+			depth=3.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		texture="Wezel.dds"
+		instance={
+			position={ 0.500000 0.810000 }
+			scale={ 0.400000 0.400000 }
+		}
+
+		instance={
+			position={ 0.750000 0.155000 }
+			scale={ 0.400000 0.400000 }
+			depth=1.010000
+		}
+
+		instance={
+			position={ 0.250000 0.155000 }
+			scale={ 0.400000 0.400000 }
+			depth=2.010000
+		}
+
+	}
+
+}
+
+#--- 7.3. County of Aachen ---
+
+c_aachen={
+	pattern="pattern_solid.dds"
+	color1=yellow
+	color2=black
+	colored_emblem={
+		color1=black
+		color2=red
+		color3=white
+		texture="ce_eagle.dds"
+		instance={
+			position={ 0.500000 0.520000 }
+			scale={ 1.100000 1.100000 }
+		}
+
+	}
+
+}
+b_aachen=c_aachen
+
+b_limbourg={
+	pattern="pattern_solid.dds"
+	color1=red
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=white
+		color2=white
+		color3=white
+		texture="Limbourg.dds"
+		instance={
+			scale={ 0.700000 0.700000 }
+		}
+
+	}
+
+}
+
+b_prum={
+	pattern="pattern_solid.dds"
+	color1=red
+	color2=black
+	color3=white
+	colored_emblem={
+		color1=green
+		color2=green
+		texture="ce_doted_roundel_frame.dds"
+		instance={
+			position={ 0.500000 1.000000 }
+			scale={ 1.000000 0.460000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=red
+		color2=yellow
+		color3=white
+		texture="Prum.dds"
+		instance={
+			position={ 0.500000 0.490000 }
+			scale={ 0.800000 0.800000 }
+		}
+
+	}
+
+}
+
+b_duren={
+	pattern="pattern_solid.dds"
+	color1=yellow
+	color2=yellow
+	color3=red
+	colored_emblem={
+		color1=black
+		color2=red
+		color3=red
+		texture="ce_lion_passant.dds"
+		instance={
+			position={ 0.500000 0.750000 }
+			scale={ 0.600000 0.600000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=black
+		color2=red
+		color3=red
+		texture="ce_eagle.dds"
+		instance={
+			position={ 0.500000 0.300000 }
+			scale={ 0.600000 0.600000 }
+			depth=1.010000
+		}
+
+	}
+
+}
+
+b_eschweiler={
+	pattern="pattern_solid.dds"
+	color1=yellow
+	color2=yellow
+	color3=red
+	colored_emblem={
+		color1=blue_light
+		color2=red
+		color3=black
+		texture="Eschweiler.dds"
+		instance={
+			scale={ 0.905000 0.825000 }
+		}
+
+	}
+
+}
+
+#--- 8. Duchy of Luxembourg ---
+
+#--- 8.1. County of Namur ---
+
+c_namur={
+	pattern="pattern_solid.dds"
+	color1=yellow
+	color2=black
+	colored_emblem={
+		color1=red
+		color2=red
+		texture="ce_bendlet.dds"
+	}
+
+	colored_emblem={
+		color1=black
+		color2=red
+		color3=yellow_light
+		texture="ce_lion_rampant_crown.dds"
+		instance={
+			depth=1.010000
+		}
+
+	}
+
+}
+b_namur = c_namur
+
+b_charleroi={
+	pattern="pattern__solid_designer.dds"
+	color1=black
+	color2=white
+	color3=blue
+	colored_emblem={
+		color1=white
+		texture="ce_block_02.dds"
+		instance={
+			position={ 0.500000 0.075000 }
+			scale={ 1.000000 0.280000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		color2=black
+		color3=white
+		texture="Charleroi.dds"
+		instance={
+			position={ 0.500000 0.580000 }
+			scale={ 0.650000 0.650000 }
+			depth=1.010000
+		}
+
+	}
+
+}
+
+
+b_couvin={
+	pattern="pattern__solid_designer.dds"
+	color1=red
+	color2=white
+	color3=green
+	colored_emblem={
+		color1=yellow
+		texture="ce_martlet.dds"
+		instance={
+			position={ 0.500000 0.700000 }
+			scale={ 0.500000 0.500000 }
+		}
+
+		instance={
+			position={ 0.750000 0.300000 }
+			scale={ 0.500000 0.500000 }
+			depth=1.010000
+		}
+
+		instance={
+			position={ 0.250000 0.300000 }
+			scale={ 0.500000 0.500000 }
+			depth=2.010000
+		}
+
+	}
+
+}
+
+#--- 8.2. County of Liege ---
+
+b_huy={
+	pattern="pattern__solid_designer.dds"
+	color1=red
+	color2=yellow
+	color3=red
+	colored_emblem={
+		color1=yellow
+		color2=yellow
+		color3=yellow
+		texture="Huy.dds"
+		instance={
+			position={ 0.500000 0.460000 }
+			scale={ 0.750000 0.750000 }
+		}
+
+	}
+
+}
+
+b_la_roche={
+	pattern="pattern_solid.dds"
+	color1=red
+	color2=white
+	color3=black
+	colored_emblem={
+		color1=white
+		color2=grey
+		color3=rgb { 160 159 159 }
+		texture="Brabant.dds"
+		instance={
+			scale={ 0.900000 0.900000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=blue
+		texture="ce_label_03.dds"
+		instance={
+			position={ 0.500000 0.640000 }
+		}
+
+	}
+
+}
+
+#--- 8.3. County of Bouillon ---
+
+b_chiny={
+	pattern="pattern_solid.dds"
+	color1=blue
+	color2=white
+	color3=black
+	colored_emblem={
+		color1=white
+		color2=black
+		texture="ce_fish.dds"
+		instance={
+			position={ 0.500000 0.850000 }
+			scale={ 0.400000 0.400000 }
+			depth=1.010000
+		}
+
+		instance={
+			position={ 0.500000 0.650000 }
+			scale={ 0.400000 0.400000 }
+			depth=2.010000
+		}
+
+		instance={
+			position={ 0.500000 0.455000 }
+			scale={ 0.400000 0.400000 }
+			depth=3.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		texture="ce_crown_random.dds"
+		instance={
+			position={ 0.500000 0.215000 }
+			scale={ 0.500000 0.500000 }
+		}
+
+	}
+
+}
+
+b_virton={
+	pattern="pattern__solid_designer.dds"
+	color1=blue
+	color2=white
+	color3=blue
+	colored_emblem={
+		color1=white
+		color2=yellow
+		color3=yellow
+		texture="ce_arrows_saltire.dds"
+		instance={
+			scale={ 0.850000 -0.850000 }
+		}
+
+	}
+
+}
+
+b_saint_hubert={
+	pattern="pattern_solid.dds"
+	color1=blue_light
+	color2=white
+	color3=blue
+	colored_emblem={
+		color1=yellow
+		color2=yellow
+		color3=yellow
+		texture="Hubert2.dds"
+		instance={
+			position={ 0.660000 0.500000 }
+			scale={ 0.650000 0.650000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		color2=yellow
+		color3=yellow
+		texture="Hubert1.dds"
+		instance={
+			position={ 0.345000 0.500000 }
+			scale={ 0.650000 0.650000 }
+			depth=1.010000
+		}
+
+	}
+
+}
+
+#--- 8.4. County of Luxembourg ---
+
+b_bastogne={
+	pattern="pattern_vertical_split_01.dds"
+	color1=red
+	color2=blue
+	color3=red
+	colored_emblem={
+		color1=white
+		color2=yellow_light
+		color3=white
+		texture="Bastogne.dds"
+		instance={
+			scale={ 0.850000 0.850000 }
+		}
+
+	}
+
+}
+
+b_clervaux={
+	pattern="pattern_horizontal_split_02.dds"
+	color1=red
+	color2=yellow
+	color3=red
+	colored_emblem={
+		color1=black
+		color2=red
+		color3=red
+		texture="ce_martlet.dds"
+		instance={
+			position={ 0.500000 0.200000 }
+			scale={ 0.350000 0.350000 }
+		}
+
+		instance={
+			position={ 0.750000 0.200000 }
+			scale={ 0.350000 0.350000 }
+			depth=1.010000
+		}
+
+		instance={
+			position={ 0.250000 0.200000 }
+			scale={ 0.350000 0.350000 }
+			depth=2.010000
+		}
+
+	}
+
+}
+
+b_vianden={
+	pattern="pattern_horizontal_stripes_01.dds"
+	color1=red
+	color2=rgb { 192 192 192 }
+	color3=blue
+}
+
+b_diekirch={
+	pattern="pattern_barruly_special.dds"
+	color1=yellow
+	color2=blue
+	color3=red
+	colored_emblem={
+		color1=white
+		color2=red
+		texture="ce_lion_rampant.dds"
+		instance={
+			position={ 0.500000 0.430000 }
+			scale={ 0.850000 0.850000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=red
+		texture="ce_tower.dds"
+		instance={
+			position={ 0.500000 1.000000 }
+			scale={ 1.000000 0.680000 }
+			depth=1.010000
+		}
+
+	}
+
+}
+
+#--- 9. Duchy of Lower Lotharinga ---
+#--- 9.1. County of Dortmund ---
+
+c_dortmund ={
+	pattern="pattern_solid.dds"
+	color1=yellow
+	color2=yellow
+	color3=red
+	colored_emblem={
+		color1=black
+		color2=orange
+		texture="ce_eagle.dds"
+	}
+
+}
+b_dortmund = c_dortmund
+
+b_essen={
+	pattern="pattern__solid_designer.dds"
+	color1=blue
+	color2=yellow
+	color3=black
+	colored_emblem={
+		color1=yellow
+		color2=white
+		texture="ce_sword_simple.dds"
+	}
+
+}
+
+b_recklinghausen={
+	pattern="pattern_solid.dds"
+	color1=green
+	color2=blue
+	color3=black
+	colored_emblem={
+		color1=yellow
+		color2=yellow
+		color3=yellow
+		texture="Recklinghausen.dds"
+		instance={
+			position={ 0.500000 0.485000 }
+			scale={ 0.850000 0.850000 }
+		}
+
+	}
+
+}
+
+#--- 9.2. County of Cologne ---
+
+b_neuss={
+	pattern="pattern__solid_designer.dds"
+	color1=black
+	color2=yellow
+	color3=black
+	colored_emblem={
+		color1=white
+		texture="ce_block_02.dds"
+		instance={
+			position={ 0.750000 0.500000 }
+			scale={ 0.080000 1.000000 }
+		}
+
+		instance={
+			position={ 1.000000 0.500000 }
+			scale={ 1.000000 0.080000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=yellow
+		color2=red
+		color3=red
+		texture="ce_eagle_double.dds"
+		instance={
+			position={ 0.250000 0.500000 }
+			scale={ -0.510000 0.850000 }
+			depth=3.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=red
+		texture="ce_block_02.dds"
+		instance={
+			position={ 1.000000 0.500000 }
+			depth=2.010000
+		}
+
+	}
+
+}
+
+b_bonn={
+	pattern="pattern_solid.dds"
+	color1=white
+	color2=black
+	colored_emblem={
+		color1=rgb { 192 123 22 }
+		color2=rgb { 192 123 22 }
+		texture="ce_crown.dds"
+		instance={
+			position={ 0.800000 0.280000 }
+			scale={ 0.300000 0.300000 }
+		}
+
+		instance={
+			position={ 0.200000 0.280000 }
+			scale={ 0.300000 0.300000 }
+			depth=1.010000
+		}
+
+		instance={
+			position={ 0.500000 0.125000 }
+			scale={ 0.300000 0.300000 }
+			depth=3.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=black
+		texture="ce_block_02.dds"
+		instance={
+			scale={ 1.000000 0.200000 }
+			depth=2.010000
+		}
+
+		instance={
+			position={ 0.500000 0.695000 }
+			scale={ 0.200000 1.000000 }
+			depth=4.010000
+		}
+
+	}
+
+}
+
+
+b_nauenahr={
+	pattern="pattern__solid_designer.dds"
+	color1=yellow
+	color2=yellow
+	color3=blue
+	colored_emblem={
+		color1=black
+		color2=red
+		color3=red
+		texture="ce_eagle.dds"
+	}
+
+}
+
+#--- 9.3. County of Koblenz ---
+
+c_koblenz={
+	pattern="pattern_solid.dds"
+	color1=white
+	color2=black
+	colored_emblem={
+		color1=rgb { 192 123 22 }
+		color2=rgb { 192 123 22 }
+		texture="ce_crown.dds"
+		instance={
+			position={ 0.500000 0.125000 }
+			scale={ 0.300000 0.300000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=red
+		texture="ce_block_02.dds"
+		instance={
+			scale={ 1.000000 0.200000 }
+		}
+
+		instance={
+			position={ 0.500000 0.695000 }
+			scale={ 0.200000 1.000000 }
+			depth=2.010000
+		}
+
+	}
+
+}
+c_koblenz=b_koblenz
+
+b_adenau={
+	pattern="pattern_solid.dds"
+	color1=red
+	color2=yellow
+	colored_emblem={
+		color1=white
+		texture="ce_block_02.dds"
+		instance={
+			position={ 0.500000 0.170000 }
+			scale={ 1.000000 0.540000 }
+			depth=2.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		color2=white
+		texture="ce_block_02.dds"
+		instance={
+			position={ 0.345000 0.880000 }
+			scale={ 0.030000 0.050000 }
+			depth=3.010000
+		}
+
+		instance={
+			position={ 0.510000 0.895000 }
+			scale={ 0.030000 0.050000 }
+			depth=4.010000
+		}
+
+		instance={
+			position={ 0.690000 0.850000 }
+			scale={ 0.030000 0.050000 }
+			depth=5.010000
+		}
+
+		instance={
+			position={ 0.880000 0.555000 }
+			scale={ 0.030000 0.050000 }
+			depth=6.010000
+		}
+
+		instance={
+			position={ 0.240000 0.500000 }
+			scale={ 0.030000 0.050000 }
+			depth=7.010000
+		}
+
+		instance={
+			position={ 0.125000 0.640000 }
+			scale={ 0.030000 0.050000 }
+			depth=8.010000
+		}
+
+		instance={
+			position={ 0.425000 0.510000 }
+			scale={ 0.030000 0.050000 }
+			depth=9.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=black
+		texture="ce_block_02.dds"
+		instance={
+			position={ 0.500000 0.000000 }
+			scale={ 0.080000 0.875000 }
+		}
+
+		instance={
+			position={ 0.500000 0.250000 }
+			scale={ 1.000000 0.080000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		color2=blue_light
+		color3=blue_light
+		texture="ce_lion_passant_small.dds"
+		instance={
+			position={ 0.500000 0.750000 }
+			depth=10.010000
+		}
+
+	}
+
+}
+
+b_cochem={
+	pattern="pattern_solid.dds"
+	color1=white
+	color2=yellow
+	color3=blue
+	colored_emblem={
+		color1=yellow
+		color2=yellow
+		texture="ce_keys_crossed.dds"
+		instance={
+			position={ 0.745000 0.500000 }
+			scale={ 0.650000 0.750000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=red
+		texture="ce_block_02.dds"
+		instance={
+			scale={ 1.000000 0.080000 }
+			depth=1.010000
+		}
+
+		instance={
+			position={ 0.250000 0.500000 }
+			scale={ 0.080000 1.000000 }
+			depth=2.010000
+		}
+
+		instance={
+			position={ 0.870000 0.505000 }
+			scale={ 0.745000 1.000000 }
+			depth=3.010000
+		}
+
+	}
+
+}
+
+b_sponheim={
+	pattern="pattern_solid.dds"
+	color1=red
+	color2=red
+	colored_emblem={
+		color1=blue
+		color2=yellow
+		color3=yellow
+		texture="Sponheim.dds"
+		instance={
+			scale={ 0.850000 0.850000 }
+		}
+
+	}
+
+}
+
+#--- 9.4. County of Bergh ---
+
+b_siegburg={
+	pattern="pattern_solid.dds"
+	color1=blue_light
+	color2=white
+	color3=blue
+	colored_emblem={
+		color1=black
+		texture="ce_escutcheon.dds"
+		instance={
+			position={ 0.500000 0.845000 }
+			scale={ 0.780000 0.785000 }
+			depth=2.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=red
+		color2=yellow_light
+		color3=white
+		texture="Siegburg.dds"
+		instance={
+			position={ 0.500000 0.535000 }
+			depth=3.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=red
+		color2=blue_light
+		texture="ce_lion_rampant_crown.dds"
+		instance={
+			position={ 0.500000 0.830000 }
+			scale={ 0.490000 0.540000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		texture="ce_escutcheon.dds"
+		instance={
+			position={ 0.500000 0.845000 }
+			scale={ 0.750000 0.750000 }
+			depth=1.010000
+		}
+
+	}
+
+}
+
+c_bergh={
+	pattern="pattern_solid.dds"
+	color1=white
+	color2=red
+	colored_emblem={
+		color1=white
+		texture="ce_block_02.dds"
+		instance={
+			position={ 0.860000 0.800000 }
+			scale={ 0.730000 1.000000 }
+			depth=3.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=red
+		color2=blue_light
+		texture="ce_lion_rampant_crown.dds"
+		instance={
+			position={ 0.750000 0.650000 }
+			scale={ 0.600000 0.600000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=green
+		texture="ce_block_02.dds"
+		instance={
+			position={ 0.500000 0.150000 }
+			scale={ 1.000000 0.300000 }
+			depth=4.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=white
+		color2=white
+		texture="ce_waves_03.dds"
+		instance={
+			position={ 0.500000 0.125000 }
+			scale={ 1.000000 0.360000 }
+			depth=1.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=black
+		color2=red
+		texture="ce_bars_embattled_03.dds"
+		instance={
+			position={ 0.500000 0.830000 }
+			depth=5.010000
+		}
+
+	}
+
+	colored_emblem={
+		color1=black
+		texture="ce_block_02.dds"
+		instance={
+			position={ 0.500000 0.800000 }
+			scale={ 0.020000 1.000000 }
+			depth=2.010000
+		}
+
+	}
+
+}
+
+b_bergh = c_bergh
+
+#--- 9.5. County of Sayn ---
+
+c_sayn={
+	pattern="pattern_solid.dds"
+	color1=red
+	color2=red
+	colored_emblem={
+		color1=yellow
+		color2=blue_light
+		color3=blue
+		texture="ce_lion_guardant.dds"
+	}
+
+}
+b_sayn = c_sayn
+
+b_isenburg={
+	pattern="pattern__solid_designer.dds"
+	color1=white
+	color2=white
+	color3=red
+	colored_emblem={
+		color1=black
+		texture="ce_block_02.dds"
+		instance={
+			position={ 0.500000 0.300000 }
+			scale={ 1.000000 0.200000 }
+		}
+
+		instance={
+			position={ 0.500000 0.700000 }
+			scale={ 1.000000 0.200000 }
+			depth=1.010000
+		}
+
+	}
+
+}
+
+b_wied ={
+	pattern="pattern_barruly_08.dds"
+	color1=yellow
+	color2=red
+	color3=red
+}
+
+#--- 9.5. County of Mark ---
+
+b_hagen={
+	pattern="pattern_solid.dds"
+	color1=blue_light
+	color2=red
+	color3=white
+	colored_emblem={
+		color1=rgb { 0 0 0 }
+		color2=rgb { 139 122 85 }
+		texture="Hagen.dds"
+		instance={
+			scale={ 0.900000 0.900000 }
+		}
+
+	}
+
+}
+
+b_hukeswag={
+	pattern="pattern_solid.dds"
+	color1=white
+	color2=white
+	color3=red
+	color4=black
+	colored_emblem={
+		color1=red
+		color2=blue
+		texture="ce_lion_rampant_crown.dds"
+		instance={
+			scale={ 0.900000 0.900000 }
+		}
+
+	}
+
+}
+
+#--- 9.6. County of Arnsberg ---
+
+c_arnsberg ={
+	pattern="pattern_shield_03_small.dds"
+	color1=red
+	color2=white
+	colored_emblem={
+		color1=white
+		color2=yellow
+		color3=yellow
+		texture="ce_eagle.dds"
+		instance={
+			position={ 0.500000 0.520000 }
+		}
+
+	}
+
+	colored_emblem={
+		color1=red
+		color2=red
+		texture="ce_block_02.dds"
+		instance={
+			depth=1.010000
+		}
+
+	}
+}
+b_arnsberg = c_arnsberg
+
+b_bilstein={
+	pattern="pattern_solid.dds"
+	color1=yellow
+	color2=yellow
+	color3=red
+	colored_emblem={
+		color1=yellow
+		color2=green
+		texture="ce_barry_06.dds"
+		instance={
+			position={ 0.565000 0.505000 }
+			scale={ 0.845000 1.000000 }
+			rotation=90
+		}
+
+	}
+
+}

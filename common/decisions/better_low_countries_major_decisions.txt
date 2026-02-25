@@ -599,7 +599,7 @@ merge_frisia_decision = { #Based on France and Aquitaine
 		NOT = {
 			is_target_in_global_variable_list = {
 				name = unavailable_unique_decisions
-				target = flag:merged_frisia
+				target = flag:flag_merged_frisia
 			}
 		}
 		OR = {
@@ -626,7 +626,11 @@ merge_frisia_decision = { #Based on France and Aquitaine
 	effect = {
 		add_to_global_variable_list = {
 			name = unavailable_unique_decisions
-			target = flag:merged_frisia
+			target = flag:flag_merged_frisia
+		}
+		set_global_variable = {
+			name = flag_restored_pagan_saxony
+			value = root
 		}
 
 		save_scope_as = rightful_liege
@@ -804,6 +808,10 @@ ubbe_abandon_walcheren_decision = {
 				modifier = ep3_voluntary_laamp_character_modifier
 				years = 5
 			}
+		}
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:flag_ubbe_left
 		}
 		set_global_variable = {
 			name = flag_ubbe_left

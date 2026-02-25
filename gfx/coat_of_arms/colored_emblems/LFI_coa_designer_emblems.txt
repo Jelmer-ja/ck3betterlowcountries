@@ -1,0 +1,71 @@
+﻿# Emblems used in the CoA designer.
+# The order defines the order in which they are listed.
+#
+# Format:
+# filename = {
+#     # How many colors options to show for this emblem. Optional, will assume maximum number of colors if missing
+#     colors = 3
+#
+#     # Whether to show the emblem in the CoA designer. Default yes.
+#     # Add an entry with no to allow specifying number of colors for emblems used in adjusted mode
+#     visible = no
+# }
+#
+#
+# Use the count_unique_emblem_colors console command to generate this instead of manually doing the tedium
+# Note that the command does NOT preserve your visible definitions, so you'll want to add them back in yourself, use a diff tool to make it easier
+
+# Possible categories:
+# abstract
+# animals
+# circles_spirals
+# crosses_and_knots
+# faiths
+# manmade
+# nature
+# patterns
+# tribal_seal
+# writing
+# figures
+
+# Double underscore intentional to make it the first option in the list
+#ce__empty_designer.dds = { colors = 0 category = abstract }
+
+Gent.dds = { colors = 3 category = animals }
+Roeselare.dds = { colors = 1 category = crosses_and_knots }
+Flanders.dds = { colors = 3 category = animals }
+Brussels.dds = { colors = 3 category = figures }
+Antwerpen.dds = { colors = 3 category = manmade }
+Mons.dds = { colors = 3 category = manmade }
+Tournai.dds = { colors = 3 category = manmade }
+Brabant.dds = { colors = 3 category =  animals }
+Turnhout.dds = { colors = 3 category =  animals }
+Tilburg.dds = { colors = 3 category = manmade }
+Alkmaar.dds = { colors = 3 category = manmade }
+Groningen.dds = { colors = 3 category = animals }
+Assen.dds = { colors = 3 category = figures }
+Kampen.dds = { colors = 3 category = manmade }
+Emmen.dds = { colors = 3 category = figures }
+Coevorden1.dds = { colors = 3 category = figures }
+Coevorden2.dds = { colors = 3 category = figures }
+Appingedam1.dds = { colors = 3 category = figures }
+Appingedam2.dds = { colors = 3 category = figures }
+Delfzijl.dds = { colors = 3 category = figures }
+Emden.dds = { colors = 3 category = figures }
+Varel.dds = { colors = 2 category = manmade }
+Geldern.dds = { colors = 3 category = animals }
+Nijwegen.dds = { colors = 3 category = animals }
+Tiel.dds = { colors = 2 category = patterns }
+Wezel.dds = { colors = 1 category = animals }
+Limbourg.dds = { colors = 3 category = manmade }
+Prum.dds = { colors = 3 category = animals }
+Eschweiler.dds = { colors = 3 category = animals }
+Charleroi.dds = { colors = 3 category = figures }
+Huy.dds = { colors = 3 category = manmade }
+Hubert1.dds = { colors = 3 category = animals }
+Hubert2.dds = { colors = 3 category = figures }
+Bastogne.dds = { colors = 3 category = figures }
+Recklinghausen.dds = { colors = 3 category = manmade }
+Sponheim.dds = { colors = 3 category = figures }
+Siegburg.dds = { colors = 3 category = figures }
+Hagen.dds = { colors = 2 category = nature }

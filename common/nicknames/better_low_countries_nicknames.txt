@@ -1,2 +1,3 @@
 ﻿nick_skylding = {}
 nick_iron_arm = {}
+nick_giantslayer = {}
