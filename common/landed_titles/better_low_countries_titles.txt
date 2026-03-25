@@ -1505,6 +1505,15 @@ k_lotharingia = {
 		c_dortmund = {
 			color = { 150 165 185 }
 
+			cultural_names = {
+				name_list_french = cn_tremoigne
+				name_list_norman = cn_tremoigne
+				name_list_walloon = cn_tremoigne
+				name_list_picard = cn_tremoigne
+				name_list_dutch = cn_dortmond
+				name_list_saxon = cn_duorpm
+			}
+
 			b_dortmund = {
 				province = 2673
 

@@ -1,6 +1,6 @@
 ﻿k_netherlands = {
 	pattern = "pattern_solid.dds"
-	color1 = "blue"
+	color1 = "black"
 	color2 = "yellow"
 	colored_emblem = {
 		texture = "ce_lion_rampant.dds"

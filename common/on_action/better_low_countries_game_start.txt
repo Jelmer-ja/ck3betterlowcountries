@@ -40,6 +40,7 @@ blc_setup_on_actions = {
         title:c_cleves = { set_county_culture = culture:dutch }
         title:c_maastricht = { set_county_culture = culture:dutch }
         title:c_guines = { set_county_culture = culture:dutch }
+        title:c_dortmund = { set_county_culture = culture:dutch }
 
         ##Saxon
         title:c_zutphen = { set_county_culture = culture:saxon }
@@ -238,6 +239,7 @@ blc_setup_on_actions = {
                     location = province:1595
                     origin = province:1595
                 }
+                add_prestige = 3000
             }
         }
         
