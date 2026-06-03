@@ -30,3 +30,8 @@ viking_unrest_modifier = {
 	icon = dread_negative
 	county_opinion_add = -30
 }
+
+artifact_blc_key_to_happiness_modifier = {
+	icon = love_positive
+	stress_gain_mult = -1.00
+}

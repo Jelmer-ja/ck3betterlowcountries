@@ -1,0 +1,4 @@
+better_low_countries_artifact_key_to_happiness_visual = {
+	icon = "artifact_key.dds"
+	asset = ep1_western_box_small_basic_01_a_entity	
+}

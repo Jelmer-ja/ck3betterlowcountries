@@ -1,0 +1,253 @@
+﻿namespace = ellert_cycle
+
+ellert_cycle.1000 = {
+    type = character_event
+	title = ellert_cycle.1000.t
+	desc = ellert_cycle.1000.desc
+	theme = learning
+	left_portrait = {
+		character = root
+		animation = thinking
+	}
+	right_portrait = {
+		character = character:941005
+		animation = spymaster
+	}
+
+	trigger = {
+		has_ep3_dlc_trigger = yes
+	}
+
+	immediate = {
+		hidden_effect = {
+
+		}
+	}
+
+	option = {
+		name = ellert_cycle.1000.a
+
+		custom_tooltip = {
+			text = ellert_keep_marieke_tt
+			#trigger_event = {
+			#	id = ellert_cycle.1002
+			#	days = 1
+			#}
+		}
+
+        #Marieke stays
+		ai_chance = {
+			base = 50 # Historically determined
+		}
+	}
+
+
+	option = {
+		name = ellert_cycle.1000.b
+		custom_tooltip = {
+			text = ellert_banish_marieke_tt
+        	remove_courtier_or_guest = character:941005
+			random_list = {
+				100 = {
+					trigger_event = {
+						id = ellert_cycle.1001
+						days = { 40 80 }
+					}
+				}
+			}
+		}
+
+        #Marieke leaves
+		ai_chance = {
+			base = 50 # Historically determined
+		}
+	}
+}
+
+ellert_cycle.1001 = {
+	type = character_event
+	title = ellert_cycle.1001.t
+	desc = ellert_cycle.1001.desc
+
+	trigger = {
+		has_ep3_dlc_trigger = yes
+	}
+
+	immediate = {
+		create_character = {
+			name = "David"
+			culture = culture:saxon
+			faith = faith:catholic
+			location = province:2417
+			prowess = 15
+			gender_female_chance = 0
+			save_scope_as = spawned_peasant_1
+		}
+		root.location = { save_scope_as = terrain_scope }
+	}
+
+	theme = learning
+	override_background = { reference = temple }
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+	right_portrait = {
+		character = scope:spawned_peasant_1
+		animation = anger
+	}
+
+	option = {
+		name = ellert_cycle.1001.a
+		ai_chance = {
+			base = 1000
+		}
+
+        configure_start_single_combat_effect = {
+            SC_INITIATOR = ROOT
+            SC_ATTACKER = scope:spawned_peasant_1
+            SC_DEFENDER = ROOT
+
+			LOCALE = terrain_scope
+
+            FATALITY = always
+            FIXED = no
+
+            OUTPUT_EVENT = ellert_cycle.1004
+            INVALIDATION_EVENT = ellert_cycle.1004
+        }
+	}
+}
+
+#Second fight
+ellert_cycle.1004 = {
+	type = character_event
+	title = ellert_cycle.1004.t
+	desc = ellert_cycle.1004.desc
+
+	immediate = {
+		create_character = {
+			name = "Ingo"
+			culture = culture:saxon
+			faith = faith:catholic
+			location = province:2417
+			prowess = 15
+			gender_female_chance = 0
+			save_scope_as = spawned_peasant_2
+		}
+		root.location = { save_scope_as = terrain_scope }
+	}
+
+	theme = learning
+	override_background = { reference = temple }
+	left_portrait = {
+		character = root
+		animation = anger
+	}
+	right_portrait = {
+		character = scope:spawned_peasant_2
+		animation = anger
+	}
+
+	option = {
+		name = ellert_cycle.1004.a
+		ai_chance = {
+			base = 1000
+		}
+
+        configure_start_single_combat_effect = {
+            SC_INITIATOR = ROOT
+            SC_ATTACKER = scope:spawned_peasant_2
+            SC_DEFENDER = ROOT
+
+			LOCALE = terrain_scope
+
+            FATALITY = always
+            FIXED = no
+
+            OUTPUT_EVENT = ellert_cycle.1005
+			INVALIDATION_EVENT = ellert_cycle.1005
+        }
+	}
+}
+
+#Third fight
+ellert_cycle.1005 = {
+	type = character_event
+	title = ellert_cycle.1005.t
+	desc = ellert_cycle.1005.desc
+
+	immediate = {
+		create_character = {
+			name = "Rudolf"
+			culture = culture:saxon
+			faith = faith:catholic
+			location = province:2417
+			prowess = 15
+			gender_female_chance = 0
+			save_scope_as = spawned_peasant_3
+		}
+		root.location = { save_scope_as = terrain_scope }
+	}
+
+	theme = learning
+	override_background = { reference = temple }
+	left_portrait = {
+		character = root
+		animation = anger
+	}
+	right_portrait = {
+		character = scope:spawned_peasant_3
+		animation = anger
+	}
+
+	option = {
+		name = ellert_cycle.1005.a
+		ai_chance = {
+			base = 1000
+		}
+
+        configure_start_single_combat_effect = {
+            SC_INITIATOR = ROOT
+            SC_ATTACKER = scope:spawned_peasant_3
+            SC_DEFENDER = ROOT
+
+			LOCALE = terrain_scope
+
+            FATALITY = always
+            FIXED = no
+
+            OUTPUT_EVENT = ellert_cycle.1003
+			INVALIDATION_EVENT = ellert_cycle.1003
+        }
+	}
+}
+
+#Conclusion of the violent path
+ellert_cycle.1003 = {
+	type = character_event
+	title = ellert_cycle.1003.t
+	desc = ellert_cycle.1003.desc
+	
+	theme = learning
+	override_background = { reference = temple }
+	left_portrait = {
+		character = root
+		animation = personality_honorable
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = ellert_cycle.1003.a
+		custom_tooltip = {
+			text = end_ellert_cycle_tt
+		}
+		add_gold = 50
+
+		ai_chance = {
+			base = 1000
+		}
+	}
+}

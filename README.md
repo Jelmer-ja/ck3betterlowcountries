@@ -10,8 +10,7 @@ A flavor mod for the Low Countries region.
 * New coats of arms for the Low Countries, taken from Low Lands Improved. 
 
 [i]Currently in development:[/i]
-* Story cycle for Ellert and Brammert bookmark
-* Flavor events
+* Second half of the story cycle for Ellert and Brammert
 
 [h1]Compatibility[/h1]
 Most of the mod's changes are in the on_action script, so the mod should be compatible with almost every other mod that doesn't also change the de jure structure of France. However, the Picard unique building might not be triggered if other mods are used due to the overriding of the building list. Two important vanilla files which are overwritten are the list of possible buildings for castle holdings and the historical wars file, so the main mod conflicts will come from there.
@@ -19,5 +18,5 @@ Most of the mod's changes are in the on_action script, so the mod should be comp
 [h1]Special Credits[/h1]
 * Caspian Mortis from Europa Magnifica for the unique buildings
 * Jozef from Jozef's New Names of the Netherlands for allowing me to use part of his naming structure
-* PrograX from Low Lands Improved for allowing my to add his coats of arms
+* PrograX from Low Lands Improved for allowing me to add his coats of arms
 * The Rajas of Asia devs for their invaluable help with debugging

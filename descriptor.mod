@@ -1,4 +1,4 @@
-version="0.3.3"
+version="0.3.4"
 tags={
 	"1.18 'Crane'"
 	"Map"
@@ -6,5 +6,5 @@ tags={
 }
 name="Better Low Countries"
 picture="thumbnail.png"
-supported_version="1.18.4"
+supported_version="1.19.0.6"
 remote_file_id="3625741723"
