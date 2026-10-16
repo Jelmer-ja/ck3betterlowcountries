@@ -6,5 +6,5 @@ tags={
 }
 name="Better Low Countries"
 picture="thumbnail.png"
-supported_version="1.19.0.6"
+supported_version="1.20.1.1"
 remote_file_id="3625741723"
