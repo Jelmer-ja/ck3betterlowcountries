@@ -5,12 +5,9 @@
 
 	#De jure shifts
 	title:d_picardy = { set_de_jure_liege_title = title:k_picardy }
-	title:d_lower_picardy = { set_de_jure_liege_title = title:k_picardy }
-	title:c_lille = { set_de_jure_liege_title = title:d_lower_picardy }
-	title:c_hainaut = { set_de_jure_liege_title = title:d_lower_picardy }
-	title:c_cambray = { set_de_jure_liege_title = title:d_lower_picardy }
-	title:c_guines = { set_de_jure_liege_title = title:d_lower_picardy }
 	title:d_flanders = { set_de_jure_liege_title = title:k_picardy }
+	title:d_artois = { set_de_jure_liege_title = title:k_picardy }
+	title:d_hainaut = { set_de_jure_liege_title = title:k_picardy }
 
 	create_title_and_vassal_change = {
 		type = created
@@ -72,6 +69,7 @@ form_new_frisia_kingdom_scripted_effect = {
 	title:d_north_frisia = { set_de_jure_liege_title = title:k_new_frisia }
 	title:c_westfriesland = { set_de_jure_liege_title = title:d_frisia }
 	title:c_groningen = { set_de_jure_liege_title = title:d_frisia }
+	title:c_drenthe = { set_de_jure_liege_title = title:d_frisia }
 	title:c_ditmarschen = { set_de_jure_liege_title = title:d_north_frisia }
 	title:c_stade = { set_de_jure_liege_title = title:d_north_frisia }
 	title:c_ribe = { set_de_jure_liege_title = title:d_north_frisia }
@@ -205,6 +203,7 @@ form_netherlands_scripted_effect = {
 	title:k_frisia.holder = { save_scope_as = scoped_king_frisia }
 	title:k_lotharingia.holder = { save_scope_as = scoped_king_lotharingia }
 	title:d_frisia = { save_scope_as = frisia }
+	title:d_artois = { save_scope_as = artois }
 	title:d_picardy = { save_scope_as = picardy }
 	title:d_lower_picardy = { save_scope_as = lower_picardy }
 	title:k_netherlands = { save_scope_as = netherlands }
@@ -220,11 +219,17 @@ form_netherlands_scripted_effect = {
 	title:d_julich = { set_de_jure_liege_title = title:k_netherlands }
 	title:d_brabant = { set_de_jure_liege_title = title:k_netherlands }
 	title:d_luxembourg = { set_de_jure_liege_title = title:k_netherlands }
+	title:d_liege = { set_de_jure_liege_title = title:k_netherlands }
 	if = {
 		limit = { completely_controls = title:d_frisia }
 		title:d_frisia = { set_de_jure_liege_title = title:k_netherlands }
 	}
 	else = { custom_tooltip = form_netherlands_kingdom_decision_effect_frisia_tooltip }
+	if = {
+		limit = { completely_controls = title:d_artois }
+		title:d_artois = { set_de_jure_liege_title = title:k_netherlands }
+	}
+	else = { custom_tooltip = form_netherlands_kingdom_decision_effect_artois_tooltip }
 	if = {
 		limit = { completely_controls = title:d_picardy }
 		title:d_picardy = { set_de_jure_liege_title = title:k_netherlands }

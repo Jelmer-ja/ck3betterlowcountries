@@ -6,62 +6,41 @@
 
 custom_core_netherlands = {
 	duchies = {
-		#k_france
 		d_flanders
-		#k_lotharingia
 		d_julich
-		#k_lotharingia
 		d_luxembourg
-		#k_lotharingia
 		d_brabant
-		#k_frisia
 		d_gelre
-		#k_frisia
 		d_utrecht
-		#k_frisia
 		d_holland
+		d_hainaut
+		d_liege
 	}
 }
 
 custom_core_netherlands_full = {
 	duchies = {
-		#k_france
 		d_flanders
-		#k_france
 		d_picardy
-		#k_lotharingia
 		d_julich
-		#k_lotharingia
 		d_luxembourg
-		#k_lotharingia
 		d_brabant
-		#k_frisia
 		d_gelre
-		#k_frisia
 		d_utrecht
-		#k_frisia
 		d_holland
-		#k_frisia
 		d_frisia
+		d_hainaut
+		d_liege
+		d_artois
 	}
 }
 
 custom_core_picardy = {
-	counties = {
-		#d_picardy
-		c_amiens
-		c_vermandois
-		c_clermont
-		c_valois
-		c_boulogne
-
-		#d_flanders
-		c_lille
-		c_guines
-
-		#d_brabant
-		c_hainaut
-		c_cambray
+	duchies = {
+		d_picardy
+		d_hainaut
+		d_flanders
+		d_artois
 	}
 }
 
@@ -80,6 +59,7 @@ custom_core_greater_frisia = {
 
 		#d_utrecht
 		c_groningen
+		c_drenthe
 
 		#d_holstein
 		c_stade

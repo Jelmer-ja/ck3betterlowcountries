@@ -911,6 +911,48 @@ c_groningen = {
 	}
 }
 
+c_drenthe = {
+	1066.1.1 = { change_prosperity_level = 12 }
+	1178.1.1 = { change_prosperity_level = 14 }
+
+	867.1.1 = {
+		liege = k_lotharingia
+		holder = 167706 #Adelbold
+	}
+	995.1.1 = {
+		liege = d_lower_lorraine
+		holder = 168218 #Ansfried
+	}
+	1054.1.1 = {
+		holder = 106530 #Willem
+	}
+	1076.4.27 = {
+		holder = 30670 #Konrad
+	}
+	1099.4.13 = {
+		holder = 30671 #Burchard
+	}
+	1112.5.16 = {
+		liege = d_holland
+		holder = 30672 #Godebald
+	}
+	1127.11.12 = {
+		holder = 30673 #Andries
+	}
+	1139.6.23 = {
+		holder = 30674 #Hartbert
+	}
+	1150.11.12 = {
+		holder = 30675 #Hermann
+	}
+	1156.1.31 = {
+		holder = 30676 #Godfried
+	}
+	1178.5.27 = {
+		holder = 206847 #Boudewijn
+	}
+}
+
 c_dokkum = {
 	769.1.1 = {
 		holder = 6392

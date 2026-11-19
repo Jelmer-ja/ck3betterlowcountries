@@ -9,23 +9,16 @@ blc_setup_on_actions = {
         # Change existing cultures
         ##Change the traditions of the Frisian culture
         culture:frisian = {
-            remove_culture_tradition = tradition_zealous_people
-            remove_culture_tradition = tradition_battlefield_looters
-            add_culture_tradition = tradition_religious_patronage
             add_culture_tradition = tradition_frisian_freedom
         }
 
         # Convert county cultures to mod standard
-        ##Frisian
-        title:c_westfriesland = { set_county_culture = culture:frisian }
-        title:c_frisia = { set_county_culture = culture:frisian }
-        title:c_dokkum = { set_county_culture = culture:frisian }
-        title:c_ostfriesland = { set_county_culture = culture:frisian }
-
         ##Walloon
         title:c_bouillon = { set_county_culture = culture:walloon }
         title:c_namur = { set_county_culture = culture:walloon }
         title:c_liege = { set_county_culture = culture:walloon }
+        title:c_stavelot = { set_county_culture = culture:walloon }
+        title:c_chiny = { set_county_culture = culture:walloon }
 
         ##Picard
         title:c_amiens = { set_county_culture = culture:picard }
@@ -35,23 +28,19 @@ blc_setup_on_actions = {
         title:c_hainaut = { set_county_culture = culture:picard }
         title:c_cambray = { set_county_culture = culture:picard }
         title:c_lille = { set_county_culture = culture:picard }
+        title:c_artois = { set_county_culture = culture:picard }
+        title:c_avesnes = { set_county_culture = culture:picard }
 
         ##Dutch
         title:c_cleves = { set_county_culture = culture:dutch }
         title:c_maastricht = { set_county_culture = culture:dutch }
         title:c_guines = { set_county_culture = culture:dutch }
-        title:c_dortmund = { set_county_culture = culture:dutch }
-
-        ##Saxon
-        title:c_zutphen = { set_county_culture = culture:saxon }
-        title:c_groningen = { set_county_culture = culture:saxon }
-        title:c_oversticht = { set_county_culture = culture:saxon }
-        title:c_arnhem = { set_county_culture = culture:saxon }
 
         ##Start date specific
         if = {
             limit = { current_date < 900.1.1 }
             title:c_luxembourg = { set_county_culture = culture:franconian }
+            title:c_vianden = { set_county_culture = culture:franconian }
 
             #Add viking unrest modifier to norse counties
             title:c_zeeland = { add_county_modifier = { modifier = viking_unrest_modifier years = 10 } }
@@ -63,37 +52,62 @@ blc_setup_on_actions = {
         if = {
             limit = { current_date >= 900.1.1 }
             title:c_ribe = { set_county_culture = culture:frisian }
+            title:c_vianden = { set_county_culture = culture:walloon }
         }
 
         # Place special building slots and buildings
         ##Place special building slots
-        province:2105 = { add_special_building_slot = koudenberg_palace_01 }
-        province:2125 = { add_special_building_slot = ypres_cloth_hall_01 }
-        province:2424 = { add_special_building_slot = utrecht_cathedral_01 }
-        province:2115 = { add_special_building_slot = saint_bavos_cathedral_01 }
-        province:2184 = { add_special_building_slot = notre_dame_amiens_01 }
-        province:2322 = { add_special_building_slot = chartres_cathedral_01 }
-        province:2390 = { add_special_building_slot = reims_cathedral_01 }
-        province:2112 = { add_special_building_slot = temple_of_nehalennia_01 }
-        province:2106 = { add_special_building_slot = antwerp_cathedral_01 }
-        province:2097 = { add_special_building_slot = liege_city_cathedral_01 }
+        #province:2105 = { holder = { add_special_building_slot = koudenberg_palace_01 } }
+        #province:2125 = { holder = { add_special_building_slot = ypres_cloth_hall_01 } }
+        #province:2424 = { holder = { add_special_building_slot = utrecht_cathedral_01 } }
+        #province:2115 = { holder = { add_special_building_slot = saint_bavos_cathedral_01 } }
+        #province:2184 = { holder = { add_special_building_slot = notre_dame_amiens_01 } }
+        #province:2322 = { holder = { add_special_building_slot = chartres_cathedral_01 } }
+        #province:2112 = { holder = { add_special_building_slot = temple_of_nehalennia_01 } }
+        #province:2106 = { holder = { add_special_building_slot = antwerp_cathedral_01 } }
+        #province:2097 = { holder = { add_special_building_slot = liege_city_cathedral_01 } }
 
         ##Place special buildings
-        province:2417 = { add_special_building = drenthe_megaliths_01 }
-        province:2418 = { add_special_building = upstalsboom_01 }
-        province:2670 = { add_special_building = munster_paulus_dom_01 }
-
-        # Put Picardy on the map in case it isn't there already
-	    title:c_clermont = { set_de_jure_liege_title = title:d_picardy }
-	    title:c_vermandois = { set_de_jure_liege_title = title:d_picardy }
-	    title:c_amiens = { set_de_jure_liege_title = title:d_picardy }
-	    title:c_valois = { set_de_jure_liege_title = title:d_picardy }
-	    title:c_boulogne = { set_de_jure_liege_title = title:d_picardy }
+        #province:2417 = { holder = { add_special_building = drenthe_megaliths_01 } }
+        #province:2418 = { holder = { add_special_building = upstalsboom_01 } }
+        #province:2670 = { holder = { add_special_building = munster_paulus_dom_01 } }
 
         # Move the capital of Picardy from Vermandois to Amiens
         title:d_picardy = {
             title_capital_county = { save_scope_as = old_capital }
             set_capital_county = title:c_amiens
+        }
+        hidden_effect = {
+            scope:old_capital ?= {
+                duchy = { save_scope_as = current_duchy }
+                random_duchy = {
+                    limit = {
+                        NOT = { this = scope:current_duchy }
+                        is_noble_family_title = no
+                        is_mercenary_company = no
+                    }
+                    save_scope_as = placeholder_duchy
+                }
+                scope:current_duchy = {
+                    every_de_jure_county = {
+                        limit = {
+                            NOT = { this = title:c_amiens }
+                        }
+                        set_de_jure_liege_title = scope:placeholder_duchy
+                        add_to_list = correction_list
+                    }
+                }
+                every_in_list = {
+                    list = correction_list
+                    set_de_jure_liege_title = scope:current_duchy
+                }
+            }
+        }
+
+        # Move the capital of Picardy from Vermandois to Amiens
+        title:d_hainaut = {
+            title_capital_county = { save_scope_as = old_capital }
+            set_capital_county = title:c_hainaut
         }
         hidden_effect = {
             scope:old_capital ?= {
@@ -633,210 +647,5 @@ blc_setup_on_actions = {
         character:168623 = {
             set_culture = culture:frisian
         }
-
-        # Add minority cultures (only available in Rajas)
-        ##Dutch
-        ###Large
-        add_culture_minority_effect = {
-            CULTURE = culture:dutch
-            SIZE = large
-            COUNTY = title:c_hainaut
-        }
-        add_culture_minority_effect = {
-            CULTURE = culture:dutch
-            SIZE = large
-            COUNTY = title:c_lille
-        }
-        add_culture_minority_effect = {
-            CULTURE = culture:dutch
-            SIZE = large
-            COUNTY = title:c_liege
-        }
-        add_culture_minority_effect = {
-            CULTURE = culture:dutch
-            SIZE = large
-            COUNTY = title:c_westfriesland
-        }
-        add_culture_minority_effect = {
-            CULTURE = culture:dutch
-            SIZE = large
-            COUNTY = title:c_zutphen
-        }
-        add_culture_minority_effect = {
-            CULTURE = culture:dutch
-            SIZE = large
-            COUNTY = title:c_arnhem
-        }
-        ###Small
-        add_culture_minority_effect = {
-            CULTURE = culture:dutch
-            SIZE = small
-            COUNTY = title:c_boulogne
-        }
-        add_culture_minority_effect = {
-            CULTURE = culture:dutch
-            SIZE = small
-            COUNTY = title:c_namur
-        }
-        add_culture_minority_effect = {
-            CULTURE = culture:dutch
-            SIZE = small
-            COUNTY = title:c_namur
-        }
-        add_culture_minority_effect = {
-            CULTURE = culture:dutch
-            SIZE = small
-            COUNTY = title:c_oversticht
-        }
-
-        ##Picard
-        ###Large
-        add_culture_minority_effect = {
-            CULTURE = culture:picard
-            SIZE = large
-            COUNTY = title:c_brabant
-        }
-        add_culture_minority_effect = {
-            CULTURE = culture:picard
-            SIZE = large
-            COUNTY = title:c_antwerpen
-        }
-        add_culture_minority_effect = {
-            CULTURE = culture:picard
-            SIZE = large
-            COUNTY = title:c_ypres
-        }
-        add_culture_minority_effect = {
-            CULTURE = culture:picard
-            SIZE = large
-            COUNTY = title:c_valois
-        }
-        ###Small
-        add_culture_minority_effect = {
-            CULTURE = culture:picard
-            SIZE = small
-            COUNTY = title:c_brugge
-        }
-        add_culture_minority_effect = {
-            CULTURE = culture:picard
-            SIZE = small
-            COUNTY = title:c_namur
-        }
-
-        ##Walloon
-        ###Large
-        add_culture_minority_effect = {
-            CULTURE = culture:walloon
-            SIZE = large
-            COUNTY = title:c_hainaut
-        }
-        add_culture_minority_effect = {
-            CULTURE = culture:walloon
-            SIZE = large
-            COUNTY = title:c_luxembourg
-        }
-        ###Small
-        add_culture_minority_effect = {
-            CULTURE = culture:walloon
-            SIZE = large
-            COUNTY = title:c_cambray
-        }
-
-        ##Saxon
-        ###Small
-        add_culture_minority_effect = {
-            CULTURE = culture:saxon
-            SIZE = small
-            COUNTY = title:c_guelders
-        }
-
-        ##Frisian
-        ###Large
-        add_culture_minority_effect = {
-            CULTURE = culture:frisian
-            SIZE = large
-            COUNTY = title:c_groningen
-        }
-        add_culture_minority_effect = {
-            CULTURE = culture:frisian
-            SIZE = large
-            COUNTY = title:c_stade
-        }
-        ###Small
-        add_culture_minority_effect = {
-            CULTURE = culture:frisian
-            SIZE = small
-            COUNTY = title:c_holland
-        }
-        add_culture_minority_effect = {
-            CULTURE = culture:frisian
-            SIZE = small
-            COUNTY = title:c_zeeland
-        }
-        add_culture_minority_effect = {
-            CULTURE = culture:frisian
-            SIZE = small
-            COUNTY = title:c_utrecht
-        }
-        add_culture_minority_effect = {
-            CULTURE = culture:frisian
-            SIZE = small
-            COUNTY = title:c_oldenburg
-        }
-
-        ##Franconian
-        ###Large
-        add_culture_minority_effect = {
-            CULTURE = culture:franconian
-            SIZE = large
-            COUNTY = title:c_aachen
-        }
-        add_culture_minority_effect = {
-            CULTURE = culture:franconian
-            SIZE = large
-            COUNTY = title:c_cleves
-        }
-        ###Small
-        add_culture_minority_effect = {
-            CULTURE = culture:franconian
-            SIZE = small
-            COUNTY = title:c_guelders
-        }
-
-        ##867: Germanic pagan minority in coastal counties due to viking occupation
-        if = {
-            limit = { current_date < 900.1.1 }
-            add_faith_minority_effect = {
-				FAITH = faith:norse_pagan
-				SIZE = small
-				COUNTY = title:c_zeeland
-			}
-            add_faith_minority_effect = {
-				FAITH = faith:norse_pagan
-				SIZE = small
-				COUNTY = title:c_holland
-			}
-            add_faith_minority_effect = {
-				FAITH = faith:norse_pagan
-				SIZE = small
-				COUNTY = title:c_westfriesland
-			}
-            add_faith_minority_effect = {
-				FAITH = faith:norse_pagan
-				SIZE = small
-				COUNTY = title:c_frisia
-			}
-            add_faith_minority_effect = {
-				FAITH = faith:norse_pagan
-				SIZE = small
-				COUNTY = title:c_dokkum
-			}
-            add_faith_minority_effect = {
-				FAITH = faith:norse_pagan
-				SIZE = small
-				COUNTY = title:c_ostfriesland
-			}
-        }
-
     }
 }

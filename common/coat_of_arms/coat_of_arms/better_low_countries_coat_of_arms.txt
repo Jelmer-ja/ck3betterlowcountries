@@ -298,6 +298,8 @@ k_saxony_norse = {
 	}
 }
 
+d_hainaut = c_hainaut
+
 # Wanderers
 house_ellerting = {
 	pattern="pattern__solid_designer.dds"
