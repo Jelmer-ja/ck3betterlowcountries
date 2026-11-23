@@ -52,7 +52,7 @@ blc_setup_on_actions = {
         if = {
             limit = { current_date >= 900.1.1 }
             title:c_ribe = { set_county_culture = culture:frisian }
-            title:c_vianden = { set_county_culture = culture:walloon }
+            title:c_vianden = { set_county_culture = culture:franconian }
         }
 
         # Place special building slots and buildings

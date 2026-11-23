@@ -48,13 +48,6 @@
 		title:k_picardy = {
 			set_de_jure_liege_title = scope:previous_kingdom.de_jure_liege
 		}
-		#Grant the duchy of Lower Picardy to player
-		title:d_lower_picardy = {
-			change_title_holder = {
-				holder = root
-				change = scope:change
-			}
-		}
 	}
 	add_prestige = major_prestige_gain
 }
@@ -205,7 +198,6 @@ form_netherlands_scripted_effect = {
 	title:d_frisia = { save_scope_as = frisia }
 	title:d_artois = { save_scope_as = artois }
 	title:d_picardy = { save_scope_as = picardy }
-	title:d_lower_picardy = { save_scope_as = lower_picardy }
 	title:k_netherlands = { save_scope_as = netherlands }
 	
 	#Check current liege of Brabant
@@ -235,11 +227,6 @@ form_netherlands_scripted_effect = {
 		title:d_picardy = { set_de_jure_liege_title = title:k_netherlands }
 	}
 	else = { custom_tooltip = form_netherlands_kingdom_decision_effect_picardy_tooltip }
-	if = {
-		limit = { completely_controls = title:d_lower_picardy }
-		title:d_lower_picardy = { set_de_jure_liege_title = title:k_netherlands }
-	}
-	else = { custom_tooltip = form_netherlands_kingdom_decision_effect_lower_picardy_tooltip }
 	
 	create_title_and_vassal_change = {
 		type = created
